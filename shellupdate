@@ -1,7 +1,9 @@
+cd /home/pi/Desktop/dispersionfarms
+git pull
 cd /
 rm /var/www/html/* -r
-cp /home/pi/Desktop/dispersionfarms/ /var/www/html/
+cp /home/pi/Desktop/dispersionfarms/* /var/www/html/
 mkdir /var/www/html/images/
 mkdir /var/www/html/textinfo/
-cp /home/pi/Desktop/dispersionfarms/images/ /var/www/html/images/
-cp /home/pi/Desktop/dispersionfarms/textinfo/ /var/www/html/textinfo/
+cp /home/pi/Desktop/dispersionfarms/images/* /var/www/html/images/
+cp /home/pi/Desktop/dispersionfarms/textinfo/* /var/www/html/textinfo/
