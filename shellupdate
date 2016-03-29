@@ -3,7 +3,7 @@ git add .
 git commit
 git pull
 cd /
-rm /var/www/html/* -r
+sudo rm /var/www/html/* -r
 cp /home/pi/Desktop/dispersionfarms/* /var/www/html/
 mkdir /var/www/html/images/
 mkdir /var/www/html/textinfo/
