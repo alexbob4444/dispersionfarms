@@ -1,0 +1,19 @@
+div.all {
+	color:black;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	width:630px;
+	top:2px;
+	float:center;
+	left:10;
+}
+a:link.contentlink, a:visited.contentlink{
+	color:green;
+	background-color: #F0FFF0;
+}  /* normal link non hovering*/
+a:hover.contentlink , a:active.contentlink{
+	color: #F0FFF0;
+	background-color:green;
+}   /* mouse over link */
+a.contentlink { margin-right:10px; font-size:22px; border-width:0px; padding:1px 4px;text-decoration:none; font: sans-serif;}

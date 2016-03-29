@@ -1,0 +1,5 @@
+PlantName
+waterEvery#days
+MinDaysToGerminate-MaxDaysToGerminate
+MinDaysToHarvestFromGerm-MaxDaysToHarvestFromGerm
+InstructionsOnHowToHarvest
