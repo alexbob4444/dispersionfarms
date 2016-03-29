@@ -1,5 +1,4 @@
 <?php
-exec('cd /home/pi/Desktop/dispersionfarms/');
-exec('chmod +x shellupdate');
-exec('sudo ./shellupdate');
+exec(dirname(/home/pi/Desktop/dispersionfarms/) 'chmod +x shellupdate');
+exec(dirname(/home/pi/Desktop/dispersionfarms/) . '/shellupdate');
 ?>
