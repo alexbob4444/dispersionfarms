@@ -3,11 +3,13 @@ img.mainimg {
 	width:100%;
 	margin-left:0px;
 	margin-top:0px;
+	position:absolute;
 }
 img.logoimg {
 	width:150px;
 	margin-left:0px;
-	margin-top:0px;	
+	margin-top:0px;
+	position:absolute;
 }
 div.all {
 	
