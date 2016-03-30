@@ -6,6 +6,7 @@ div.page {
 	margin-top:-8px;
 	margin-left:-8px;
 	margin-right:-8px;
+	right:0;
 }
 div.header {
 	text-align:left;
@@ -68,4 +69,29 @@ img.menuicond {
 	height: 30px;
 	display:block;
 	padding:30px;
+}
+nav.pushmenu {
+	right:0;
+	width:240px;
+	height:100%;
+	top:0;
+}
+nav.pushmenu.open {
+	right:240px;
+}
+div.page.open {
+	right:-240px;
+}
+nav.pushmenu, div.page {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;  
+}
+nav.pushmenu {
+	overflow-x:hidden;
+	position:relative;
+	left:0;
+}
+nav.pushmenu a {
+	display: block;
 }
