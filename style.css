@@ -23,14 +23,17 @@ div.body {
 	width:100%;
 	max-width:900px;
 	display:block;
+	min-height:300px;
 }
 div.social {
 	text-align:center;
 	background-color:#5A5959;
+	min-height:100px;
 }
 div.footer {
 	text-align:center;
 	background-color:#313131;
+	min-height:200px;
 }
 img.headerlogom {
 	width:350px;
