@@ -1,12 +1,16 @@
+img.mainimg {
+	min-width:300px;
+	width:100%;
+	margin-left:0px;
+	margin-top:0px;
+}
+img.logoimg {
+	width:150px;
+	margin-left:0px;
+	margin-top:0px;	
+}
 div.all {
-	color:black;
-	margin-left:auto;
-	margin-right:auto;
-	position:relative;
-	width:630px;
-	top:2px;
-	float:center;
-	left:10;
+	
 }
 a:link.contentlink, a:visited.contentlink{
 	color:green;
