@@ -10,7 +10,7 @@ function eventResize() {
     document.getElementById("mainbody").innerHTML = "That ran";
 }
 
-window.onresize = eventResize();
+window.onresize = eventResize;
 eventResize();
 document.getElementById("mainbody").innerHTML = "This ran";
 
