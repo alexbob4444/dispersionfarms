@@ -14,11 +14,12 @@ div.header {
 	display:block;
 }
 div.body {
-	position:relative;
+	position:absolute;
 	float:center;
 	width:100%;
 	max-width:900px;
 	display:block;
+	
 }
 img.headerlogom {
 	width:350px;
