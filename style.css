@@ -4,7 +4,8 @@ html {
 div.header {
 	height:700px;
 	width:100%;
-	margin-top:0px;
+	margin-top:-3px;
+	margin-left:-3px;
 	position:absolute;
 	background-image:url(../dispersionfarms/images/IMG_2231.JPG);
 	background-repeat:no-repeat;
