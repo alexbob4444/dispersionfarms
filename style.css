@@ -24,6 +24,14 @@ div.body {
 	max-width:900px;
 	display:block;
 }
+div.social {
+	text-align:center;
+	background-color:#5A5959;
+}
+div.footer {
+	text-align:center;
+	background-color:#313131;
+}
 img.headerlogom {
 	width:350px;
 	margin-left:7px;
