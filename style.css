@@ -58,8 +58,7 @@ img.headerlogod {
 	position:absolute;
 }
 img.menuicon {
-	margin-right:8px;
-	margin-top:8px;
+	float:right;
 	width:30px; 
 	height: 30px;
 	display:block;
