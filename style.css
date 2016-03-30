@@ -13,6 +13,8 @@ div.header {
 	display:block;
 }
 div.body {
+	float:center;
+	text-align:left;
 	width:100%;
 	max-width:900px;
 	display:block;
