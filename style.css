@@ -6,6 +6,8 @@ div.header {
 	margin-top:0px;
 	position:absolute;
 	background-image:url(../dispersionfarms/images/IMG_2231.JPG);
+	background-repeat:no-repeat;
+	background-position:center;
 }
 img.logoimgd {
 	width:150px;
