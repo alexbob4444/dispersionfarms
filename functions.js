@@ -7,7 +7,6 @@ function eventResize() {
       document.getElementById("headerlogo").className = "headerlogod";
       document.getElementById("menuicon").className = 'menuicond';
     }
-    document.getElementById("page").width=(window.innerWidth+50);
 }
 $(document).ready(function() {
 	//null
