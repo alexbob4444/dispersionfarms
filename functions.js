@@ -11,7 +11,6 @@ function eventResize() {
 }
 $(document).ready(function() {
 	$(#menuicon).click(function(){
-	    $(this).toggleClass('active');
 	    $('.page').toggleClass('.open');
 	    $('.pushmenu').toggleClass('.open');
 	});
