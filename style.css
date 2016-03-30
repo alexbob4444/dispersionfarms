@@ -11,11 +11,13 @@ div.header {
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-size: auto 100%;
+	display:;
 }
 div.body {
 	position:relative;
 	float: center;
-	max-width:800px;
+	max-width:900px;
+	display:inline;
 }
 img.headerlogom {
 	width:350px;
