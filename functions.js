@@ -10,6 +10,7 @@ function eventResize() {
     document.getElementById("mainbody").html = window.innerWidth;
 }
 
+window.onresize = eventResize;
 function loading() {
     window.onresize = eventResize;
     eventResize();
