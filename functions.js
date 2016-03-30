@@ -10,8 +10,5 @@ function eventResize() {
     document.getElementById("page").width=(window.innerWidth+50);
 }
 $(document).ready(function() {
-	$(#menuicon).click(function(){
-	    $('.page').toggleClass('.open');
-	    $('.pushmenu').toggleClass('.open');
-	});
+	//null
 });
