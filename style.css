@@ -7,7 +7,6 @@ div.page {
 	margin-left:-8px;
 	margin-right:-8px;
 	right:0;
-	overflow-x:hidden;
 	position:absolute;
 }
 div.header {
