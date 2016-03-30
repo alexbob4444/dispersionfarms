@@ -1,25 +1,28 @@
-img.mainimg {
+div.header {
+	min-height:300px;
+	max-height:500px;
+	width:100%;
+	margin-left:0px;
+	margin-top:0px;
+	position:absolute;
+}
+img.logoimgd {
+	width:150px;
+	margin-left:0px;
+	margin-top:0px;
+	position:absolute;
+}
+img.mainimgm {
 	min-width:300px;
 	width:100%;
 	margin-left:0px;
 	margin-top:0px;
 	position:absolute;
 }
-img.logoimg {
+img.logoimgm {
 	width:150px;
 	margin-left:0px;
 	margin-top:0px;
 	position:absolute;
 }
-div.all {
-	
-}
-a:link.contentlink, a:visited.contentlink{
-	color:green;
-	background-color: #F0FFF0;
-}  /* normal link non hovering*/
-a:hover.contentlink , a:active.contentlink{
-	color: #F0FFF0;
-	background-color:green;
-}   /* mouse over link */
-a.contentlink { margin-right:10px; font-size:22px; border-width:0px; padding:1px 4px;text-decoration:none; font: sans-serif;}
+
