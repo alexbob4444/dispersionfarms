@@ -1,1 +1,1 @@
-cd /var/www/html/dispersionfarms && git pull && cd / && sudo cp /var/www/html/dispersionfarms/* /var/www/html/ && sudo cp /var/www/html/dispersionfarms/images/* /var/www/html/images/ && sudo cp /var/www/html/dispersionfarms/textinfo/* /var/www/html/textinfo/ && cd /
+cd /var/www/html/dispersionfarms && git pull && cd / && sudo cp /var/www/html/dispersionfarms/* /var/www/html/ && cd /
