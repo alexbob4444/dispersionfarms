@@ -74,13 +74,13 @@ img.menuicond {
 	padding:30px;
 }
 nav.pushmenu {
-	right:0;
+	right:-240;
 	width:240px;
 	height:100%;
 	top:0;
 }
 nav.pushmenu.open {
-	right:-240px;
+	right:0px;
 }
 div.page.open {
 	right:240px;
