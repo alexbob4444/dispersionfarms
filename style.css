@@ -55,10 +55,17 @@ img.headerlogod {
 	padding:20px;
 	position:absolute;
 }
-img.menuicon {
+img.menuiconm {
 	float:right;
 	width:25px; 
 	height: 25px;
 	display:block;
 	padding:20px;
+}
+img.menuicond {
+	float:right;
+	width:30px; 
+	height: 30px;
+	display:block;
+	padding:30px;
 }
