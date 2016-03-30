@@ -5,14 +5,14 @@ function eventResize() {
     }
     else {//screen of desktop
       document.getElementById("headerlogo").className = "headerlogod";
-      document.getElementById("mainbody").innerHTML = "These ran";
+      document.getElementById("mainbody").html = "These ran";
     }
-    document.getElementById("mainbody").innerHTML = window.innerWidth;
+    document.getElementById("mainbody").html = window.innerWidth;
 }
 
 function loading() {
     window.onresize = eventResize;
     eventResize();
-    document.getElementById("mainbody").innerHTML = "This ran";
+    document.getElementById("mainbody").html = "This ran";
 }
 
