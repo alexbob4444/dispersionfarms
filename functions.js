@@ -8,6 +8,9 @@ function eventResize() {
       document.getElementById("menuicon").className = 'menuicond';
     }
 }
+function loadMenu() {
+      document.getElementById("menuicon").innerHTML = 'new text as of click';
+}
 $(document).ready(function() {
 	//null
 });
