@@ -15,6 +15,7 @@ div.header {
 }
 div.body {
 	position:relative;
+	float:center;
 	max-width:900px;
 	display:block;
 	text-align:left;
