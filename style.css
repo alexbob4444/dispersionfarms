@@ -17,6 +17,7 @@ div.body {
 	position:relative;
 	max-width:900px;
 	display:block;
+	text-align:left;
 }
 img.headerlogom {
 	width:350px;
