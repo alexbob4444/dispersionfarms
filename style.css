@@ -12,6 +12,9 @@ div.header {
 	background-position:top center;
 	background-size: auto 100%;
 }
+div.body {
+	position:relative;
+}
 img.headerlogom {
 	width:100px;
 	margin-left:7px;
