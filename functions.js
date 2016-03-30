@@ -1,7 +1,6 @@
 $(document).ready(function()
 {
-    $(document).live("onchange",function()
-    {
+    $(window).resize(function() {
         if (screen.width<700) {//screen of mobile
           document.getElementById("headerlogo").className = "headerlogom";
         }
