@@ -14,7 +14,7 @@ div.header {
 	display:block;
 }
 div.body {
-	position:relative;
+	position:absolute;
 	float:center;
 	max-width:900px;
 	display:block;
