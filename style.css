@@ -1,6 +1,9 @@
 html {
 	overflow: hidden;
 }
+div.page {
+	text-align:center;
+}
 div.header {
 	height:70%;
 	width:100%;
