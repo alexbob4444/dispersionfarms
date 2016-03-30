@@ -7,6 +7,6 @@ eventResize() {
     }
 }
 load() {
-    window.onresize = eventResize;
-    //eventResize();
+    window.onresize = eventResize();
+    eventResize();
 }
