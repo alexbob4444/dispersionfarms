@@ -1,6 +1,5 @@
 div.header {
-	min-height:300px;
-	max-height:900px;
+	height:700px;
 	width:100%;
 	margin-left:0px;
 	margin-top:0px;
@@ -8,6 +7,7 @@ div.header {
 	background-image:url(../dispersionfarms/images/IMG_2231.JPG);
 	background-repeat:no-repeat;
 	background-position:center;
+	background-size: 100%;
 }
 img.logoimgd {
 	width:150px;
