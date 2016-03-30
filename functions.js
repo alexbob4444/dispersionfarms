@@ -9,7 +9,7 @@ function eventResize() {
     }
 }
 function loadMenu() {
-      document.getElementById("menuicon").innerHTML = 'new text as of click';
+      document.getElementById("body").innerHTML = 'new text as of click';
 }
 $(document).ready(function() {
 	//null
