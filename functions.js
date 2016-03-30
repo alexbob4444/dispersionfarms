@@ -9,6 +9,10 @@ function eventResize() {
     }
     document.getElementById("page").width=(window.innerWidth+50);
 }
-
-
-
+$(document).ready(function() {
+	$(#menuicon).click(function(){
+	    $(this).toggleClass('active');
+	    $('.pushmenu-push').toggleClass('pushmenu-push-toright');
+	    $('.pushmenu-left').toggleClass('pushmenu-open')
+	});
+});
