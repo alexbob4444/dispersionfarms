@@ -7,10 +7,12 @@ function eventResize() {
       document.getElementById("headerlogo").className = "headerlogod";
       document.getElementById("mainbody").innerHTML = "These ran";
     }
-    document.getElementById("mainbody").innerHTML = "That ran";
+    document.getElementById("mainbody").innerHTML = window.innerWidth;
 }
 
-window.onresize = eventResize;
-eventResize();
-document.getElementById("mainbody").innerHTML = "This ran";
+function loading() {
+    window.onresize = eventResize;
+    eventResize();
+    document.getElementById("mainbody").innerHTML = "This ran";
+}
 
