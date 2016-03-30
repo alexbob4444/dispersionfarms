@@ -6,7 +6,7 @@ eventResize() {
       document.getElementById("headerlogo").className = "headerlogod";
     }
 }
-load() {
-    window.onresize = eventResize();
-    eventResize();
-}
+
+window.onresize = eventResize();
+eventResize();
+
