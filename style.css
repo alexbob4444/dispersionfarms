@@ -18,8 +18,7 @@ div.header {
 	display:block;
 }
 div.menu {
-	margin-right:8px;
-	margin-top:8px;
+	width:100%;
 }
 div.bodyholder {
 	width:100%;
@@ -56,4 +55,8 @@ img.headerlogod {
 	margin-left:8px;
 	margin-top:8px;
 	position:absolute;
+}
+img.menuicon {
+	margin-right:8px;
+	margin-top:8px;
 }
