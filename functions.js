@@ -6,11 +6,10 @@ function eventResize() {
     else {//screen of desktop
       document.getElementById("headerlogo").className = "headerlogod";
     }
-    document.getElementById("mainbody").innerHTML = window.innerWidth;
 }
 
-window.onresize = eventResize;
 function loading() {
     eventResize();
+    window.onresize = eventResize;
 }
 
