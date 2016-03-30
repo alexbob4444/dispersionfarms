@@ -1,3 +1,6 @@
+html {
+	overflow: hidden;
+}
 div.header {
 	height:700px;
 	width:100%;
