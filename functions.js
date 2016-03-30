@@ -9,8 +9,5 @@ function eventResize() {
     document.getElementById("page").width=(window.innerWidth+50);
 }
 
-function loading() {
-    eventResize();
-    window.onresize = eventResize;
-}
+
 
