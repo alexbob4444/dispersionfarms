@@ -12,8 +12,14 @@ div.header {
 	background-position:top center;
 	background-size: auto 100%;
 }
+img.logoimgm {
+	width:350px;
+	margin-left:7px;
+	margin-top:8px;
+	position:absolute;
+}
 img.logoimgd {
-	width:200px;
+	width:550px;
 	margin-left:7px;
 	margin-top:8px;
 	position:absolute;
