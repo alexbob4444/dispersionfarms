@@ -12,7 +12,7 @@ function eventResize() {
 $(document).ready(function() {
 	$(#menuicon).click(function(){
 	    $(this).toggleClass('active');
-	    $('.pushmenu-push').toggleClass('pushmenu-push-toright');
-	    $('.pushmenu-left').toggleClass('pushmenu-open')
+	    $('.page').toggleClass('.open');
+	    $('.pushmenu').toggleClass('.open')
 	});
 });
