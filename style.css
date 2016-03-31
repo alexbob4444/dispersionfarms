@@ -81,7 +81,7 @@ img.headerlogod {
 	display:block;
 }
 img.menuiconm {
-	float:right top;
+	position:relative;
 	top:0px;
 	right:0px;
 	width:25px; 
@@ -91,7 +91,7 @@ img.menuiconm {
 	margin-top:20px;
 }
 img.menuicond {
-	float:right top;
+	position:relative;
 	top:0px;
 	right:0px;
 	width:30px; 
