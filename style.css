@@ -3,7 +3,7 @@ html {
 }
 div.page.menuclosed {
 	/*overflow-x:hidden;*/
-	position:absolute;
+	position:relative;
 	top:0px; left:0px; right:0px;
 	text-align:center;
 	width=100%;
@@ -11,7 +11,7 @@ div.page.menuclosed {
 }
 div.page.menuopen {
 	/*overflow:hidden;*/
-	position:absolute;
+	position:relative;
 	top:0px; left:-240px; right:240px;
 	text-align:center;
 	width=100%;
