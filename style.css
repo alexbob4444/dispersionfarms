@@ -8,15 +8,15 @@ div.page {
 	margin-right:-8px;
 	position:relative;
 }
-div.menu {
+div.pushout {
 	text-align:left;
 	position:relative;
 	margin-top:-8px;
 	margin-right:-8px;
 	margin-left:auto;
-}
-nav.menu {
 	width='240px';
+}
+nav.pushout {
 	height='100%';
 }
 div.header {
@@ -29,7 +29,7 @@ div.header {
 	background-size: auto 100%;
 	display:block;
 }
-div.menu {
+div.topbar {
 	text-align:right;
 	width:100%;
 }
