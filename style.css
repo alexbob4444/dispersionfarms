@@ -43,27 +43,27 @@ img.arrowdownm {
 	height:35px;
 }
 div.arrowdown {
-	position:relative;
+	position:absolute;
 	bottom:0px;
 }
 div.pageheadtextbd {
-	position:relative;
+	position:absolute;
 	font-size:50px;
 	text-transform:uppercase;
 }
 div.pageheadtextsd {
-	position:relative;
+	position:absolute;
 	top:280px; left:0px;
 	width:100%;
 	font-size:25px;
 }
 div.pageheadtextbm {
-	position:static;
+	position:absolute;
 	font-size:45px;
 	text-transform:uppercase;
 }
 div.pageheadtextsm {
-	position:relative;
+	position:absolute;
 	top:200px; left:0px;
 	width:100%;
 	font-size:20px;
