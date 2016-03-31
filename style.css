@@ -7,6 +7,7 @@ div.page {
 	margin-left:-8px;
 	margin-right:-8px;
 	position:relative;
+	
 }
 div.pushout {
 	float:right;
@@ -62,7 +63,7 @@ div.footer {
 img.headerlogom {
 	width:320px;
 	padding:20px;
-	position:absolute;
+	position:relative;
 }
 img.headerlogod {
 	width:450px;
@@ -85,10 +86,10 @@ img.menuicond {
 	margin-right:30px;
 	margin-top:30px;
 }
-
+/*
 div.page {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;  
 }
-
+*/
