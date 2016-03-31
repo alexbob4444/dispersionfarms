@@ -29,19 +29,19 @@ div.header {
 	top:0;
 	background-image:url(../dispersionfarms/images/IMG_2231.JPG);
 	background-repeat:no-repeat;
-	background-position:top center;
+	background-position: center;
 	background-size: auto 100%;
 	display:block;
 	color:#E6E6E6;
 }
 img.arrowdownd {
-	position:absolute;
+	position:relative;
 	width:70px;
 	height:50px;
 	bottom:30px;
 }
 img.arrowdownm {
-	position:absolute;
+	position:relative;
 	width:60px;
 	height:35px;
 	bottom:25px;
