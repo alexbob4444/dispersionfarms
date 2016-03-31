@@ -73,7 +73,7 @@ img.headerlogod {
 }
 a.headerlogo {
 	position:absolute;
-	left:5px;
+	left:10px;
 	top:5px;
 }
 a.menuiconm {
@@ -81,14 +81,14 @@ a.menuiconm {
 	position:absolute;
 	display:block;
 	right:20px;
-	top:15px;
+	top:12px;
 }
 a.menuicond {
 	float:right;
 	position:absolute;
 	display:block;
 	right:30px;
-	top:24px;
+	top:21px;
 }
 img.menuiconm {
 	position:relative;
