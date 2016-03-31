@@ -130,16 +130,24 @@ div.menu.menuopen {
 nav.menu a {
 	font-size:20px;
 	display:block;
-	padding:14px;
 	text-decoration:none;
 	font: sans-serif;
 }
 nav.menu b {
 	font-size:25px;
 	display:block;
-	padding:5px;
 	text-decoration:none;
-	font: sans-serif;	
+	font: sans-serif;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:15px;
+	margin-right:auto;
+}
+b.menub a:link, a:visited {
+	color:#E3E2E2;
+}
+b.menub a:hover, a:active {
+	color:#E3E2E2;
 }
 nav.menu a:link, a:visited {
 	color:#B0AFAF;
