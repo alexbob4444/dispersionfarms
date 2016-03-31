@@ -33,7 +33,9 @@ div.header {
 	display:block;
 }
 
-
+span.vertheadcenter {
+	vertical-align:middle;
+}
 div.pageheadtextbd {
 	position:relative;
 	font-size:30px;
@@ -44,7 +46,6 @@ div.pageheadtextsd {
 	top:0px; left:0px;
 	width:100%;
 	height:100%;
-	vertical-align:middle;
 	font-size:20px;
 }
 div.pageheadtextbm {
@@ -57,7 +58,6 @@ div.pageheadtextsm {
 	top:0px; left:0px;
 	width:100%;
 	height:100%;
-	vertical-align:middle;
 	font-size:14px;
 }
 
