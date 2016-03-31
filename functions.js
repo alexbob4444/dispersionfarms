@@ -14,6 +14,8 @@ function eventResize() {
 }
 function loadMenu() {
       document.getElementById("body").innerHTML = 'new text as of click';
+      $('.page').toggleClass('menuopen');
+      $('.page').toggleClass('menuopen');
 }
 $(document).ready(function() {
 	//null
