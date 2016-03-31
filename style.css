@@ -39,7 +39,7 @@ img.arrowdown {
 	height:50px;
 }
 div.arrowdown {
-	position:absolute;
+	position:relative;
 	bottom:0px;
 }
 div.pageheadtextbd {
