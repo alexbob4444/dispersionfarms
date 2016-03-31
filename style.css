@@ -7,9 +7,10 @@ div.page {
 	margin-left:-8px;
 	margin-right:-8px;
 	position:relative;
-	
+	display:block;
 }
 div.pushout {
+	display:block;
 	float:right;
 	text-align:left;
 	position:relative;
