@@ -2,6 +2,16 @@ html {
 	background-color:#313131;
 	overflow-x:hidden;
 }
+a.back.menuclosed {
+	display:none;
+}
+a.back.menuopen {
+	display:block;
+	width:900px;
+	height:100%;
+	right:250px;
+	top:0px;
+}
 html.menuopen {
 	overflow:hidden;
 }
