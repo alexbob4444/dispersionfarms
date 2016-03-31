@@ -32,19 +32,19 @@ div.header {
 }
 
 a.accountd {
-	font-size:15px;
+	font-size:20px;
 	color:#FFFFFF;
 	position:absolute;
-	right:67px;
-	top:27px;
+	right:70px;
+	top:32px;
 	text-decoration:none;
 }
 a.accountm {
-	font-size:12px;
+	font-size:15px;
 	color:#FFFFFF;
 	position:absolute;
 	right:57px;
-	top:17px;
+	top:22px;
 	text-decoration:none;
 }
 
