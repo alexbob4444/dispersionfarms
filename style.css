@@ -114,12 +114,13 @@ div.footer {
 }
 
 
-/*
+
 div.page {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;  
 }
+/*
 nav.menu a {
 	display:block;
 	padding:10px;
