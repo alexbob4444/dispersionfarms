@@ -73,7 +73,7 @@ div.pageheadtextsm {
 
 a.accountd {
 	font-size:20px;
-	position:relative;
+	position:absolute;
 	right:70px;
 	top:28px;
 	text-decoration:none;
@@ -81,7 +81,7 @@ a.accountd {
 
 a.accountm {
 	font-size:15px;
-	position:relative;
+	position:absolute;
 	right:57px;
 	top:18px;
 	text-decoration:none;
@@ -108,27 +108,27 @@ img.headerlogod {
 	display:block;
 }
 a.headerlogo {
-	position:relative;
+	position:absolute;
 	left:10px;
 	top:5px;
 }
 a.menuiconm {
 	float:right;
-	position:relative;
+	position:absolute;
 	display:block;
 	right:20px;
 	top:12px;
 }
 a.menuicond {
 	float:right;
-	position:relative;
+	position:absolute;
 	display:block;
 	right:30px;
 	top:21px;
 }
 
 img.menuiconm {
-	position:relative;
+	position:absolute;
 	top:0px;
 	right:0px;
 	width:25px; 
@@ -136,7 +136,7 @@ img.menuiconm {
 	display:block;
 }
 img.menuicond {
-	position:relative;
+	position:absolute;
 	top:0px;
 	right:0px;
 	width:30px; 
