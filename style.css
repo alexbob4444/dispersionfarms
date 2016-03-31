@@ -80,11 +80,17 @@ img.headerlogod {
 	position:relative;
 	display:block;
 }
-div.topbar a {
+a.menuiconm {
 	position:relative;
-	top:0px;
-	right:0px;
 	display:block;
+	right:20px;
+	top:15px;
+}
+a.menuicond {
+	position:relative;
+	display:block;
+	right:30px;
+	top:24px;
 }
 img.menuiconm {
 	position:relative;
@@ -93,8 +99,6 @@ img.menuiconm {
 	width:25px; 
 	height: 25px;
 	display:block;
-	right:20px;
-	top:15px;
 }
 img.menuicond {
 	position:relative;
@@ -103,8 +107,6 @@ img.menuicond {
 	width:30px; 
 	height: 30px;
 	display:block;
-	right:30px;
-	top:24px;
 }
 
 /*
