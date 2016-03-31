@@ -1,8 +1,72 @@
-<!DOCTYPE html>
+<html id='completehtml'>
 <head>
 <title>Dispersion Farms</title>
 <link rel="shortcut icon" href="icon.ico">
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <script src="jquery-2.2.1.js"></script>
 <script type="text/javascript" src="functions.js"></script>
+<script>
+  window.onresize = eventResize;
+  window.onload = eventResize;
+</script>
 </head>
+
+<div class='page'>
+
+<div id='header' class='header headerm' style='background-image:url(../dispersionfarms/images/IMG_2231.JPG);'>
+  <a href='myaccount' class='accountm' id='account'>Sign In</a>
+  <a href='index.html' class='headerlogo'><img class='headerlogom' id='headerlogoi' src='/dispersionfarms/images/logo.png'></a>
+  <a href='#' id='menuicona' onclick='loadMenu()' class='menuiconm'><img id='menuiconi' class='menuiconm' src='/dispersionfarms/images/menu.png'></a>
+  
+  <div class='pageheadtextsm' id=pageheadtexts>
+    <br><br>
+    <div class='pageheadtextbm' id=pageheadtextb>
+      <b>Make a Request</b>
+    </div>
+    <br>
+    To You
+  </div>
+  <div class='arrowdown'><img id='arrowdown' class='arrowdownm' src='/dispersionfarms/images/arrowdown.png'/></div>
+</div>
+
+<div class='bodyholder'>
+  <div class='body' id='body'>
+  body
+  </div>
+</div>
+
+
+<div class='social'>
+  <br>
+  <a href="http://www.facebook.com" target='_blank'>
+    <img class='social' src='/dispersionfarms/images/facebook.png'>
+  </a>
+  &nbsp
+  <a href="http://www.instagram.com" target='_blank'>
+    <img class='social' src='/dispersionfarms/images/instagram.png'>
+  </a>
+  <br><br>
+</div>
+
+<div class='footer'>
+    <br><br>
+    Fresh Food For All <br><br>
+    <div class="footerdark"> Madison, Wi <br><br>
+    dispersionfarms@gmail.com
+    <br><br>
+    </div>
+</div>
+
+</div>
+
+<div class='menu'>
+  <nav class='menu'>
+    <a class='menuh' href='index.html'><b>Home</b></a>
+    <a class='menui' href='request'>Make a Request</a>
+    <a class='menui' href='search'>Locate a Site</a>
+    <a class='menui' href='create'>Upload New Site Info</a>
+    <a class='menui' target='_blank'href='http://instagram.com/'>Photos</a>
+    <a class='menui' href='getinvolved'>Get Involved</a>
+  </nav>
+</div>
+</html>
