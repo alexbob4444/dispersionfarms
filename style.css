@@ -131,6 +131,10 @@ div.social {
 	background-color:#444444;
 	min-height:100px;
 }
+img.social {
+	width:80px;
+	height:80px;
+}
 div.footer {
 	position:static;
 	text-align:center;
