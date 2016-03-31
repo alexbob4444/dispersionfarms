@@ -5,6 +5,8 @@ function eventResize() {
       document.getElementById("menuicona").className = 'menuiconm';
       document.getElementById("header").className = "headerm header";
       document.getElementById("account").className = "accountm";
+      document.getElementById("pageheadtextb").className = "pageheadtextbm";
+      document.getElementById("pageheadtexts").className = "pageheadtextsm";
     }
     else {//screen of desktop
       document.getElementById("headerlogoi").className = "headerlogod";
@@ -12,6 +14,8 @@ function eventResize() {
       document.getElementById("menuicona").className = 'menuicond';
       document.getElementById("header").className = "headerd header";
       document.getElementById("account").className = "accountd";
+      document.getElementById("pageheadtextb").className = "pageheadtextbd";
+      document.getElementById("pageheadtexts").className = "pageheadtextsd";
     }
 }
 function loadMenu() {
