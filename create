@@ -19,13 +19,11 @@
   <a href='#' id='menuicona' onclick='loadMenu()' class='menuiconm'><img id='menuiconi' class='menuiconm' src='/dispersionfarms/images/menu.png'></a>
   
   <div class='pageheadtextsm' id=pageheadtexts>
-    We Bring The
     <br><br>
     <div class='pageheadtextbm' id=pageheadtextb>
-      <b>Garden</b>
+      <b>Upload New Site Information</b>
     </div>
     <br>
-    To You
   </div>
   <div class='arrowdown'><img id='arrowdown' class='arrowdownm' src='/dispersionfarms/images/arrowdown.png'/></div>
 </div>
@@ -65,7 +63,7 @@
     <a class='menuh' href='index.html'><b>Home</b></a>
     <a class='menui' href='request'>Make a Request</a>
     <a class='menui' href='search'>Locate a Site</a>
-    <a class='menui' href='create'>Create a New Site</a>
+    <a class='menui' href='create'>Upload New Site Info</a>
     <a class='menui' target='_blank'href='http://instagram.com/'>Photos</a>
     <a class='menui' href='getinvolved'>Get Involved</a>
   </nav>
