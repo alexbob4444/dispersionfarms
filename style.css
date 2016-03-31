@@ -120,7 +120,7 @@ div.menu {
 	width:250px;
 	right:-250px;
 	height:100%;
-	overflow-x:hidden;
+	overflow:hidden;
 }
 div.menu.menuopen {
 	right:0px;
@@ -130,9 +130,13 @@ nav.menu a:link, a:visited {
 	display:block;
 	padding:10px;
 	color:#F1F1F1;
+	text-decoration:none;
+	font: sans-serif;
 }
 nav.menu a:hover, a:active {
 	display:block;
 	padding:10px;
 	color:#FAFAFA;
+	text-decoration:none;
+	font: sans-serif;
 }
