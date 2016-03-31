@@ -96,9 +96,10 @@ img.headerlogod {
 	width:450px;
 	padding:10px;
 	position:relative;
+	display:block;
 }
 img.menuiconm {
-	float:right;
+	float:right top;
 	width:25px; 
 	height: 25px;
 	display:block;
@@ -106,7 +107,7 @@ img.menuiconm {
 	margin-top:20px;
 }
 img.menuicond {
-	float:right;
+	float:right top;
 	width:30px; 
 	height: 30px;
 	display:block;
