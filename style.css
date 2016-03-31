@@ -136,7 +136,13 @@ div.footer {
 	background-color:#313131;
 	min-height:200px;
 }
-
+body.footer {
+	color:#E6E6E6;
+	font:"proxima-nova";
+	font-size:13px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
 
 
 div.menu {
