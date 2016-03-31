@@ -20,6 +20,9 @@ div.pushout {
 	height='100%';
 	position:absolute;
 }
+nav.pushout {
+	width='240px';
+}
 nav.pushout a {
 	display:block;
 	padding:10px;
