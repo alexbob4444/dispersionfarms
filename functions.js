@@ -4,12 +4,14 @@ function eventResize() {
       document.getElementById("menuiconi").className = 'menuiconm';
       document.getElementById("menuicona").className = 'menuiconm';
       document.getElementById("header").className = "headerm header";
+      document.getElementById("account").className = "accountm";
     }
     else {//screen of desktop
       document.getElementById("headerlogoi").className = "headerlogod";
       document.getElementById("menuiconi").className = 'menuicond';
       document.getElementById("menuicona").className = 'menuicond';
       document.getElementById("header").className = "headerd header";
+      document.getElementById("account").className = "accountd";
     }
 }
 function loadMenu() {
