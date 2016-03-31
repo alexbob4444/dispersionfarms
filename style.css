@@ -45,10 +45,10 @@ a.accountm {
 	top:18px;
 	text-decoration:none;
 }
-a.accountm:link, a.accountm:visited a.accountd:link, a.accountd:visited {
+a.accountm:link, a.accountm:visited, a.accountd:link, a.accountd:visited {
 	color:#E6E6E6;
 }
-a.accountm:hover, a.accountm:active a.accountd:hover, a.accountd:active {
+a.accountm:hover, a.accountm:active, a.accountd:hover, a.accountd:active {
 	color:#FFFFFF;
 }
 
