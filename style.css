@@ -1,5 +1,6 @@
 html {
 	background-color:#313131;
+	overflow-x:hidden;
 }
 div.page {
   	-webkit-transition: all 0.3s ease;
