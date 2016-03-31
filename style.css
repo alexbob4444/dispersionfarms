@@ -12,8 +12,8 @@ div.page {
 	display:block;
 }
 div.page.menuopen {
-	/*overflow:hidden;*/
-	top:0px; left:-240px; right:240px;
+	overflow:hidden;
+	top:0px; left:-250px; right:250px;
 }
 
 div.header {
@@ -113,9 +113,20 @@ div.footer {
 
 
 
+div.menu {
+	-webkit-transition: all 0.3s ease;
+  	-moz-transition: all 0.3s ease;
+	position:absolute;
+	width:250px;
+	right:-250px;
+	height:100%;
+	overflow-x:hidden;
+}
+div.menu.menuopen {
+	right:0px;
+}
 
-/*
 nav.menu a {
 	display:block;
 	padding:10px;
-}*/
+}
