@@ -74,20 +74,20 @@ img.headerlogod {
 	display:block;
 }
 a.headerlogo {
-	position:relative;
+	position:absolute;
 	left:5px;
 	top:5px;
 }
 a.menuiconm {
 	float:right;
-	position:relative;
+	position:absolute;
 	display:block;
 	right:20px;
 	top:15px;
 }
 a.menuicond {
 	float:right;
-	position:relative;
+	position:absolute;
 	display:block;
 	right:30px;
 	top:24px;
