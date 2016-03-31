@@ -142,6 +142,9 @@ div.footer {
 	text-transform:uppercase;
 	letter-spacing:2px;
 }
+div.footerdark {
+	color:#D6D6D6;
+}
 
 div.menu {
 	-webkit-transition: all 0.3s ease;
