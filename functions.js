@@ -17,7 +17,7 @@ function eventResize() {
       document.getElementById("account").className = "accountd";
       document.getElementById("pageheadtextb").className = "pageheadtextbd";
       document.getElementById("pageheadtexts").className = "pageheadtextsd";
-      document.getElementById("arrowdown").className = "arrowdownm";
+      document.getElementById("arrowdown").className = "arrowdownd";
     }
 }
 function loadMenu() {
