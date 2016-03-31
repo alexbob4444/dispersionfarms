@@ -13,7 +13,6 @@ div.pushout {
 	display:block;
 	float:right top;
 	text-align:left;
-	position:relative;
 	margin-top:-8px;
 	margin-right:-8px;
 	margin-left:auto;
@@ -21,8 +20,8 @@ div.pushout {
 	height='100%';
 	position:absolute;
 }
-nav.pushout {
-	display:inline;
+nav.pushout a {
+	display:block;
 }
 div.header {
 	text-align:left;
