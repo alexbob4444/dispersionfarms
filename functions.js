@@ -24,7 +24,7 @@ function loadMenu() {
       $('.page').toggleClass('menuopen');
       $('.menu').toggleClass('menuopen');
       $('.back').toggleClass('menuopen');
-      $('.back').toggleClass('menucloded');
+      $('.back').toggleClass('menuclosed');
 }
 $(document).ready(function() {
 	//null
