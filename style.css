@@ -12,6 +12,7 @@ div.page {
 div.pushout {
 	display:block;
 	float:right top;
+	right:0px;
 	text-align:left;
 	margin-top:-8px;
 	margin-right:-8px;
