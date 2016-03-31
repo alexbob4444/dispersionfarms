@@ -127,20 +127,18 @@ div.social {
 	position:static;
 	top:0px;
 	text-align:center;
-	vertical-align:center;
 	background-color:#444444;
-	min-height:100px;
 }
 img.social {
-	width:80px;
-	height:80px;
+	width:60px;
+	height:60px;
+	
 }
 div.footer {
 	position:static;
 	text-align:center;
 	top:0px;
 	background-color:#313131;
-	min-height:200px;
 	color:#E6E6E6;
 	font:"proxima-nova";
 	font-size:20px;
