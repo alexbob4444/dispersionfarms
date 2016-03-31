@@ -23,7 +23,8 @@ function eventResize() {
 function loadMenu() {
       $('.page').toggleClass('menuopen');
       $('.menu').toggleClass('menuopen');
-      $('html').toggleClass('menuopen');
+      $('.back').toggleClass('menuopen');
+      $('.back').toggleClass('menucloded');
 }
 $(document).ready(function() {
 	//null
