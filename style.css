@@ -35,11 +35,13 @@ div.header {
 	color:#E6E6E6;
 }
 img.arrowdownd {
+	position:relative;
 	width:70px;
 	height:50px;
 	bottom:30px;
 }
 img.arrowdownm {
+	position:relative;
 	width:60px;
 	height:35px;
 	bottom:25px;
