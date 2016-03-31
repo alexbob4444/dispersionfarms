@@ -35,16 +35,20 @@ div.header {
 	color:#E6E6E6;
 }
 img.arrowdownd {
-	position:relative;
+	position:absolute;
+	display:block;
 	width:70px;
 	height:50px;
 	bottom:30px;
+	float:center;
 }
 img.arrowdownm {
-	position:relative;
+	display:block;
+	position:absolute;
 	width:60px;
 	height:35px;
 	bottom:25px;
+	float:center;
 }
 
 div.pageheadtextbd {
