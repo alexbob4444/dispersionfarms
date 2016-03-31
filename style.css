@@ -2,7 +2,7 @@ html {
 	background-color:#313131;
 }
 div.page.menuclosed {
-	overflow-x:hidden;
+	/*overflow-x:hidden;*/
 	position:absolute;
 	top:0px; left:0px; right:0px;
 	text-align:center;
@@ -10,7 +10,7 @@ div.page.menuclosed {
 	display:block;
 }
 div.page.menuopen {
-	overflow:hidden;
+	/*overflow:hidden;*/
 	position:absolute;
 	top:0px; left:-240px; right:240px;
 	text-align:center;
@@ -114,7 +114,7 @@ div.footer {
 }
 
 
-
+/*
 div.page {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -123,4 +123,4 @@ div.page {
 nav.menu a {
 	display:block;
 	padding:10px;
-}
+}*/
