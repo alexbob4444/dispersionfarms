@@ -33,19 +33,23 @@ div.header {
 
 a.accountd {
 	font-size:20px;
-	color:#FFFFFF;
 	position:absolute;
 	right:70px;
-	top:32px;
+	top:28px;
 	text-decoration:none;
 }
 a.accountm {
 	font-size:15px;
-	color:#FFFFFF;
 	position:absolute;
 	right:57px;
-	top:22px;
+	top:18px;
 	text-decoration:none;
+}
+a.accountm:link, a.accountm:visited a.accountd:link, a.accountd:visited {
+	color:#E6E6E6;
+}
+a.accountm:hover, a.accountm:active a.accountd:hover, a.accountd:active {
+	color:#FFFFFF;
 }
 
 div.headerm {
@@ -81,6 +85,7 @@ a.menuicond {
 	right:30px;
 	top:21px;
 }
+
 img.menuiconm {
 	position:relative;
 	top:0px;
