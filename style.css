@@ -36,14 +36,12 @@ div.header {
 }
 img.arrowdownd {
 	position:absolute;
-	display:block;
 	width:70px;
 	height:50px;
 	bottom:30px;
 	margin:auto;
 }
 img.arrowdownm {
-	display:block;
 	position:absolute;
 	width:60px;
 	height:35px;
