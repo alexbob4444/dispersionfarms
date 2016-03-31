@@ -36,13 +36,18 @@ nav.pushout a {
 div.header {
 	position:static;
 	text-align:left;
-	height:70%;
 	width:100%;
 	background-image:url(../dispersionfarms/images/IMG_2231.JPG);
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-size: auto 100%;
 	display:block;
+}
+div.header.m {
+	height:700px;
+}
+div.header.d {
+	height:800px;
 }
 div.topbar {
 	
