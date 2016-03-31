@@ -30,6 +30,12 @@ div.header {
 	background-size: auto 100%;
 	display:block;
 }
+a.account {
+	color:#E3E2E2;
+	position:absolute;
+	right:60px;
+	top:30px;
+}
 div.headerm {
 	height:700px;
 }
