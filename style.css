@@ -2,17 +2,6 @@ html {
 	background-color:#313131;
 	overflow-x:hidden;
 }
-a.back.menuclosed {
-	display:none;
-}
-a.back.menuopen {
-	margin-left:auto;
-	display:block;
-	width:900px;
-	height:100%;
-	right:250px;
-	top:0px;
-}
 html.menuopen {
 	overflow:hidden;
 }
