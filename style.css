@@ -79,12 +79,14 @@ a.headerlogo {
 	top:5px;
 }
 a.menuiconm {
+	float:right;
 	position:relative;
 	display:block;
 	right:20px;
 	top:15px;
 }
 a.menuicond {
+	float:right;
 	position:relative;
 	display:block;
 	right:30px;
