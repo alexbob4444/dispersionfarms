@@ -7,6 +7,7 @@ function eventResize() {
       document.getElementById("account").className = "accountm";
       document.getElementById("pageheadtextb").className = "pageheadtextbm";
       document.getElementById("pageheadtexts").className = "pageheadtextsm";
+      document.getElementById("arrowdown").className = "arrowdownm";
     }
     else {//screen of desktop
       document.getElementById("headerlogoi").className = "headerlogod";
@@ -16,6 +17,7 @@ function eventResize() {
       document.getElementById("account").className = "accountd";
       document.getElementById("pageheadtextb").className = "pageheadtextbd";
       document.getElementById("pageheadtexts").className = "pageheadtextsd";
+      document.getElementById("arrowdown").className = "arrowdownm";
     }
 }
 function loadMenu() {
