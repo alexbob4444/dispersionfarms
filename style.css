@@ -47,7 +47,7 @@ div.arrowdown {
 	bottom:0px;
 }
 div.pageheadtextbd {
-	position:static;
+	position:relative;
 	font-size:50px;
 	text-transform:uppercase;
 }
