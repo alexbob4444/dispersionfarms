@@ -32,7 +32,7 @@ nav.pushout a {
 	padding:10px;
 }
 div.header {
-	position:relative;
+	position:static;
 	text-align:left;
 	height:70%;
 	width:100%;
@@ -48,11 +48,12 @@ div.topbar {
 	width:100%;
 }
 div.bodyholder {
-	position:relative;
+	position:static;
 	width:100%;
 	background-color:#FFFFFF;
 }
 div.body {
+	position:static;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:left;
@@ -63,13 +64,13 @@ div.body {
 	background-color:#FFFFFF;
 }
 div.social {
-	position:relative;
+	position:static;
 	text-align:center;
 	background-color:#575757;
 	min-height:100px;
 }
 div.footer {
-	position:relative;
+	position:static;
 	text-align:center;
 	background-color:#313131;
 	min-height:200px;
