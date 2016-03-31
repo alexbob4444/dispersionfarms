@@ -44,14 +44,14 @@ div.header {
 	background-size: auto 100%;
 	display:block;
 }
-div.header.m {
+div.headerm {
 	height:700px;
 }
-div.header.d {
+div.headerd {
 	height:800px;
 }
 div.topbar {
-	
+	top:0;
 	text-align:right;
 	width:100%;
 }
@@ -100,6 +100,8 @@ img.headerlogod {
 }
 img.menuiconm {
 	float:right top;
+	top:0px;
+	right:0px;
 	width:25px; 
 	height: 25px;
 	display:block;
@@ -108,11 +110,16 @@ img.menuiconm {
 }
 img.menuicond {
 	float:right top;
+	top:0px;
+	right:0px;
 	width:30px; 
 	height: 30px;
 	display:block;
 	margin-right:30px;
 	margin-top:30px;
+}
+div.topbar a {
+	
 }
 /*
 div.page {
