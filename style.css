@@ -88,13 +88,14 @@ div.footer {
 }
 img.headerlogom {
 	width:320px;
-	padding:20px;
+	padding:10px;
 	position:relative;
+	display:block;
 }
 img.headerlogod {
 	width:450px;
-	padding:20px;
-	position:absolute;
+	padding:10px;
+	position:relative;
 }
 img.menuiconm {
 	float:right;
