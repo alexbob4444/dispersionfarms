@@ -14,6 +14,7 @@ div.page {
 	text-align:center;
 	width=100%;
 	display:block;
+	font:"proxima-nova";
 }
 div.page.menuopen {
 	top:0px; left:-250px; right:250px;
@@ -137,7 +138,7 @@ div.footer {
 	min-height:200px;
 	color:#E6E6E6;
 	font:"proxima-nova";
-	font-size:13px;
+	font-size:20px;
 	text-transform:uppercase;
 	letter-spacing:2px;
 }
@@ -157,7 +158,6 @@ a.menui {
 	font-size:20px;
 	display:block;
 	text-decoration:none;
-	font: sans-serif;
 	margin-top:10px;
 	margin-left:15px;
 	margin-right:auto;
@@ -166,7 +166,6 @@ a.menuh {
 	font-size:25px;
 	display:block;
 	text-decoration:none;
-	font: sans-serif;
 	margin-top:5px;
 	margin-bottom:5px;
 	margin-left:15px;
