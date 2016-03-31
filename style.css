@@ -30,12 +30,24 @@ div.header {
 	background-size: auto 100%;
 	display:block;
 }
-a.account {
-	color:#E3E2E2;
+
+a.accountd {
+	font-size:15px;
+	color:#FFFFFF;
 	position:absolute;
-	right:60px;
-	top:30px;
+	right:67px;
+	top:27px;
+	text-decoration:none;
 }
+a.accountm {
+	font-size:12px;
+	color:#FFFFFF;
+	position:absolute;
+	right:57px;
+	top:17px;
+	text-decoration:none;
+}
+
 div.headerm {
 	height:700px;
 }
