@@ -34,9 +34,13 @@ div.header {
 	display:block;
 	color:#E6E6E6;
 }
-img.arrowdown {
-	width:50px;
+img.arrowdownd {
+	width:70px;
 	height:50px;
+}
+img.arrowdownm {
+	width:60px;
+	height:35px;
 }
 div.arrowdown {
 	position:relative;
