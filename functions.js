@@ -25,6 +25,7 @@ function loadMenu() {
       $('.menu').toggleClass('menuopen');
       $('.back').toggleClass('menuopen');
       $('.back').toggleClass('menuclosed');
+      %('#completehtml').toggleClass('menuopen');
 }
 $(document).ready(function() {
 	//null
