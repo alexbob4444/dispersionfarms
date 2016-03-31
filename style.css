@@ -1,10 +1,15 @@
 html {
 	background-color:#313131;
 }
+div.page {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;  
+}
 div.page.menuclosed {
 	/*overflow-x:hidden;*/
 	position:absolute;
-	top:0px; left:0px; right:0px;
+	top:-8px; left:-8px; right:-8px;
 	text-align:center;
 	width=100%;
 	display:block;
@@ -115,11 +120,7 @@ div.footer {
 
 
 
-div.page {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;  
-}
+
 /*
 nav.menu a {
 	display:block;
