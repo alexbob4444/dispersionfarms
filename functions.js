@@ -16,6 +16,7 @@ function loadMenu() {
       document.getElementById("body").innerHTML = 'new text as of click';
       $('.page').toggleClass('menuopen');
       $('.menu').toggleClass('menuopen');
+      $('html').toggleClass('menuopen');
 }
 $(document).ready(function() {
 	//null
