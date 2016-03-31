@@ -128,11 +128,18 @@ div.menu.menuopen {
 	right:0px;
 }
 nav.menu a {
-	font-size:16px;
+	font-size:20px;
 	display:block;
 	padding:10px;
 	text-decoration:none;
 	font: sans-serif;
+}
+nav.menu h1 {
+	font-size:30px;
+	display:block;
+	padding:10px;
+	text-decoration:none;
+	font: sans-serif;	
 }
 nav.menu a:link, a:visited {
 	color:#B0AFAF;
