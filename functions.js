@@ -15,7 +15,7 @@ function eventResize() {
 function loadMenu() {
       document.getElementById("body").innerHTML = 'new text as of click';
       $('.page').toggleClass('menuopen');
-      $('.page').toggleClass('menuopen');
+      $('.page').toggleClass('menuclosed');
 }
 $(document).ready(function() {
 	//null
