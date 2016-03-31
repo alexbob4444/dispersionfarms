@@ -127,31 +127,34 @@ div.menu {
 div.menu.menuopen {
 	right:0px;
 }
-nav.menu a {
+a.menui {
 	font-size:20px;
 	display:block;
 	text-decoration:none;
 	font: sans-serif;
+	margin-top:10px;
+	margin-left:15px;
+	margin-right:auto;
 }
-nav.menu b {
+a.menuh {
 	font-size:25px;
 	display:block;
 	text-decoration:none;
 	font: sans-serif;
 	margin-top:5px;
 	margin-bottom:5px;
-	margin-left:15px;
+	margin-left:10px;
 	margin-right:auto;
 }
-b.menub a:link, a:visited {
+a.menuh:link, a.menuh:visited {
 	color:#E3E2E2;
 }
-b.menub a:hover, a:active {
+a.menuh:hover, a.menuh:active {
 	color:#E3E2E2;
 }
-nav.menu a:link, a:visited {
+a.menui:link, a.menui:visited {
 	color:#B0AFAF;
 }
-nav.menu a:hover, a:active {
+a.menui:hover, a.menui:active {
 	color:#E3E2E2;
 }
