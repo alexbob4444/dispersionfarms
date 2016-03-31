@@ -25,6 +25,7 @@ nav.pushout a {
 	display:block;
 }
 div.header {
+	position:relative;
 	text-align:left;
 	height:70%;
 	width:100%;
@@ -35,10 +36,12 @@ div.header {
 	display:block;
 }
 div.topbar {
+	
 	text-align:right;
 	width:100%;
 }
 div.bodyholder {
+	position:relative;
 	width:100%;
 	background-color:#FFFFFF;
 }
@@ -53,11 +56,13 @@ div.body {
 	background-color:#FFFFFF;
 }
 div.social {
+	position:relative;
 	text-align:center;
 	background-color:#575757;
 	min-height:100px;
 }
 div.footer {
+	position:relative;
 	text-align:center;
 	background-color:#313131;
 	min-height:200px;
