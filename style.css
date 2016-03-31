@@ -130,14 +130,14 @@ div.menu.menuopen {
 nav.menu a {
 	font-size:20px;
 	display:block;
-	padding:10px;
+	padding:14px;
 	text-decoration:none;
 	font: sans-serif;
 }
 nav.menu b {
 	font-size:25px;
 	display:block;
-	padding:10px;
+	padding:5px;
 	text-decoration:none;
 	font: sans-serif;	
 }
