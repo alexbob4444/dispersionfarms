@@ -126,7 +126,13 @@ div.menu.menuopen {
 	right:0px;
 }
 
-nav.menu a {
+nav.menu a:link, a:visited {
 	display:block;
 	padding:10px;
+	color:#F1F1F1;
+}
+nav.menu a:hover, a:active {
+	display:block;
+	padding:10px;
+	color:#FAFAFA;
 }
