@@ -37,6 +37,7 @@ div.header {
 	position:static;
 	text-align:left;
 	width:100%;
+	top:0;
 	background-image:url(../dispersionfarms/images/IMG_2231.JPG);
 	background-repeat:no-repeat;
 	background-position:top center;
