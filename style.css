@@ -12,17 +12,17 @@ div.page {
 }
 div.pushout {
 	display:block;
-	float:right top;
+	float:top right;
 	top:0px;
 	right:0px;
 	text-align:left;
-	margin-left:auto;
 	width='240px';
 	height='100%';
 	position:absolute;
 }
 nav.pushout a {
 	display:block;
+	padding:10px;
 }
 div.header {
 	position:relative;
