@@ -127,6 +127,7 @@ div.social {
 	position:static;
 	top:0px;
 	text-align:center;
+	vertical-align:center;
 	background-color:#444444;
 	min-height:100px;
 }
