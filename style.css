@@ -9,9 +9,11 @@ div.page {
 	position:relative;
 }
 div.menu {
+	text-align:left;
 	position:relative;
 	margin-top:-8px;
 	margin-right:-8px;
+	margin-left:auto;
 }
 nav.menu {
 	width='240px';
