@@ -9,15 +9,17 @@ div.page {
 	position:relative;
 }
 div.pushout {
+	float:right;
 	text-align:left;
 	position:relative;
 	margin-top:-8px;
 	margin-right:-8px;
 	margin-left:auto;
 	width='240px';
+	height='100%';
 }
 nav.pushout {
-	height='100%';
+	display:inline;
 }
 div.header {
 	text-align:left;
