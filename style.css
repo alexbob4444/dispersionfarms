@@ -92,7 +92,7 @@ a.accountm {
 	text-transform:uppercase;
 }
 a.accountm:link, a.accountm:visited, a.accountd:link, a.accountd:visited {
-	color:#E6E6E6;
+	color:#F0F0F0;
 }
 a.accountm:hover, a.accountm:active, a.accountd:hover, a.accountd:active {
 	color:#FFFFFF;
