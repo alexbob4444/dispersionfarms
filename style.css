@@ -1,15 +1,16 @@
 html {
 	background-color:#313131;
 }
+/*
 div.page {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;  
-}
+}*/
 div.page.menuclosed {
 	/*overflow-x:hidden;*/
 	position:absolute;
-	top:-8px; left:-8px; right:-8px;
+	top:-8px; left:-30px; right:-8px;
 	text-align:center;
 	width=100%;
 	display:block;
