@@ -2,6 +2,9 @@ html {
 	background-color:#313131;
 	overflow-x:hidden;
 }
+html.menuopen {
+	overflow:hidden;
+}
 div.page {
   	-webkit-transition: all 0.3s ease;
   	-moz-transition: all 0.3s ease;
@@ -13,7 +16,6 @@ div.page {
 	display:block;
 }
 div.page.menuopen {
-	overflow:hidden;
 	top:0px; left:-250px; right:250px;
 }
 
@@ -133,8 +135,8 @@ nav.menu a {
 	font: sans-serif;
 }
 nav.menu a:link, a:visited {
-	color:#F1F1F1;
+	color:#B0AFAF;
 }
 nav.menu a:hover, a:active {
-	color:#FAFAFA;
+	color:#E3E2E2;
 }
