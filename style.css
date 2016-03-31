@@ -8,6 +8,15 @@ div.page {
 	margin-right:-8px;
 	position:relative;
 }
+div.menu {
+	position:relative;
+	margin-top:-8px;
+	margin-right:-8px;
+}
+nav.menu {
+	width='240px';
+	height='100%';
+}
 div.header {
 	text-align:left;
 	height:70%;
