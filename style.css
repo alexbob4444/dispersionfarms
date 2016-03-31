@@ -6,6 +6,7 @@ a.back.menuclosed {
 	display:none;
 }
 a.back.menuopen {
+	margin-left:auto;
 	display:block;
 	width:900px;
 	height:100%;
