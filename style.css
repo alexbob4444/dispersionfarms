@@ -73,7 +73,7 @@ div.pageheadtextsm {
 
 a.accountd {
 	font-size:20px;
-	position:absolute;
+	position:relative;
 	right:70px;
 	top:28px;
 	text-decoration:none;
@@ -81,7 +81,7 @@ a.accountd {
 
 a.accountm {
 	font-size:15px;
-	position:absolute;
+	position:relative;
 	right:57px;
 	top:18px;
 	text-decoration:none;
@@ -108,20 +108,20 @@ img.headerlogod {
 	display:block;
 }
 a.headerlogo {
-	position:absolute;
+	position:relative;
 	left:10px;
 	top:5px;
 }
 a.menuiconm {
 	float:right;
-	position:absolute;
+	position:relative;
 	display:block;
 	right:20px;
 	top:12px;
 }
 a.menuicond {
 	float:right;
-	position:absolute;
+	position:relative;
 	display:block;
 	right:30px;
 	top:21px;
