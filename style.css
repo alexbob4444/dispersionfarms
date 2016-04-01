@@ -5,6 +5,16 @@ html {
 html.menuopen {
 	overflow:hidden;
 }
+a.textlink {
+	text-decoration:none;
+}
+a.textlink:link, a.accountm:visited  {
+	color:#202020;
+}
+a.accountm:hover, a.accountm:active {
+	color:#000000;
+}
+
 div.page {
   	-webkit-transition: all 0.3s ease;
   	-moz-transition: all 0.3s ease;
