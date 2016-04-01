@@ -27,12 +27,12 @@ function loadMenu() {
       $('.back').toggleClass('menuclosed');
       $('#completehtml').toggleClass('menuopen');
 }
-function autologinmyaccountpage {
+function autologinmyaccountpage() {
 	//check session
 	//place username in account
 	//make loginform invisible
 	//show user content
-	document.getElementById("createaccountformmsg").innerHTML = "did it work?";
+	//document.getElementById("createaccountformmsg").innerHTML = "did it work?";
 }
 function login() {
 	//check loginform for inputusername and inputpassword
