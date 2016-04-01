@@ -48,6 +48,7 @@
       
       <input onsubmit='createAccount();' type='submit' value='Create Account'>
       or <a href='#' onclick='openLogin()'>Log In</a>
+      <label id='createaccountformmsg'></label>
     </form>
     
     <!-- 
