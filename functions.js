@@ -27,41 +27,36 @@ function loadMenu() {
       $('.back').toggleClass('menuclosed');
       $('#completehtml').toggleClass('menuopen');
 }
-function autologinmyaccountpage() {
-	//check session
-	//place username in account
-	//make loginform invisible
-	//show user content
-	document.getElementById("loginform").style.display = 'none';
+function autologin() {
+	//check session 
+	//place username in id=account
 }
 function login() {
 	//check loginform for inputusername and inputpassword
 	//check against databased
-	//create logged in session
-	autologinmyaccountpage();
+	//create session
+	autologin();
+	//display account info in id=dispaccount
 }
 function createAccount() {
 	//check createaccountform for inputusername, inputpassword, and retypepassword
-	//make sure doesn't already exist in database
+	//make sure inputusername doesn't already exist in database
 		//output that this account already exists to id=createaccountformmsg
 	//add to database
-	//create logged in session
-	autologinmyaccountpage();
+	//create session
+	autologin();
+	//display account info in id=dispaccount
 
 }
 function openLogin() {
-	//make createaccountform invisible
-	//make loginform visible
 	document.getElementById("createaccountform").className = 'createaccountform creataccountformhidden';
 	document.getElementById("loginform").className = 'loginform';
 	
 }
 function openCreateAccount() {
-	//make loginform invisible
-	//make createaccountform visible
 	document.getElementById("loginform").className = 'loginform loginformhidden';
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
 $(document).ready(function() {
-	//Check if logged in and place Username into id='account'
+	autologin();//Check if logged in and place Username into id='account'
 });
