@@ -52,11 +52,15 @@ function createAccount() {
 function openLogin() {
 	//make createaccountform invisible
 	//make loginform visible
+	document.getElementById("createaccountform").className = 'createaccountform creataccountform.hidden';
+	document.getElementById("loginform").className = 'loginform';
 	
 }
 function openCreateAccount() {
-	//make createaccountform invisible
-	//make loginform visible
+	//make loginform invisible
+	//make createaccountform visible
+	document.getElementById("loginform").className = 'loginform loginform.hidden';
+	document.getElementById("createaccountform").className = 'createaccountform';
 }
 $(document).ready(function() {
 	//Check if logged in and place Username into id='account'
