@@ -178,7 +178,7 @@ div.body {
 	width:100%;
 	max-width:900px;
 	display:block;
-	min-height:300px;
+	min-height:50px;
 	background-color:#FFFFFF;
 }
 div.social {
