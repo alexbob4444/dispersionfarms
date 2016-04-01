@@ -9,7 +9,7 @@
   window.onresize = eventResize;
   window.onload = eventResize;
   
-  $('#loginsubmit').click(function()
+  $('#loginform').submit(function()
 {
 	//$.ajax({
 		//check loginform for inputusername and inputpassword
@@ -21,7 +21,7 @@
 	//});
 	return false;
 });
-$('#createaccountsubmit').click(function()
+$('#createaccountform').submit(function()
 {
 	//$.ajax({
 		//check createaccountform for inputusername, inputpassword, and retypepassword
@@ -66,7 +66,7 @@ $('#createaccountsubmit').click(function()
       <input type='text' name='inputusername'><br>
       Password: <br>
       <input type='text' name='inputpassword'><br>
-      <input id='loginsubmit' type='submit' value='Log In'>
+      <input type='submit' value='Log In'>
       or <a href='#' class='textlink' onclick='openCreateAccount();'>Create An Account</a>
     </form>
     </div>
@@ -80,7 +80,7 @@ $('#createaccountsubmit').click(function()
       Retype Password: <br>
       <input type='text' name='retypepassword'><br>
       
-      <input id='createaccountsubmit' type='submit' value='Create Account'>
+      <input type='submit' value='Create Account'>
       or <a href='#' class='textlink' onclick='openLogin()'>Log In</a>
     </form>
     </div>
