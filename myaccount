@@ -30,7 +30,6 @@
 
 <div class='bodyholder'>
   <div class='body' id='body'>
-  <br>
   <div class='loginform' id='loginform'>
     <form>
       <h3>Log In</h3>
@@ -56,6 +55,9 @@
       or <a href='#' class='textlink' onclick='openLogin()'>Log In</a>
       <label id='createaccountformmsg'></label>
     </form>
+    </div>
+    <div id='dispaccount'>
+      all the data on that user
     </div>
     <!-- 
     Load all of your site information
