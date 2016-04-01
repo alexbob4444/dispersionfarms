@@ -248,15 +248,15 @@ a.menui:link, a.menui:visited {
 a.menui:hover, a.menui:active {
 	color:#E3E2E2;
 }
-form.createaccountform {
+div.createaccountform {
 	
 }
-form.createaccountform.hidden {
+div.createaccountform.hidden {
 	display:none;
 }
-form.loginform {
+div.loginform {
 	
 }
-form.loginform.hidden {
+div.loginform.hidden {
 	display:none;
 }
