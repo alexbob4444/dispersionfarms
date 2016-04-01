@@ -19,6 +19,7 @@
 		//display account info in id=dispaccount
 		document.getElementById("dispaccount").className = 'dispaccount';
 	//});
+	return false;
 });
 $('#createaccountsubmit').click(function()
 {
@@ -32,6 +33,7 @@ $('#createaccountsubmit').click(function()
 		//display account info in id=dispaccount
 		document.getElementById("dispaccount").className = 'dispaccount';
 	//});
+	return false;
 });
 
 
