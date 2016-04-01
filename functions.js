@@ -52,14 +52,14 @@ function createAccount() {
 function openLogin() {
 	//make createaccountform invisible
 	//make loginform visible
-	document.getElementById("createaccountform").className = 'createaccountform creataccountform.hidden';
+	document.getElementById("createaccountform").className = 'createaccountform creataccountformhidden';
 	document.getElementById("loginform").className = 'loginform';
 	
 }
 function openCreateAccount() {
 	//make loginform invisible
 	//make createaccountform visible
-	document.getElementById("loginform").className = 'loginform loginform.hidden';
+	document.getElementById("loginform").className = 'loginform loginformhidden';
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
 $(document).ready(function() {
