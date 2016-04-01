@@ -8,7 +8,6 @@
 <script>
   window.onresize = eventResize;
   window.onload = eventResize;
-  window.onload += autologinmyaccountpage;
 </script>
 </head>
 
