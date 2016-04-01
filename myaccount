@@ -30,6 +30,7 @@
 
 <div class='bodyholder'>
   <div class='body' id='body'>
+  <br>
     <form class='loginform' id='loginform' method='post'>
       Username: <br>
       <input type='text' name='inputusername'><br>
