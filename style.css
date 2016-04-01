@@ -8,10 +8,10 @@ html.menuopen {
 a.textlink {
 	text-decoration:none;
 }
-a.textlink:link, a.accountm:visited  {
+a.textlink:link, a.textlink:visited  {
 	color:#202020;
 }
-a.accountm:hover, a.accountm:active {
+a.textlink:hover, a.textlink:active {
 	color:#000000;
 }
 
