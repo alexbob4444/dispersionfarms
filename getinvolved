@@ -31,7 +31,20 @@
 
 <div class='bodyholder'>
   <div class='body' id='body'>
-  body
+    <p class="mainp">
+      We are run by a small group of students fighting to create an increasingly 
+      sustainable city so we always can use help.
+      <br>
+      <br>
+      Right now, City Grazer is run by a few friends and I. We grow seedlings on our porches
+      and under a grow light in order to give other students easy access to plants and food 
+      by taking care of the seeding and starting in addition to teaching users how
+      to take care of plants, compost, and harvest the food.<br>
+      <br>
+      If you would like to help out with crop-starting, teaching, funding, or simply would like to 
+      request a compost bin setup or a bucket farm, contact me via my
+      information below and we will make things happen.
+    </p>
   </div>
 </div>
 
