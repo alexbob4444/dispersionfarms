@@ -38,10 +38,10 @@
       Password: <br>
       <input type='text' name='inputpassword'><br>
       <input method='post' onsubmit='login()' type='submit' value='Log In'>
-      or <a href='#' class='textlink' onclick='openCreateAccount()'>Create An Account</a>
+      or <a href='#' class='textlink' onclick='openCreateAccount();'>Create An Account</a>
     </form>
     </div>
-    <div class='createaccountform createaccountform.hidden'id='createaccountform'>
+    <div class='createaccountform createaccountformhidden'id='createaccountform'>
     <form>
       Username: <br>
       <input type='text' name='inputusername'><br>
@@ -50,7 +50,7 @@
       Retype Password: <br>
       <input type='text' name='retypepassword'><br>
       
-      <input method='post' onsubmit='createAccount()' type='submit' value='Create Account'>
+      <input method='post' onsubmit='createAccount();' type='submit' value='Create Account'>
       or <a href='#' class='textlink' onclick='openLogin()'>Log In</a>
       <label id='createaccountformmsg'></label>
     </form>
