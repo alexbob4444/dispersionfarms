@@ -40,30 +40,6 @@ function openCreateAccount() {
 	document.getElementById("loginform").className = 'loginform loginformhidden';
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
-$('#loginsubmit').click(function()
-{
-	$.ajax({
-		//check loginform for inputusername and inputpassword
-		//check against databased
-		//create session
-		autologin();
-		//display account info in id=dispaccount
-		document.getElementById("dispaccount").className = 'dispaccount';
-	});
-});
-$('#createaccountsubmit').click(function()
-{
-	$.ajax({
-		//check createaccountform for inputusername, inputpassword, and retypepassword
-		//make sure inputusername doesn't already exist in database
-			//output that this account already exists to id=createaccountformmsg
-		//add to database
-		//create session
-		autologin();
-		//display account info in id=dispaccount
-		document.getElementById("dispaccount").className = 'dispaccount';
-	});
-});
 $(document).ready(function() {
 	autologin();//Check if logged in and place Username into id='account'
 });
