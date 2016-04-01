@@ -56,15 +56,12 @@
       <label id='createaccountformmsg'></label>
     </form>
     </div>
-    <div id='dispaccount'>
-      all the data on that user
+    <div class='dispaccount dispaccounthidden' id='dispaccount'>
+      all the data on that user, their sites, and their compost bins
+      <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a>
+      <a class='requestbutton' href='#' onclick='requestbucket()'>Request a Bucket Farm</a>
+      <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Request a Private Property Planting</a>
     </div>
-    <!-- 
-    Load all of your site information
-    div on the bottom that allows you to input a request to:
-      -be a compost ambassador
-      -get another bucket farm
-    -->
   </div>
 </div>
 
