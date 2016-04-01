@@ -251,12 +251,12 @@ a.menui:hover, a.menui:active {
 div.createaccountform {
 	
 }
-div.createaccountform.hidden {
+div.createaccountformhidden {
 	display:none;
 }
 div.loginform {
 	
 }
-div.loginform.hidden {
+div.loginformhidden {
 	display:none;
 }
