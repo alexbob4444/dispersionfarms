@@ -28,5 +28,5 @@ function loadMenu() {
       $('#completehtml').toggleClass('menuopen');
 }
 $(document).ready(function() {
-	//null
+	//Check if logged in and place Username into id='account'
 });
