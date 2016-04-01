@@ -163,6 +163,7 @@ img.menuicond {
 
 div.bodyholder {
 	position:static;
+	margin:0px;
 	width:100%;
 	background-color:#FFFFFF;
 }
@@ -180,7 +181,7 @@ div.body {
 }
 div.social {
 	position:static;
-	top:0px;
+	margin:0px;
 	text-align:center;
 	background-color:#444444;
 }
@@ -192,7 +193,7 @@ img.social {
 div.footer {
 	position:static;
 	text-align:center;
-	top:0px;
+	margin:0px;
 	background-color:#313131;
 	color:#E6E6E6;
 	font:"proxima-nova";
