@@ -262,3 +262,20 @@ div.loginform {
 div.loginformhidden {
 	display:none;
 }
+a.requestbutton {
+	padding:2px;
+	text-decoration:none;
+	background-color:#505050;
+}
+a.requestbutton:link, a.requestbutton:visited {
+	color:#BFBFBF;
+}
+a.requestbutton:hover, a.requestbutton:active {
+	color:#E3E2E2;
+}
+div.dispaccount {
+	
+}
+div.dispaccounthidden {
+	display:none;
+}
