@@ -167,7 +167,7 @@ div.bodyholder {
 	background-color:#FFFFFF;
 }
 div.body {
-	position:static;
+	position:absolute;
 	top:0px;
 	margin-left:auto;
 	margin-right:auto;
