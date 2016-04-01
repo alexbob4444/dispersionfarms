@@ -27,6 +27,36 @@ function loadMenu() {
       $('.back').toggleClass('menuclosed');
       $('#completehtml').toggleClass('menuopen');
 }
+function autologinmyaccountpage {
+	//check session
+	//place username in account
+	//make loginform invisible
+	//show user content
+}
+function login() {
+	//check loginform for inputusername and inputpassword
+	//check against databased
+	//create logged in session
+	autologinmyaccountpage();
+}
+function createAccount() {
+	//check createaccountform for inputusername, inputpassword, and retypepassword
+	//make sure doesn't already exist in database
+		//output that this account already exists to id=createaccountformmsg
+	//add to database
+	//create logged in session
+	autologinmyaccountpage();
+
+}
+function openLogin() {
+	//make createaccountform invisible
+	//make loginform visible
+	
+}
+function openCreateAccount() {
+	//make createaccountform invisible
+	//make loginform visible
+}
 $(document).ready(function() {
 	//Check if logged in and place Username into id='account'
 });
