@@ -33,6 +33,7 @@
   <br>
   <div class='loginform' id='loginform'>
     <form>
+      <h3>Log In</h3>
       Username: <br>
       <input type='text' name='inputusername'><br>
       Password: <br>
@@ -43,6 +44,7 @@
     </div>
     <div class='createaccountform createaccountformhidden'id='createaccountform'>
     <form>
+      <h3>Create an Account</h3>
       Username: <br>
       <input type='text' name='inputusername'><br>
       Password: <br>
