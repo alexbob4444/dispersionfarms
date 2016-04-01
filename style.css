@@ -9,7 +9,7 @@ a.textlink {
 	text-decoration:none;
 }
 a.textlink:link, a.textlink:visited  {
-	color:#202020;
+	color:#0d370d;
 }
 a.textlink:hover, a.textlink:active {
 	color:#000000;
