@@ -30,7 +30,12 @@
 
 <div class='bodyholder'>
   <div class='body' id='body'>
-  body
+    <!-- 
+    Load all of your site information
+    div on the bottom that allows you to input a request to:
+      -be a compost ambassador
+      -get another bucket farm
+    -->
   </div>
 </div>
 
