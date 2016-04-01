@@ -37,6 +37,8 @@ function login() {
 	//create session
 	autologin();
 	//display account info in id=dispaccount
+	document.getElementById("dispaccount").className = 'dispaccount';
+
 }
 function createAccount() {
 	//check createaccountform for inputusername, inputpassword, and retypepassword
@@ -46,6 +48,7 @@ function createAccount() {
 	//create session
 	autologin();
 	//display account info in id=dispaccount
+	document.getElementById("dispaccount").className = 'dispaccount';
 
 }
 function openLogin() {
