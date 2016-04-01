@@ -80,9 +80,8 @@ $('#createaccountsubmit').click(function()
       Retype Password: <br>
       <input type='text' name='retypepassword'><br>
       
-      <input id='createaccountsubmin' type='submit' value='Create Account'>
+      <input id='createaccountsubmit' type='submit' value='Create Account'>
       or <a href='#' class='textlink' onclick='openLogin()'>Log In</a>
-      <label id='createaccountformmsg'></label>
     </form>
     </div>
     <div class='dispaccount dispaccounthidden' id='dispaccount'>
