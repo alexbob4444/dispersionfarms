@@ -32,7 +32,7 @@ function autologin() {
 	//place username in id=account
 }
 function openLogin() {
-	document.getElementById("createaccountform").className = 'createaccountform creataccountformhidden';
+	document.getElementById("createaccountform").className = 'createaccountform createaccountformhidden';
 	document.getElementById("loginform").className = 'loginform';
 	
 }
