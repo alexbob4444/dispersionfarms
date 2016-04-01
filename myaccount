@@ -30,8 +30,26 @@
 
 <div class='bodyholder'>
   <div class='body' id='body'>
-    <form>
+    <form class='loginform' id='loginform' method='post'>
+      Username: <br>
+      <input type='text' name='inputusername'><br>
+      Password: <br>
+      <input type='text' name='inputpassword'><br>
+      <input onsubmit='login();' type='submit' value='Log In'>
+      or <a href='#' onclick='openCreateAccount()'>Create An Account</a>
     </form>
+    <form class='createaccountform' id='createaccountform' method='post'>
+      Username: <br>
+      <input type='text' name='inputusername'><br>
+      Password: <br>
+      <input type='text' name='inputpassword'><br>
+      Retype Password: <br>
+      <input type='text' name='retypepassword'><br>
+      
+      <input onsubmit='createAccount();' type='submit' value='Create Account'>
+      or <a href='#' onclick='openLogin()'>Log In</a>
+    </form>
+    
     <!-- 
     Load all of your site information
     div on the bottom that allows you to input a request to:
