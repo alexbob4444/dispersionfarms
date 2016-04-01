@@ -31,18 +31,18 @@
 <div class='bodyholder'>
   <div class='body' id='body'>
   <div class='loginform' id='loginform'>
-    <form>
+    <form method='POST'>
       <h3>Log In</h3>
       Username: <br>
       <input type='text' name='inputusername'><br>
       Password: <br>
       <input type='text' name='inputpassword'><br>
-      <input method='post' onsubmit='login()' type='submit' value='Log In'>
+      <input id='loginsubmit' type='submit' value='Log In'>
       or <a href='#' class='textlink' onclick='openCreateAccount();'>Create An Account</a>
     </form>
     </div>
     <div class='createaccountform createaccountformhidden'id='createaccountform'>
-    <form>
+    <form method='POST'>
       <h3>Create an Account</h3>
       Username: <br>
       <input type='text' name='inputusername'><br>
@@ -51,7 +51,7 @@
       Retype Password: <br>
       <input type='text' name='retypepassword'><br>
       
-      <input method='post' onsubmit='createAccount();' type='submit' value='Create Account'>
+      <input id='createaccountsubmin' type='submit' value='Create Account'>
       or <a href='#' class='textlink' onclick='openLogin()'>Log In</a>
       <label id='createaccountformmsg'></label>
     </form>
