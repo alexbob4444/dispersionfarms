@@ -68,9 +68,9 @@ $('#createaccountform').submit(function()
     <form method='POST'>
       <h3>Log In</h3>
       Username: <br>
-      <input type='text' name='inputusername'><br>
+      <input required='true' type='text' name='inputusername'><br>
       Password: <br>
-      <input type='text' name='inputpassword'><br>
+      <input required='true' type='text' name='inputpassword'><br>
       <input type='submit' value='Log In'>
       or <a href='#' class='textlink' onclick='openCreateAccount();'>Create An Account</a>
     </form>
@@ -79,11 +79,11 @@ $('#createaccountform').submit(function()
     <form method='POST'>
       <h3>Create an Account</h3>
       Username: <br>
-      <input type='text' name='inputusername'><br>
+      <input required='true' type='text' name='inputusername'><br>
       Password: <br>
-      <input type='text' name='inputpassword'><br>
+      <input required='true' type='text' name='inputpassword'><br>
       Retype Password: <br>
-      <input type='text' name='retypepassword'><br>
+      <input required='true' type='text' name='retypepassword'><br>
       
       <input type='submit' value='Create Account'>
       or <a href='#' class='textlink' onclick='openLogin()'>Log In</a>
