@@ -12,7 +12,7 @@ function loading() {
   	sessionopencheck();
   	autologin();
   	<?php
-
+    echo "what what what?";
     //check if session... if not openLogin()... 
     //if so (document.getElementById("dispaccount").className = 'dispaccount';)
     //else
