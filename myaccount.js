@@ -12,7 +12,7 @@ function docready() {
 $('#createaccountform').submit(function()
 {
 	$.ajax({
-		method:'POST',
+		type:'POST',
 		url:'/php/createaccount.php',
 		data: {
 			
