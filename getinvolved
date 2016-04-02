@@ -6,8 +6,12 @@
 <script src="jquery-2.2.1.js"></script>
 <script type="text/javascript" src="functions.js"></script>
 <script>
+  function loading() {
+  	eventResize();
+  	autologin();
+  }
   window.onresize = eventResize;
-  window.onload = eventResize;
+  window.onload = loading;
 </script>
 </head>
 
