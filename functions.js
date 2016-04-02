@@ -41,6 +41,3 @@ function openCreateAccount() {
 	document.getElementById("loginform").className = 'loginform loginformhidden';
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
-$(document).ready(function() {
-	//empty for now
-});
