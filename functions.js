@@ -41,5 +41,5 @@ function openCreateAccount() {
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
 $(document).ready(function() {
-	autologin();//Check if logged in and place Username into id='account'
+	//autologin();//Check if logged in and place Username into id='account'
 });
