@@ -30,6 +30,7 @@ function loadMenu() {
 function autologin() {
 	//check session 
 	//place username in id=account
+	//if no session, display "sign in"
 }
 function openLogin() {
 	document.getElementById("createaccountform").className = 'createaccountform createaccountformhidden';
@@ -41,5 +42,5 @@ function openCreateAccount() {
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
 $(document).ready(function() {
-	//autologin();//Check if logged in and place Username into id='account'
+	//empty for now
 });
