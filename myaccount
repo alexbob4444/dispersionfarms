@@ -11,20 +11,19 @@ function loading() {
   	eventResize();
   	sessionopencheck();
   	autologin();
+  	<?php
+
+    //check if session... if not openLogin()... 
+    //if so (document.getElementById("dispaccount").className = 'dispaccount';)
+    //else
+    //show dispaccount and populate with server data
+
+  ?>
   }
-  openCreateAccount();
   window.onresize = eventResize;
   window.onload = loading;
-  document.getElementById("dispaccount").innerHTML = "hello?";
 </script>
-<?php
 
-//check if session... if not openLogin()... 
-//if so (document.getElementById("dispaccount").className = 'dispaccount';)
-//else
-//show dispaccount and populate with server data
-
-?>
 </head>
 
 <div class='page'>
