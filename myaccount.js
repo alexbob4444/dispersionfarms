@@ -18,7 +18,11 @@ $('#createaccountform').submit(function()
 			
 		};
 		success: function(echoin) {
+			alert("data saved");
 			$('#dispaccount').innerHTML = echoin;
+		};
+		error: function() {
+			alert("failed");
 		}
 		//check createaccountform for inputusername, inputpassword, and retypepassword
 		//make sure inputusername doesn't already exist in database
