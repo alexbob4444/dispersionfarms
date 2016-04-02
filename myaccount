@@ -11,15 +11,7 @@ function loading() {
   	eventResize();
   	sessionopencheck();
   	autologin();
-  	<?php
-    echo "what what what?";
-    //check if session... if not openLogin()... 
-    //if so (document.getElementById("dispaccount").className = 'dispaccount';)
-    //else
-    //show dispaccount and populate with server data
-
-  ?>
-  }
+ }
   window.onresize = eventResize;
   window.onload = loading;
 </script>
@@ -71,10 +63,23 @@ function loading() {
     </form>
     </div>
     <div class='dispaccount' id='dispaccount'>
+    
+    
+    
+      check if session... if not openLogin()... 
+      if so (document.getElementById("dispaccount").className = 'dispaccount';)
+      else
+      show dispaccount and populate with server data
+    
       all the data on that user, their sites, and their compost bins
       <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a>
       <a class='requestbutton' href='#' onclick='requestbucket()'>Request a Bucket Farm</a>
       <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Request a Private Property Planting</a>
+    
+    
+    
+    
+    
     </div>
   </div>
 </div>
