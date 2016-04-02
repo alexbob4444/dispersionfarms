@@ -9,7 +9,7 @@
 <script>
 function loading() {
   	eventResize();
-  	docready();
+  	sessionopencheck();
   	autologin();
   }
   window.onresize = eventResize;
