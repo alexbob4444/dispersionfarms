@@ -17,8 +17,8 @@ $('#createaccountform').submit(function()
 		data: {
 			
 		};
-		success: function(echosin) {
-			$('#dispaccount').innerHTML = echosin;
+		success: function(echoin) {
+			$('#dispaccount').innerHTML = echoin;
 		}
 		//check createaccountform for inputusername, inputpassword, and retypepassword
 		//make sure inputusername doesn't already exist in database
