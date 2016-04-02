@@ -265,13 +265,13 @@ div.loginformhidden {
 a.requestbutton {
 	padding:2px;
 	text-decoration:none;
-	background-color:#505050;
+	background-color:#FFFFFF;
 }
 a.requestbutton:link, a.requestbutton:visited {
-	color:#BFBFBF;
+	color:#333333;
 }
 a.requestbutton:hover, a.requestbutton:active {
-	color:#E3E2E2;
+	color:#000000;
 }
 div.dispaccount {
 	display:inline;
