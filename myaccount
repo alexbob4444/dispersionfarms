@@ -37,7 +37,7 @@ function loading() {
 <div class='bodyholder'>
   <div class='body' id='body'>
   <div class='loginform' id='loginform'>
-    <form action='/php/login.php' method='POST'>
+    <form action='/dispersionfarms/php/login.php' method='POST'>
       <h3>Log In</h3>
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
@@ -48,7 +48,7 @@ function loading() {
     </form>
     </div>
     <div class='createaccountform createaccountformhidden'id='createaccountform'>
-    <form action='/php/createaccount.php' method='POST'>
+    <form action='/dispersionfarms/php/createaccount.php' method='POST'>
       <h3>Create an Account</h3>
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
