@@ -5,7 +5,6 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <script src="jquery-2.2.1.js"></script>
 <script type="text/javascript" src="functions.js"></script>
-<script type='text/javascript" src="myaccount.js></script>
 <script>
 function loading() {
   	eventResize();
@@ -14,6 +13,33 @@ function loading() {
   }
   window.onresize = eventResize;
   window.onload = loading;
+  
+  function docready() {
+  $('#loginform').submit(function()
+{
+	//$.ajax({
+		//check loginform for inputusername and inputpassword
+		//check against databased
+		//create session
+		//display account info in id=dispaccount
+	//});
+	return false;
+});
+$('#createaccountform').submit(function()
+{
+	//$.ajax({
+		//check createaccountform for inputusername, inputpassword, and retypepassword
+		//make sure inputusername doesn't already exist in database
+			//output that this account already exists to id=createaccountformmsg
+		//add to database
+		//create session
+		//display account info in id=dispaccount
+	//});
+	return false;
+});
+}
+//check if session... if not openLogin()...
+//if so (document.getElementById("dispaccount").className = 'dispaccount';)
 </script>
 </head>
 
@@ -63,7 +89,7 @@ function loading() {
       or <a href='#' class='textlink' onclick='openLogin()'>Log In</a>
     </form>
     </div>
-    <div class='dispaccount dispaccounthidden' id='dispaccount'>
+    <div class='dispaccount' id='dispaccount'>
       all the data on that user, their sites, and their compost bins
       <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a>
       <a class='requestbutton' href='#' onclick='requestbucket()'>Request a Bucket Farm</a>
