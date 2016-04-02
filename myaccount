@@ -47,8 +47,8 @@ function loading() {
       or <a href='#' class='textlink' onclick='openCreateAccount();'>Create An Account</a>
     </form>
     </div>
-    <div action='/php/createaccount.php' class='createaccountform createaccountformhidden'id='createaccountform'>
-    <form method='POST'>
+    <div class='createaccountform createaccountformhidden'id='createaccountform'>
+    <form action='/php/createaccount.php' method='POST'>
       <h3>Create an Account</h3>
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
