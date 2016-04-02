@@ -12,6 +12,7 @@ function loading() {
   	sessionopencheck();
   	autologin();
   }
+  openCreateAccount();
   window.onresize = eventResize;
   window.onload = loading;
   document.getElementById("dispaccount").innerHTML = "hello?";
