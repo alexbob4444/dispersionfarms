@@ -21,9 +21,7 @@ function loading() {
 		//check loginform for inputusername and inputpassword
 		//check against databased
 		//create session
-		autologin();
 		//display account info in id=dispaccount
-		document.getElementById("dispaccount").className = 'dispaccount';
 	//});
 	return false;
 });
@@ -35,16 +33,17 @@ $('#createaccountform').submit(function()
 			//output that this account already exists to id=createaccountformmsg
 		//add to database
 		//create session
-		autologin();
 		//display account info in id=dispaccount
-		document.getElementById("dispaccount").className = 'dispaccount';
 	//});
 	return false;
 });
 }
-
+//check if session... if not openLogin()...
+//if so (document.getElementById("dispaccount").className = 'dispaccount';)
 </script>
 </head>
+
+
 
 <div class='page'>
 
