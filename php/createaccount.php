@@ -1,17 +1,22 @@
 <?php 
 if(isset($_POST['createsubmit'])) {//submit button pressed
-//echo $_POST['inputusername'];
-//echo $_POST['inputpassword'];
-//echo $_POST['retypepassword'];
+$usrn = $_POST['inputusername'];
+$pass1 = $_POST['inputpassword'];
+$pass2 = $_POST['retypepassword'];
+if(strcmp($pass1,$pass2)) {
 include('connect.php');//connect to db
 if (!$con) {//bad connection
 	die("Cannot connect to Database: ". mysql_error());
 }
 else {//good connection
-	
-	
+$sql = "INSERT INTO users (username,signupdate,password) VALUES ('$usrn','date()','$pass1')";
+mysql_query($sql,$con);
 mysql_select_db('dispersionfarms',$con);
 include('closeconnect.php');
+}
+}
+else {//passwords are not the same so reset page and note passwords need to be same
+	
 }
 }
 //check createaccountform for inputusername, inputpassword, and retypepassword
@@ -20,5 +25,6 @@ include('closeconnect.php');
 		//add to database
 		//create session
 		//display account info in id=dispaccount
+//header('Location: https://dispersionfarms.com/myaccount');
 ?>
 
