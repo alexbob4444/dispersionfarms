@@ -19,12 +19,13 @@ else {//passwords are not the same so reset page and note passwords need to be s
 	
 }
 }
+echo "hello?";
 //check createaccountform for inputusername, inputpassword, and retypepassword
 		//make sure inputusername doesn't already exist in database
 			//output that this account already exists to id=createaccountformmsg
 		//add to database
 		//create session
 		//display account info in id=dispaccount
-header('Location: https://www.dispersionfarms.com/myaccount');
+//header('Location: https://www.dispersionfarms.com/myaccount');
 ?>
 
