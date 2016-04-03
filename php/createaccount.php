@@ -1,4 +1,5 @@
 <?php 
+echo "compiled..<br>"
 if(isset($_POST['createsubmit'])) {//submit button pressed
 $usrn = $_POST['inputusername'];
 $pass1 = $_POST['inputpassword'];
