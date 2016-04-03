@@ -8,7 +8,7 @@
 <script>
 function loading() {
   	eventResize();
-  	sessionopencheck();
+  	sessionOpenCheck();
   	autologin();
  }
   window.onresize = eventResize;
