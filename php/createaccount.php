@@ -9,7 +9,7 @@ if (!$con) {//bad connection
 	die("Cannot connect to Database: ". mysql_error());
 }
 else {//good connection
-$sql = "INSERT INTO users (username,password,permissions) VALUES ('$usrn','$pass1','n')";
+$sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
 mysql_select_db('dispersionfarms',$con);
 echo mysql_query($sql,$con);
 include('closeconnect.php');
