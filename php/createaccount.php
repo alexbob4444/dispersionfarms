@@ -10,10 +10,11 @@ if (!$con) {//bad connection
 }
 else {//good connection
 $sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
-mysql_select_db('dispersionfarms',$con);
+echo mysql_select_db('dispersionfarms',$con);
 echo mysql_query($sql,$con);
-include('closeconnect.php');
+echo "hi now";
 }
+include('closeconnect.php');
 }
 else {//passwords are not the same so reset page and note passwords need to be same
 	
