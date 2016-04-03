@@ -21,7 +21,7 @@ if($record['username']==$usrn) {
 }
 
 if (!$userExistsAlready) {
-$sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
+$sql = "INSERT INTO users (username,password,datecreated) VALUES ('$usrn','$pass1','date()')";
 echo mysql_query($sql,$con);
 echo "Successful Creation";
 
