@@ -41,3 +41,6 @@ function openCreateAccount() {
 	document.getElementById("loginform").className = 'loginform loginformhidden';
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
+function sessionOpenCheck() {
+	$("#phpdrawing").load("/dispersionfarms/php/loadUserInfo.php");
+}
