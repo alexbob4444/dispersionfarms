@@ -15,11 +15,15 @@ echo mysql_query($sql,$con);
 echo "hi now";
 }
 include('closeconnect.php');
+echo "hi now1";
 }
 else {//passwords are not the same so reset page and note passwords need to be same
 	
+echo "hi now2";
 }
 }
+
+echo "hi now3";
 //check createaccountform for inputusername, inputpassword, and retypepassword
 		//make sure inputusername doesn't already exist in database
 			//output that this account already exists to id=createaccountformmsg
