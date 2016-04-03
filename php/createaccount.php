@@ -23,25 +23,18 @@ if (!$userExistsAlready) {
 $sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
 echo mysql_query($sql,$con);
 echo "Successful Creation";
+
+header('Location: https://www.dispersionfarms.com/myaccount');
 }
 else {
-//this username exists already
 echo "user exists already";
 }
 }
 include('closeconnect.php');
 }
-else {//passwords are not the same so reset page and note passwords need to be same
-
+else {
+	echo "your passwords are not the same"
 }
 }
-
-//check createaccountform for inputusername, inputpassword, and retypepassword
-		//make sure inputusername doesn't already exist in database
-			//output that this account already exists to id=createaccountformmsg
-		//add to database
-		//create session
-		//display account info in id=dispaccount
-//header('Location: https://www.dispersionfarms.com/myaccount');
 ?>
 
