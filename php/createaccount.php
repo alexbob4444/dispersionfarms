@@ -25,6 +25,6 @@ else {//passwords are not the same so reset page and note passwords need to be s
 		//add to database
 		//create session
 		//display account info in id=dispaccount
-header('Location: https://dispersionfarms.com/myaccount');
+header('Location: https://www.dispersionfarms.com/myaccount');
 ?>
 
