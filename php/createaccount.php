@@ -1,5 +1,5 @@
 <?php 
-echo "compiled..<br>"
+echo "compiled..<br>";
 if(isset($_POST['createsubmit'])) {//submit button pressed
 $usrn = $_POST['inputusername'];
 $pass1 = $_POST['inputpassword'];
@@ -34,7 +34,7 @@ echo "user exists already";
 include('closeconnect.php');
 }
 else {
-	echo "your passwords are not the same"
+	echo "your passwords are not the same";
 }
 }
 ?>
