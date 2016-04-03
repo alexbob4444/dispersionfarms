@@ -62,9 +62,9 @@ function loading() {
     </form>
     </div>
     <div class='dispaccount' id='dispaccount'>
+    <div class="phpdrawing" id='phpdrawing'>
     
-    
-    
+    </div>
       check if session... if not openLogin()... 
       if so (document.getElementById("dispaccount").className = 'dispaccount';)
       else
