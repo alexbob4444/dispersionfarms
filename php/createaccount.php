@@ -10,8 +10,8 @@ if (!$con) {//bad connection
 }
 else {//good connection
 $sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
-mysql_query($sql,$con);
 mysql_select_db('dispersionfarms',$con);
+echo mysql_query($sql,$con);
 include('closeconnect.php');
 }
 }
