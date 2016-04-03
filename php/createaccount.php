@@ -3,7 +3,7 @@ if(isset($_POST['createsubmit'])) {//submit button pressed
 $usrn = $_POST['inputusername'];
 $pass1 = $_POST['inputpassword'];
 $pass2 = $_POST['retypepassword'];
-if(!strcmp($pass1,$pass2)) {
+if($pass1==$pass2) {
 include('connect.php');//connect to db
 if (!$con) {//bad connection
 	die("Cannot connect to Database: ". mysql_error());
@@ -14,7 +14,7 @@ $userExistsAlready = false;
 $sql = "SELECT * FROM users";
 $userData = mysql_query($sql,$con);
 while(!$userExistsAlready && $record=mysql_fetch_array($myData)) {//loop through array of data
-if(!strcmp($record['username'],$usrn)) {
+if($record['username']==$usrn) {
 	$userExistsAlready =true;//stop loop and quit
 }
 }
