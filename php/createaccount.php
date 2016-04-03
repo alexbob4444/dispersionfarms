@@ -9,7 +9,7 @@ if (!$con) {//bad connection
 	die("Cannot connect to Database: ". mysql_error());
 }
 else {//good connection
-$sql = "INSERT INTO users (username,signupdate,password) VALUES ('$usrn','date()','$pass1')";
+$sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
 mysql_query($sql,$con);
 mysql_select_db('dispersionfarms',$con);
 include('closeconnect.php');
@@ -19,7 +19,6 @@ else {//passwords are not the same so reset page and note passwords need to be s
 	
 }
 }
-echo "hello?";
 //check createaccountform for inputusername, inputpassword, and retypepassword
 		//make sure inputusername doesn't already exist in database
 			//output that this account already exists to id=createaccountformmsg
