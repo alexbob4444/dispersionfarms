@@ -13,7 +13,7 @@ echo mysql_select_db('dispersionfarms',$con);//select db
 $userExistsAlready = false;
 $sql = "SELECT * FROM users";
 $userData = mysql_query($sql,$con);
-while(!$userExistsAlready && $record=mysql_fetch_array($myData)) {//loop through array of data
+while(!$userExistsAlready && $record=mysql_fetch_array($userData)) {//loop through array of data
 if($record['username']==$usrn) {
 	$userExistsAlready =true;//stop loop and quit
 }
