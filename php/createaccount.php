@@ -9,10 +9,25 @@ if (!$con) {//bad connection
 	die("Cannot connect to Database: ". mysql_error());
 }
 else {//good connection
+echo mysql_select_db('dispersionfarms',$con);//select db
+$userExistsAlready = false;
+$sql = "SELECT * FROM users";
+$userData = mysql_query($sql,$con);
+while(!$userExistsAlready || $record=mysql_fetch_array($myData)) {//loop through array of data
+if(!strcmp($record['username'],$usrn)) {
+	$userExistsAlready =true;//stop loop and quit
+}
+}
+
+if (!$userExistsAlready) {
 $sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
-echo mysql_select_db('dispersionfarms',$con);
 echo mysql_query($sql,$con);
 echo "Successful Creation";
+}
+else {
+//this username exists already
+echo "user exists already";
+}
 }
 include('closeconnect.php');
 }
