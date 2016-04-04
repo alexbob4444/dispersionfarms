@@ -25,6 +25,7 @@ $sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
 echo mysql_query($sql,$con);
 echo "Successful Creation";
 session_start();
+session_name('dispersionfarms');
 $_SESSION['currentuser']=$usrn;
 header('Location: http://www.dispersionfarms.com/myaccount');
 }
