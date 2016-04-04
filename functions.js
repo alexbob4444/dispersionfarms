@@ -71,7 +71,7 @@ function createInputMap() {
 	});
 	var marker = new google.maps.Marker({
 		position:new google.maps.LatLng(43.070000,-89.411000),
-		draggable:true;
+		draggable:true
 	});
 	google.maps.event.addListener(marker,'dragend',function(event){
 		document.getElementById('lat').value = event.latLng.lat();
