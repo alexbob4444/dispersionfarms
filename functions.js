@@ -31,7 +31,18 @@ function autologin() {
 	//check session 
 	//place username in id=account
 	//if no session, display "sign in"
-	$("#account").load("/dispersionfarms/php/getUsername.php");
+	if (window.XMLHttpRequest) {
+	SJAX=new XMLHttpRequest();
+	}else {
+	SJAX=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	if (SJAX) {
+		SJAX.open("POST","/dispersionfarms/php/getUsername.php",false);
+		SJAX.send();
+		document.getElementById('account').innerHTML = SJAX.responseText;
+	} 
+	document.getElementById('account').innerHTML = "My Code Doesn't Work";
+	//$("#account").load("/dispersionfarms/php/getUsername.php");
 }
 function openLogin() {
 	document.getElementById("createaccountform").className = 'createaccountform createaccountformhidden';
