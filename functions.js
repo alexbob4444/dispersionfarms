@@ -55,9 +55,9 @@ function openCreateAccount() {
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
 function sessionOpenCheck() {
-	$("#phpuserfarms").load("/dispersionfarms/php/loadUserFarms.php");
-	$("#phpusercompost").load("/dispersionfarms/php/loadUserCompost.php");
 	if ( -1 == ((document.getElementById("account").innerHTML).search("SIGN IN"))) {
+		$("#phpuserfarms").load("/dispersionfarms/php/loadUserFarms.php");
+		$("#phpusercompost").load("/dispersionfarms/php/loadUserCompost.php");
 		document.getElementById("loginform").className = 'loginform loginformhidden';
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
