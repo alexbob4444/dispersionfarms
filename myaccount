@@ -63,7 +63,7 @@ function loading() {
     </div>
     <div class='dispaccount dispaccounthidden' id='dispaccount'>
     <div class="phpdrawing" id='phpuserfarms'></div><br>
-      <a class='requestbutton' href='#' onclick='requestbucket()'>Request Bucket Farm</a>
+      <a class='requestbutton' href='#' onclick='requestbucket()'>Request Bucket Farm</a> - 
       <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Suggest Planting Location</a><br><br>
       
       <div class="phpdrawing" id='phpusercompost'></div><br>
