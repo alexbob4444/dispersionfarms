@@ -62,3 +62,12 @@ function sessionOpenCheck() {
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
 }
+function requestbucket() {
+	$("#requestdiv").load("/dispersionfarms/php/createFarm.php");
+}
+function requestprivateplanting() {
+	$("#requestdiv").load("/dispersionfarms/php/createFarm.php");
+}
+function becomeambassador() {
+	$("#requestdiv").load("/dispersionfarms/php/createCompost.php");
+}
