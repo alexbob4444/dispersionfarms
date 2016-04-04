@@ -74,8 +74,8 @@ function createInputMap() {
 		draggable:true
 	});
 	google.maps.event.addListener(marker,'dragend',function(event){
-		document.getElementById('lat').value = event.latLng.lat();
-		document.getElementById('lng').value = event.latLng.lng();
+		document.getElementById('lat').value = '' + event.latLng.lat();
+		document.getElementById('lng').value = '' + event.latLng.lng();
 	});
 	map.setCenter(marker.position);
 	marker.setMap(map);
