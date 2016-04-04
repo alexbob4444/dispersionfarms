@@ -13,6 +13,10 @@ $sql = "SELECT * FROM users where password='$pass' AND username='$usrn'";
 $rows = mysql_num_rows($sql);
 if(!($rows==1)) {
 	echo "password does not match username";
+	echo "usrn=";
+	echo $usrn;
+	echo "pass=";
+	echo $pass;
 }
 else {
 	//valid info was entered so login using session of $usrn
