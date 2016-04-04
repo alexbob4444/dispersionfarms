@@ -40,8 +40,9 @@ function autologin() {
 		SJAX.open("POST","/dispersionfarms/php/getUsername.php",false);
 		SJAX.send();
 		document.getElementById('account').innerHTML = SJAX.responseText;
-	} 
+	} else {
 	document.getElementById('account').innerHTML = "My Code Doesn't Work";
+	}
 	//$("#account").load("/dispersionfarms/php/getUsername.php");
 }
 function openLogin() {
