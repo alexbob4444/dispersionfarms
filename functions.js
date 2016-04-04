@@ -43,4 +43,7 @@ function openCreateAccount() {
 }
 function sessionOpenCheck() {
 	$("#phpdrawing").load("/dispersionfarms/php/loadUserInfo.php");
+	if (doccument.getElementById("phpdrawing").innerHTML != "") {
+		document.getElementById("dispaccount").className = 'dispaccount';
+	}
 }
