@@ -62,8 +62,35 @@ function sessionOpenCheck() {
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
 }
+function createInputMap() {
+	document.getElementById('map').style = "width:500px; height:300px;";
+	var map = new google.maps.Map(document.getElementById('requestdiv')), {
+		zoom:100,
+		center: new google.maps.LatLng(43.070000,-89.411000),
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+	var marker = new google.maps.Marker({
+		position:new google.maps.LatLng(43.070000,-89.411000),
+		draggable:true;
+	});
+	google.maps.event.addListener(marker,'dragend',function(event){
+		document.getElementById('lat').value = event.latLng.lat();
+		document.getElementById('lng').value = event.latLng.lng();
+	});
+	map.setCenter(marker.position);
+	marker.setMap(map);
+}
 function requestbucket() {
+	
+	createInputMap();
+	
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
+	document.getElementById('requestdiv').innerHTML=  "\
+	<form class="form" action="/dispersionfarms/php/createFarm.php" method="POST">\
+	<input required='true' type='hidden' id='lat' name='lat'>\
+	<input required='true' type='hidden' id='lng' name='lng'>\
+	<input required='true' type='text' name='locationdescription' size='35'>\
+	</form>";
 }
 function requestprivateplanting() {
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
