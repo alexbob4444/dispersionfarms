@@ -61,6 +61,25 @@ function sessionOpenCheck() {
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
 }
+function createMap() {
+	document.getElementById('map').style.width = 500;
+	document.getElementById('map').style.height = 400;
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom:13,
+		center: new google.maps.LatLng(43.070000,-89.411000),
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+	var marker1 = new google.maps.Marker({
+		position:new google.maps.LatLng(43.070000,-89.411000),
+		draggable:false
+	});
+	google.maps.event.addListener(marker,'dragend',function (evt){
+		document.getElementById('lat').value = "" + evt.latLng.lat().toFixed(6);
+		document.getElementById('lng').value = "" + evt.latLng.lng().toFixed(6);
+	});
+	map.setCenter(marker1.position);
+	marker.setMap(map1);
+}
 function createInputMap() {
 	document.getElementById('map').style.width = 500;
 	document.getElementById('map').style.height = 400;
