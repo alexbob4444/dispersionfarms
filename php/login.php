@@ -20,6 +20,7 @@ if(!($rows==1)) {
 }
 else {
 	//valid info was entered so login using session of $usrn
+	session_name('dispersionfarms');
 	session_start();
 	$_SESSION['currentuser']=$usrn;
 	header('Location: http://www.dispersionfarms.com/myaccount');
