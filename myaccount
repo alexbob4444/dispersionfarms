@@ -67,7 +67,8 @@ function loading() {
       <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Suggest Planting Location</a><br><br>
       
       <div class="phpdrawing" id='phpusercompost'></div><br>
-      <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a><br><br>
+      <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a><br>
+      <div class="phpdrawing" id='requestdiv'></div><br>
       <a class='requestbutton' href='/dispersionfarms/php/logout.php'>Log Out</a>
     </div>
   </div>
