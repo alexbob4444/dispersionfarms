@@ -10,7 +10,7 @@ if (!$con) {//bad connection
 else {//good connection
 mysql_select_db('dispersionfarms',$con);//select the correct database
 $sql = "SELECT * FROM users where password='$pass' AND username='$usrn'";
-$rows = mysql_num_rows($sql);
+$rows = mysql_num_rows(mysql_query($sql,$con));
 if(!($rows==1)) {
 	echo "password does not match username";
 	echo "usrn=";
