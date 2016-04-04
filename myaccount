@@ -42,7 +42,7 @@ function loading() {
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
       Password: <br>
-      <input required='true' type='text' name='inputpassword'><br>
+      <input required='true' type='password' name='inputpassword'><br>
       <input type='submit' name='login' value='Log In'>
       or <a href='#' class='textlink' onclick='openCreateAccount();'>Create An Account</a>
     </form>
@@ -53,9 +53,9 @@ function loading() {
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
       Password: <br>
-      <input required='true' type='text' name='inputpassword'><br>
+      <input required='true' type='password' name='inputpassword'><br>
       Retype Password: <br>
-      <input required='true' type='text' name='retypepassword'><br>
+      <input required='true' type='password' name='retypepassword'><br>
       
       <input type='submit' name='createsubmit' value='Create Account'>
       or <a href='#' class='textlink' onclick='openLogin()'>Log In</a>
