@@ -43,7 +43,6 @@ function autologin() {
 	} else {
 	document.getElementById('account').innerHTML = "My Code Doesn't Work";
 	}
-	//$("#account").load("/dispersionfarms/php/getUsername.php");
 }
 function openLogin() {
 	document.getElementById("createaccountform").className = 'createaccountform createaccountformhidden';
@@ -65,7 +64,7 @@ function sessionOpenCheck() {
 function createInputMap() {
 	document.getElementById('map').style.width = 500;
 	document.getElementById('map').style.height = 400;
-	var map = new google.maps.Map(document.getElementById('requestdiv')), {
+	var map = new google.maps.Map(document.getElementById('requestdiv'), {
 		zoom:100,
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
