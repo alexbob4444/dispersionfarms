@@ -43,8 +43,9 @@ function openCreateAccount() {
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
 function sessionOpenCheck() {
-	$("#phpdrawing").load("/dispersionfarms/php/loadUserInfo.php");
-	if (document.getElementById("phpdrawing").innerHTML != "" || document.getElementById("phpdrawing").innerHTML != null || document.getElementById("phpdrawing").innerHTML != " ") {
+	$("#phpuserfarms").load("/dispersionfarms/php/loadUserInfo.php");
+	$("#phpuserfarms").load("/dispersionfarms/php/loadUserInfo.php");
+	if (document.getElementById("acount").innerHTML != "SIGN IN") {
 		document.getElementById("loginform").className = 'loginform loginformhidden';
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
