@@ -48,7 +48,7 @@ function loading() {
     </form>
     </div>
     <div class='createaccountform createaccountformhidden'id='createaccountform'>
-    <form action='/dispersionfarms/php/createaccount.php' method='POST'>
+    <form action='/dispersionfarms/php/createAccount.php' method='POST'>
       <h3>Create an Account</h3>
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
@@ -62,11 +62,13 @@ function loading() {
     </form>
     </div>
     <div class='dispaccount dispaccounthidden' id='dispaccount'>
-    <div class="phpdrawing" id='phpdrawing'></div>
-      <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a>
+    <div class="phpdrawing" id='phpuserfarms'></div><br>
       <a class='requestbutton' href='#' onclick='requestbucket()'>Request a Bucket Farm</a>
-      <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Request a Private Property Planting</a>
-      <br>
+      <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Request a Private Property Planting</a><br><br>
+      
+      <div class="phpdrawing" id='phpusercompost'></div><br>
+      <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a><br><br>
+      <a class='requestbutton' href='/dispersionfarms/php/logout.php'>Log Out</a>
     </div>
   </div>
 </div>
