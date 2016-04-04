@@ -73,8 +73,8 @@ function createInputMap() {
 		position:new google.maps.LatLng(43.070000,-89.411000),
 		draggable:true
 	});
-	google.maps.event.addListener(marker,'dragend',function(evt){
-		document.getElementById('lat').value = "" +evt.latLng.lat().toFixed(6);
+	google.maps.event.addListener(marker,'dragend',function (evt){
+		document.getElementById('lat').value = "" + evt.latLng.lat().toFixed(6);
 		document.getElementById('lng').value = "" + evt.latLng.lng().toFixed(6);
 	});
 	map.setCenter(marker.position);
