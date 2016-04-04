@@ -15,8 +15,6 @@ if(!($rows==1)) {
 	echo "password does not match username";
 	echo "usrn=";
 	echo $usrn;
-	echo "pass=";
-	echo $pass;
 }
 else {
 	//valid info was entered so login using session of $usrn
