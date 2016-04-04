@@ -62,9 +62,7 @@ function loading() {
     </form>
     </div>
     <div class='dispaccount dispaccounthidden' id='dispaccount'>
-    <div class="phpdrawing" id='phpdrawing'>
-    
-    </div>
+    <div class="phpdrawing" id='phpdrawing'></div>
       <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a>
       <a class='requestbutton' href='#' onclick='requestbucket()'>Request a Bucket Farm</a>
       <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Request a Private Property Planting</a>
