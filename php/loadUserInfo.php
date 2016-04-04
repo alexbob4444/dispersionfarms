@@ -1,5 +1,4 @@
 <?php
-session_name('dispersionfarms');
 session_start();
 $usrn = $_SESSION['currentuser'];
 echo $usrn;
