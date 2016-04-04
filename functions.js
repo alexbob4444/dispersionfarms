@@ -31,6 +31,7 @@ function autologin() {
 	//check session 
 	//place username in id=account
 	//if no session, display "sign in"
+	$("#account").load("/dispersionfarms/php/getUsername.php");
 }
 function openLogin() {
 	document.getElementById("createaccountform").className = 'createaccountform createaccountformhidden';
@@ -42,7 +43,6 @@ function openCreateAccount() {
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
 function sessionOpenCheck() {
-	$("#account").load("/dispersionfarms/php/getUsername.php");
 	$("#phpdrawing").load("/dispersionfarms/php/loadUserInfo.php");
 	if (document.getElementById("phpdrawing").innerHTML != "") {
 		document.getElementById("loginform").className = 'loginform loginformhidden';
