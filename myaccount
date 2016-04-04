@@ -68,6 +68,7 @@ function loading() {
       <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a>
       <a class='requestbutton' href='#' onclick='requestbucket()'>Request a Bucket Farm</a>
       <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Request a Private Property Planting</a>
+      <br>
     </div>
   </div>
 </div>
