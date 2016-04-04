@@ -86,7 +86,7 @@ function requestbucket() {
 	
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	document.getElementById('requestdiv').innerHTML=  "" +
-	"<form class="form" action="/dispersionfarms/php/createFarm.php" method="POST">" +
+	"<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>" +
 	"<input required='true' type='hidden' id='lat' name='lat'>" +
 	"<input required='true' type='hidden' id='lng' name='lng'>" +
 	"<input required='true' type='text' name='locationdescription' size='35'>" +
