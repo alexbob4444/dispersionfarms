@@ -63,11 +63,11 @@ function sessionOpenCheck() {
 	}
 }
 function requestbucket() {
-	$("#requestdiv").load("/dispersionfarms/php/createFarm.php");
+	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 }
 function requestprivateplanting() {
-	$("#requestdiv").load("/dispersionfarms/php/createFarm.php");
+	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 }
 function becomeambassador() {
-	$("#requestdiv").load("/dispersionfarms/php/createCompost.php");
+	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createCompost.php
 }
