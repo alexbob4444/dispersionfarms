@@ -76,9 +76,9 @@ function loading() {
 
 <div class='social'>
   <br>
-  <a style="text_decoration:none;" href="http://www.facebook.com/dispersionfarms/" target='_blank'><img class='social' src='/dispersionfarms/images/facebook.png'></a>
+  <a style="text-decoration:none;" href="http://www.facebook.com/dispersionfarms/" target='_blank'><img class='social' src='/dispersionfarms/images/facebook.png'></a>
   &nbsp
-  <a style="text_decoration:none;" href="http://www.instagram.com/dispersionfarms/" target='_blank'><img class='social' src='/dispersionfarms/images/instagram.png'></a>
+  <a style="text-decoration:none;" href="http://www.instagram.com/dispersionfarms/" target='_blank'><img class='social' src='/dispersionfarms/images/instagram.png'></a>
   <br><br>
 </div>
 
