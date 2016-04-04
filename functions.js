@@ -44,7 +44,7 @@ function openCreateAccount() {
 function sessionOpenCheck() {
 	document.getElementById("dispaccount").className = 'dispaccount';
 	$("#phpdrawing").load("/dispersionfarms/php/loadUserInfo.php");
-	if (doccument.getElementById("phpdrawing") != "") {
+	if (doccument.getElementById("phpdrawing").innerHTML != "") {
 		document.getElementById("loginform").className = 'loginform loginformhidden';
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
