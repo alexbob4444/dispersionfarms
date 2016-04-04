@@ -44,7 +44,7 @@ function openCreateAccount() {
 }
 function sessionOpenCheck() {
 	$("#phpdrawing").load("/dispersionfarms/php/loadUserInfo.php");
-	if (document.getElementById("phpdrawing").innerHTML != "") {
+	if (document.getElementById("phpdrawing").innerHTML != "" || document.getElementById("phpdrawing").innerHTML != null) {
 		document.getElementById("loginform").className = 'loginform loginformhidden';
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
