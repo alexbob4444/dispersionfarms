@@ -24,7 +24,8 @@ if (!$userExistsAlready) {
 $sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
 echo mysql_query($sql,$con);
 echo "Successful Creation";
-
+session_start();
+$_SESSION['currentuser']=$usrn;
 header('Location: http://www.dispersionfarms.com/myaccount');
 }
 else {
