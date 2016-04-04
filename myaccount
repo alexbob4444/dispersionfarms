@@ -76,13 +76,9 @@ function loading() {
 
 <div class='social'>
   <br>
-  <a href="http://www.facebook.com/dispersionfarms/" target='_blank'>
-    <img class='social' src='/dispersionfarms/images/facebook.png'>
-  </a>
+  <a href="http://www.facebook.com/dispersionfarms/" target='_blank'><img class='social' src='/dispersionfarms/images/facebook.png'></a>
   &nbsp
-  <a href="http://www.instagram.com/dispersionfarms/" target='_blank'>
-    <img class='social' src='/dispersionfarms/images/instagram.png'>
-  </a>
+  <a href="http://www.instagram.com/dispersionfarms/" target='_blank'><img class='social' src='/dispersionfarms/images/instagram.png'></a>
   <br><br>
 </div>
 
