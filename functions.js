@@ -63,7 +63,8 @@ function sessionOpenCheck() {
 	}
 }
 function createInputMap() {
-	document.getElementById('map').style = "width:500px; height:300px;";
+	document.getElementById('map').style.width = 500;
+	document.getElementById('map').style.height = 400;
 	var map = new google.maps.Map(document.getElementById('requestdiv')), {
 		zoom:100,
 		center: new google.maps.LatLng(43.070000,-89.411000),
