@@ -1,4 +1,7 @@
 <?php
+session_start();
+$usrn = $_SESSION['currentuser'];
+echo $usrn;
 //check if session...
 //if session has username matching a db username
 // then document.getElementById("dispaccount").className = 'dispaccount';
