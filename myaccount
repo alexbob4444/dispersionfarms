@@ -43,7 +43,7 @@ function loading() {
       <input required='true' type='text' name='inputusername'><br>
       Password: <br>
       <input required='true' type='text' name='inputpassword'><br>
-      <input type='submit' value='Log In'>
+      <input type='submit' name='login' value='Log In'>
       or <a href='#' class='textlink' onclick='openCreateAccount();'>Create An Account</a>
     </form>
     </div>
