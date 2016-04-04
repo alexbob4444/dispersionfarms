@@ -45,7 +45,7 @@ function openCreateAccount() {
 function sessionOpenCheck() {
 	$("#phpuserfarms").load("/dispersionfarms/php/loadUserFarms.php");
 	$("#phpusercompost").load("/dispersionfarms/php/loadUserCompost.php");
-	if ( -1 != "SIGN IN".search(document.getElementById("account").innerHTML)) {
+	if ( -1 == "SIGN IN".search(document.getElementById("account").innerHTML)) {
 		document.getElementById("loginform").className = 'loginform loginformhidden';
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
