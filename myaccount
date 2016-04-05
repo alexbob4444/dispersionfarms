@@ -69,8 +69,13 @@ function loading() {
       
       <div class="phpdrawing" id='phpusercompost'></div><br>
       <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a><br>
+      
+      <div class="requestdiv requestdivhidden" id='requestdiv'>
+      Input the Location by Dragging the Marker
       <div id='map'></div>
-      <div class="phpdrawing" id='requestdiv'></div><br>
+      <div class="phpdrawing" id='inputdiv'></div><br>
+      </div>
+      
       <a class='requestbutton' href='/dispersionfarms/php/logout.php'>Log Out</a>
     </div>
   </div>
