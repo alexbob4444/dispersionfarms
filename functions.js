@@ -146,7 +146,7 @@ function loadpubliccompostmap() {
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
-	syncrequest('n',0);
+	syncrequest('nc',0);
 	var curnum = 1;
 	syncrequest('c',curnum);
 
