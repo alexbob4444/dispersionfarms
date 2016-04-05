@@ -73,7 +73,7 @@ function loading() {
       <div class="requestdiv requestdivhidden" id='requestdiv'>
       <h3><div id="inputtitlediv"></div></h3>
       Where should it be? (Drag the Marker)
-      <div id='map'></div>
+      <div id='map'></div><br><br>
       <div class="phpdrawing" id='inputdiv'></div><br>
       </div>
       
