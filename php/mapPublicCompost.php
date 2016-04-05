@@ -9,9 +9,10 @@
 		mysql_select_db('dispersionfarms',$con);
 		$sql = "SELECT * FROM compost WHERE public='1' AND requestfulfilled='1' AND id='$cid'";
 		$binquery = mysql_query($sql,$con);
-		$bin = mysql_fetch_array($binquery);
-			echo("<script>var lat =". json_encode($bin['lat']) . "; </script>");
-			echo("<script>var lng =". json_encode($bin['lng']) . ";</script>");
+		$bin = mysql_fetch_array($binquery);	
+			echo(($bin['lat']));
+			echo(($bin['lng']));
+			echo "1";
 	}
 	include('closeconnect.php');
 	}
