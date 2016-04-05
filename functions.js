@@ -147,25 +147,26 @@ function loadpubliccompostmap() {
 	});
 	var numbins = Number("<?php  include('connect.php'); mysql_select_db('dispersionfarms',$con); $sql = 'SELECT max(id) FROM compost'; echo(mysql_result(mysql_query($sql,$con),0); ?>");
 	var currnum = 1;
-	
+	var marker;
 	var latlng = syncidrequest('c',currnum);
 	var lat = latlng[0];//first php val
 	var lng = latlng[1];//first php val
 	while (currnum<=numbins) {//while curid < max id number
-		if (lat!=null && lat!=0) {
-		var marker = new google.maps.Marker({
+		if (lat!=null && lat!=0 && getCookie('valid')) {
+		marker = new google.maps.Marker({
 			position:new google.maps.LatLng(lat, lng),
 			draggable:false
 		})
 		marker.setMap(mapc);
 		var latlng = syncidrequest('c',currnum);
-		var lat = latlng[0];//first php val
-		var lng = latlng[1];//first php val
+		var lat = getCookie('lat');//first php val
+		var lng = getCookie('lng')];//first php val
+		
 		}
 		currnum=currnum+1;
 	}
 }
-var latlng = function syncidrequest(type, id) {
+function syncidrequest(type, id) {
 	if (window.XMLHttpRequest) {
 	SJAX=new XMLHttpRequest();
 	}else {
@@ -175,9 +176,7 @@ var latlng = function syncidrequest(type, id) {
 		setCookie("cookieid",id);
 		SJAX.open("POST","/dispersionfarms/php/getUsername.php",false);
 		SJAX.send();
-		return [getCookie('lat'),getCookie('lng')];
 	}
-	return [0, 0];
 }
 function loadpublicfarmmap() {
 	
