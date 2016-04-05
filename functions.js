@@ -185,6 +185,7 @@ function syncrequest(type, id) {
 	
 	if (SJAX) {
 		SJAX.open("POST","/dispersionfarms/php/mapPublicCompost.php",true);
+		SJAX.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		SJAX.onreadystatechange = function()
 		{
 		if(SJAX.readyState == 4 && SJAX.status == 200) {
@@ -192,7 +193,7 @@ function syncrequest(type, id) {
         		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + latlng;
     		}
 		}
-		SJAX.send(("postid=" + id));
+		SJAX.send("postid=" + id);
 	}
 	}
 	if (type=='n') {
