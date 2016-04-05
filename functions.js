@@ -150,7 +150,8 @@ function loadpubliccompostmap() {
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 888;
 	var curnum = 1;
 	syncrequest('c',curnum);
-	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML +" " + latlng;
+	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML +" " + numcompost;
+	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + " " + latlng;
 
 	while (curnum<=numcompost) {//while curid < max id number
 		var lat = latlng.substring(0,7);
