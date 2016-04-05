@@ -147,7 +147,7 @@ function loadpubliccompostmap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 	document.getElementById('publicfarmdiv').innerHTML = '999';
-	var numcompost = syncrequest('n',0);
+	syncrequest('n',0);
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + numcompost;
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 899;
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 888;
@@ -171,7 +171,8 @@ function loadpubliccompostmap() {
 	}
 }
 var numcompost;
-var returnval = function syncrequest(type, id) {
+var latlng;
+function syncrequest(type, id) {
 	if (type=='c') {
 	if (window.XMLHttpRequest) {
 	SJAX=new XMLHttpRequest();
@@ -187,7 +188,6 @@ var returnval = function syncrequest(type, id) {
     		}
 		}
 		SJAX.send("postid="+id);
-		return latlng;
 	}
 	}
 	if (type=='n') {
@@ -201,12 +201,11 @@ var returnval = function syncrequest(type, id) {
 			SJAX.onreadystatechange = function()
 			{
 			if(SJAX.readyState == 4 && SJAX.status == 200) {
-				 //numcompost=SJAX.responseText;
+				 numcompost=SJAX.responseText;
 				 document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + SJAX.responseText;
     			}
 			}
 			SJAX.send();
-			return numcompost;
 		}	
 	}
 }
