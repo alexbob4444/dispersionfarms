@@ -9,6 +9,7 @@
 	else {
 		mysql_select_db('dispersionfarms',$con);
 		$sql = "SELECT * FROM compost WHERE public='1' AND requestfulfilled='1' AND id='$cid'";
+		echo "before query";
 		$binquery = mysql_query($sql,$con);
 		$bin = mysql_fetch_array($binquery);
 		echo "made it to before echos";
