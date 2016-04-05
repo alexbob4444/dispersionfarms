@@ -1,4 +1,5 @@
 <?php
+	echo "compiled...";
 	if (isset(cookies["cookieid"])) {
 	$cid = intval(cookies["cookieid"]);
 	include('connect.php');
