@@ -153,13 +153,13 @@ function loadpubliccompostmap() {
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 888;
 	var curnum = 1;
 	syncrequest('c',curnum);
-	var marker;
-	var lat = latlng.substring(0,10);
-	var lng = latlng.substring(10,15);
-	var valid = latlng.substring(15);
+	
 	while (curnum<=numcompost) {//while curid < max id number
+		var lat = latlng.substring(0,10);
+		var lng = latlng.substring(10,15);
+		var valid = latlng.substring(15);
 		if (lat!=null && lat!=0 && valid==1) {
-		marker = new google.maps.Marker({
+		var marker = new google.maps.Marker({
 			position:new google.maps.LatLng(lat, lng),
 			draggable:false
 		})
@@ -176,12 +176,13 @@ function loadpubliccompostmap() {
 var numcompost;
 var latlng;
 function syncrequest(type, id) {
-	if (type=='c') {
 	if (window.XMLHttpRequest) {
 	SJAX=new XMLHttpRequest();
 	}else {
 	SJAX=new ActiveXObject("Microsoft.XMLHTTP");
 	}
+	if (type=='c') {
+	
 	if (SJAX) {
 		SJAX.open("POST","/dispersionfarms/php/mapPublicCompost.php",true);
 		SJAX.onreadystatechange = function()
@@ -191,15 +192,11 @@ function syncrequest(type, id) {
         		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + latlng;
     		}
 		}
-		SJAX.send("postid="+id);
+		SJAX.send(("postid=" + id));
 	}
 	}
 	if (type=='n') {
-		if (window.XMLHttpRequest) {
-		SJAX=new XMLHttpRequest();
-		}else {
-		SJAX=new ActiveXObject("Microsoft.XMLHTTP");
-		}
+		
 		if (SJAX) {
 			SJAX.open("POST","/dispersionfarms/php/numCompost.php",false);
 			SJAX.onreadystatechange = function()
