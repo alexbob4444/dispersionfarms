@@ -152,20 +152,17 @@ function loadpubliccompostmap() {
 
 	while (curnum<=numcompost) {//while curid < max id number
 		var lat = latlng.substring(0,7);
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lat + " ";
 		var lng = latlng.substring(7,15);
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lng + " ";
 		var valid = latlng.substring(15);
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + valid+ " ";
 		if (lat!=null && lat!=0 && valid==Number(1)) {
 		var marker = new google.maps.Marker({
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
 		marker.setMap(map);
-		syncrequest('c',curnum);
 		}
 		curnum=curnum+1;
+		syncrequest('c',curnum);
 	}
 }
 var numcompost;
@@ -192,7 +189,21 @@ function syncrequest(type, id) {
 		SJAX.send("postid=" + id);
 	}
 	}
-	if (type=='n') {
+	if (type=='f') {
+	
+	if (SJAX) {
+		SJAX.open("POST","/dispersionfarms/php/mapPublicFarm.php",false);
+		SJAX.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		SJAX.onreadystatechange = function()
+		{
+		if(SJAX.readyState == 4 && SJAX.status == 200) {
+        		latlng = SJAX.responseText;
+    		}
+		}
+		SJAX.send("postid=" + id);
+	}
+	}
+	if (type=='nc') {
 		
 		if (SJAX) {
 			SJAX.open("POST","/dispersionfarms/php/numCompost.php",false);
@@ -205,7 +216,44 @@ function syncrequest(type, id) {
 			SJAX.send();
 		}	
 	}
+	if (type=='nf') {
+		
+		if (SJAX) {
+			SJAX.open("POST","/dispersionfarms/php/numFarms.php",false);
+			SJAX.onreadystatechange = function()
+			{
+			if(SJAX.readyState == 4 && SJAX.status == 200) {
+				 numcompost=Number(SJAX.responseText);
+    			}
+			}
+			SJAX.send();
+		}	
+	}
 }
 function loadpublicfarmmap() {
-	
+	document.getElementById('publicfarmdiv').style.width = '90%';
+	document.getElementById('publicfarmdiv').style.height = 400;
+	var map = new google.maps.Map(document.getElementById('publicfarmdiv'), {
+		zoom:13,
+		center: new google.maps.LatLng(43.070000,-89.411000),
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+	syncrequest('nf',0);
+	var curnum = 1;
+	syncrequest('f',curnum);
+
+	while (curnum<=numcompost) {//while curid < max id number
+		var lat = latlng.substring(0,7);
+		var lng = latlng.substring(7,15);
+		var valid = latlng.substring(15);
+		if (lat!=null && lat!=0 && valid==Number(1)) {
+		var marker = new google.maps.Marker({
+			position:new google.maps.LatLng(Number(lat), Number(lng)),
+			draggable:false
+		})
+		marker.setMap(map);
+		}
+		curnum=curnum+1;
+		syncrequest('f',curnum);
+	}
 }
