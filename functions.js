@@ -148,24 +148,24 @@ function loadpubliccompostmap() {
 	syncrequest('n',0);
 	var numcompost = getCookie('numCompost');
 	document.getElementById('publicfarmdiv').innerHTML = numcompost;
-	var currnum = 1;
+	var curnum = 1;
 	var marker;
-	syncrequest('c',currnum);
-	var lat = latlng[0];//first php val
-	var lng = latlng[1];//first php val
-	while (currnum<=numcompost) {//while curid < max id number
+	syncrequest('c',curnum);
+	var lat = getCookie('lat');//first php val
+	var lng = getCookie('lng');//first php val
+	while (curnum<=numcompost) {//while curid < max id number
 		if (lat!=null && lat!=0 && getCookie('valid')==1) {
 		marker = new google.maps.Marker({
 			position:new google.maps.LatLng(lat, lng),
 			draggable:false
 		})
 		marker.setMap(mapc);
-		var latlng = syncrequest('c',currnum);
+		var latlng = syncrequest('c',curnum);
 		var lat = getCookie('lat');//first php val
 		var lng = getCookie('lng');//first php val
 		
 		}
-		currnum=currnum+1;
+		curnum=curnum+1;
 	}
 }
 function syncrequest(type, id) {
