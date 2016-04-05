@@ -201,7 +201,8 @@ var returnval = function syncrequest(type, id) {
 			SJAX.onreadystatechange = function()
 			{
 			if(SJAX.readyState == 4 && SJAX.status == 200) {
-				 numcompost=SJAX.responseText;
+				 //numcompost=SJAX.responseText;
+				 document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + SJAX.responseText;
     			}
 			}
 			SJAX.send();
