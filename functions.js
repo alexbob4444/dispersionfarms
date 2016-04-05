@@ -159,7 +159,7 @@ function loadpubliccompostmap() {
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false,
 			map: mapc
-		})
+		});
 		//markerc.setMap(mapc);
 		}
 		curnum=curnum+1;
@@ -252,7 +252,7 @@ function loadpublicfarmmap() {
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false,
 			map: mapf
-		})
+		});
 		//markerf.setMap(mapf);
 		}
 		curnum=curnum+1;
