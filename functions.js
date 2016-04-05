@@ -153,10 +153,10 @@ function loadpubliccompostmap() {
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 888;
 	var curnum = 1;
 	var marker;
+	syncrequest('c',curnum);
 	var lat = latlng.substring(0,10);
 	var lng = latlng.substring(10,15);
 	var valid = latlng.substring(15);
-	syncrequest('c',curnum);
 	while (curnum<=numcompost) {//while curid < max id number
 		if (lat!=null && lat!=0 && valid==1) {
 		marker = new google.maps.Marker({
