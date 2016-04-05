@@ -147,16 +147,13 @@ function loadpubliccompostmap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 	syncrequest('n',0);
-	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 888;
 	var curnum = 1;
 	syncrequest('c',curnum);
-	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML +" " + numcompost;
-	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + " " + latlng;
 
 	while (curnum<=numcompost) {//while curid < max id number
 		var lat = latlng.substring(0,7);
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lat + " ";
-		var lng = latlng.substring(7,15);
+		var lng = latlng.substring(7,8);
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lng;
 		var valid = latlng.substring(15);
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + valid;
