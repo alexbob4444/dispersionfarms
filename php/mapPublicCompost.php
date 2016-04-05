@@ -1,5 +1,5 @@
 <?php
-	if (isset("cookieid")) {
+	if (isset(cookies["cookieid"])) {
 	$cid = intval(cookies["cookieid"]);
 	include('connect.php');
 	if (!$con) {//bad connection
