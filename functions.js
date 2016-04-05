@@ -155,12 +155,12 @@ function loadpubliccompostmap() {
 	syncrequest('c',curnum);
 	
 	while (curnum<=numcompost) {//while curid < max id number
-		var lat = latlng.substring(0,10);
-		var lng = latlng.substring(10,15);
+		var lat = latlng.substring(0,7);
+		var lng = latlng.substring(7,15);
 		var valid = latlng.substring(15);
 		if (lat!=null && lat!=0 && valid==1) {
 		var marker = new google.maps.Marker({
-			position:new google.maps.LatLng(lat, lng),
+			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 777;
