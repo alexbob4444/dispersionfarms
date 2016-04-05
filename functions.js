@@ -180,7 +180,7 @@ function syncrequest(type, id) {
 		SJAX.open("POST","/dispersionfarms/php/mapPublicCompost.php",true);
 		SJAX.send("postid="+id);
 		if(http.readyState == 4 && http.status == 200) {
-        		var numcompost = http.responseText;
+        		var numcompost = SJAX.responseText;
     		}
 	}
 	}
@@ -194,7 +194,7 @@ function syncrequest(type, id) {
 			SJAX.open("POST","/dispersionfarms/php/numCompost.php",false);
 			SJAX.send();
 			if(http.readyState == 4 && http.status == 200) {
-				 var latlng=http.responseText;
+				 var latlng=SJAX.responseText;
     			}
 		}	
 	}
