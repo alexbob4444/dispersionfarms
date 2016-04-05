@@ -12,8 +12,7 @@
 			echo(setcookie('lat', $bin['lat']));
 			echo(setcookie('lng', $bin['lng']));
 			echo(setcookie('valid',true));
-		}
-		include('closeconnect.php');
 	}
+	include('closeconnect.php');
 	}
 ?>
