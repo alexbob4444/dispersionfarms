@@ -240,6 +240,7 @@ function loadpublicfarmmap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 	syncrequest('nf',0);
+	document.getElementById('body').innerHTML = document.getElementById('body').innerHTML + numcompost;
 	var curnum = 1;
 	syncrequest('f',curnum);
 	var markerf;
