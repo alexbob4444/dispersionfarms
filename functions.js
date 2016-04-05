@@ -146,6 +146,7 @@ function loadpubliccompostmap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 	var numbins = Number("<?php  include('connect.php'); mysql_select_db('dispersionfarms',$con); $sql = 'SELECT max(id) FROM compost'; echo(mysql_result(mysql_query($sql,$con),0); ?>");
+	document.getElementById('publicfarmdiv').innerHTML = numbins;
 	var currnum = 1;
 	var marker;
 	var latlng = syncidrequest('c',currnum);
