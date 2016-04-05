@@ -185,7 +185,7 @@ var returnval = function syncrequest(type, id) {
     		}
 		}
 		SJAX.send("postid="+id);
-		return numcompost;
+		return latlng;
 	}
 	}
 	if (type=='n') {
@@ -203,7 +203,7 @@ var returnval = function syncrequest(type, id) {
     			}
 			}
 			SJAX.send();
-			return latlng;
+			return numcompost;
 		}	
 	}
 }
