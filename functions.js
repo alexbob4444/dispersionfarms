@@ -141,11 +141,15 @@ function loadpubliccompostmap() {
 	<script type='text/javascript'>document.getElementById('publiccompostdiv').style.width = '100%';
 	document.getElementById('publiccompostdiv').style.height = 400;
 	var map = new google.maps.Map(document.getElementById('publiccompostdiv'), {zoom:13, center: new google.maps.LatLng(43.070000,-89.411000), mapTypeId: google.maps.MapTypeId.ROADMAP });
-	var numbins = "";
-	var currnum = "";
+	var numbins = "<?php  include('connect.php'); mysql_select_db('dispersionfarms',$con);\
+	$sql = "SELECT id,lat,lng FROM compost";\
+	echo '$bins = mysql_query($sql,$con)';\
+	?>";
+	var currnum = "1";
 	var lat = "";//first php val
 	var lng = "";//first php val
 	while (lat!=null) {
+		if ()
 		var marker = new google.maps.Marker({
 			position:new google.maps.LatLng(lat, lng),
 			draggable:false
