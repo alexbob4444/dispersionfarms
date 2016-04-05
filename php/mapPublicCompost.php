@@ -1,7 +1,8 @@
 <?php
 	echo "compiled...";
-	if (isset($_COOKIE["cookieid"])) {
-	$cid = intval($_COOKIE["cookieid"]);
+	//if (isset($_COOKIE["cookieid"])) {
+	//$cid = intval($_COOKIE["cookieid"]);
+	$cid=1;
 	include('connect.php');
 	if (!$con) {//bad connection
 		die("Cannot connect to Database: ". mysql_error());
@@ -19,5 +20,5 @@
 			echo "after echos";
 	}
 	include('closeconnect.php');
-	}
+//	}
 ?>
