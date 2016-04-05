@@ -152,7 +152,7 @@ function loadpubliccompostmap() {
 			position:new google.maps.LatLng(lat, lng),
 			draggable:false
 		})
-		marker.setMap(map);
+		marker.setMap(mapc);
 		var latlng = syncidrequest('c',currnum);
 		var lat = latlng[0];//first php val
 		var lng = latlng[1];//first php val
