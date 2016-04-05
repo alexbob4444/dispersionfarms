@@ -205,7 +205,7 @@ function syncrequest(type, id) {
 			SJAX.onreadystatechange = function()
 			{
 			if(SJAX.readyState == 4 && SJAX.status == 200) {
-				 numcompost=SJAX.responseText;
+				 numcompost=Number(SJAX.responseText);
     			}
 			}
 			SJAX.send();
