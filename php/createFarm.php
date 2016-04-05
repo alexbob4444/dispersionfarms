@@ -11,7 +11,7 @@ $p3 = $_SESSION['currentuser'];
 $p4 = $_SESSION['currentuser'];
 $p5 = $_SESSION['currentuser'];
 $date = $_SESSION['currentuser'];
-$publicin = $_SESSION['currentuser'];
+$public = $_SESSION['currentuser'];
 include('connect.php');
 if (!$con) {
   die("Cannot connect to Database: ". mysql_error());
