@@ -145,11 +145,12 @@ function loadpubliccompostmap() {
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
+	syncidrequest('n',0);
 	var numcompost = getCookie('numCompost');
 	document.getElementById('publicfarmdiv').innerHTML = numcompost;
 	var currnum = 1;
 	var marker;
-	var latlng = syncidrequest('c',currnum);
+	syncidrequest('c',currnum);
 	var lat = latlng[0];//first php val
 	var lng = latlng[1];//first php val
 	while (currnum<=numcompost) {//while curid < max id number
