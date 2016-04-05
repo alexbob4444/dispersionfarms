@@ -51,6 +51,12 @@ function loading() {
     <div class='createaccountform createaccountformhidden'id='createaccountform'>
     <form class="form" action='/dispersionfarms/php/createAccount.php' method='POST'>
       <h3>Create an Account</h3>
+      First Name: <br>
+      <input required='true' type='text' name='inputname'><br>
+      Email (<i>coordinating purposes</i>): <br>
+      <input required='true' type='email' name='inputemail'><br>
+      Phone (<i>coordinating purposes</i>): <br>
+      <input required='true' type='phone' name='inputphone'><br>
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
       Password: <br>
