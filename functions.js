@@ -158,7 +158,9 @@ function loadpubliccompostmap() {
 		var lat = latlng.substring(0,7);
 		var lng = latlng.substring(7,15);
 		var valid = latlng.substring(15);
-		if (lat!=null && lat!=0 && valid==1) {
+		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lat + " ";
+		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lng;
+		if (lat!=null && lat!=0 && valid==Number(1)) {
 		var marker = new google.maps.Marker({
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
@@ -166,8 +168,7 @@ function loadpubliccompostmap() {
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 777;
 		marker.setMap(mapc);
 		syncrequest('c',curnum);
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lat + " ";
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lng;
+		
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 666;
 		}
 		curnum=curnum+1;
