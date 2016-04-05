@@ -12,7 +12,11 @@
 		$bin = mysql_fetch_array($binquery);	
 			echo(($bin['lat']));
 			echo(($bin['lng']));
-			echo "1";
+			if ($bin['lat']>10) {
+				echo "1";
+			}else {
+				echo "0";
+			}
 	}
 	include('closeconnect.php');
 	}
