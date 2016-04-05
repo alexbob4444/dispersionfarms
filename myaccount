@@ -71,6 +71,7 @@ function loading() {
       <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a><br>
       
       <div class="requestdiv requestdivhidden" id='requestdiv'>
+      <h2><div id="inputtitlediv"></div></h2><br>
       Input the Location by Dragging the Marker
       <div id='map'></div>
       <div class="phpdrawing" id='inputdiv'></div><br>
