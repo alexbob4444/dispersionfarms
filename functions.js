@@ -251,6 +251,7 @@ function loadpublicfarmmap() {
 		lat = latlng.substring(0,7);
 		lng = latlng.substring(7,15);
 		valid = latlng.substring(15);
+		document.getElementById('pageheadtextb').innerHTML = document.getElementById('pageheadtextb').innerHTML + " " + lat +" " +  lng + valid;
 		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerf = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
