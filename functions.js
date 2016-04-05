@@ -109,8 +109,8 @@ function requestbucket() {
 	<input required='true' type='hidden' id='lat' name='lat'>\
 	<input required='true' type='hidden' id='lng' name='lng'>\
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br>\
-	What Types of Plants are here: <input required='true' list='plants' name='p1'> and <input list='plants' name='p2'> and <input list='plants' name='p3'> and <input list='plants' name='p4'> and <input list='plants' name='p5'>\
-	<datalist id='p1'>\
+	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> & <input list='plants' name='p3'> & <input list='plants' name='p4'> & <input list='plants' name='p5'>\
+	<datalist id='plants'>\
 	<option value='Peas'>\
 	<option value='Carrots'>\
 	<option value='Spinach'>\
