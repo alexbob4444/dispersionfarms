@@ -108,8 +108,8 @@ function requestbucket() {
 	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>\
 	<input required='true' type='hidden' id='lat' name='lat'>\
 	<input required='true' type='hidden' id='lng' name='lng'>\
-	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br>\
-	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> &<br><input list='plants' name='p3'> & <input list='plants' name='p4'> & <input list='plants' name='p5'>\
+	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
+	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> &<br><input list='plants' name='p3'> & <input list='plants' name='p4'> & <input list='plants' name='p5'><br><br>\
 	<datalist id='plants'>\
 	<option value='Peas'>\
 	<option value='Carrots'>\
@@ -118,6 +118,9 @@ function requestbucket() {
 	<option value='Honeydew'>\
 	<option value='Strawberries'>\
 	</datalist>\
+	When Were They Planted? <input type='date' name='date'><br><br>\
+	Does This Site Recieve Rainwater? <select name='public'><option value='true'><option value='false'></option><br><br>\
+	Is This Farm Open To the Public? <select name='public'><option value='true'><option value='false'></option><br><br>\
 	</form>";
 }
 function requestprivateplanting() {
