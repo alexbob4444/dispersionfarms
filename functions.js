@@ -105,6 +105,10 @@ function requestbucket() {
 	document.getElementById('inputtitlediv').innerHTML = "Input The Information about Your Bucket Farm"
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
+	farmModForm('c');
+}
+function farmModForm(upc) {
+	if (upc=='c') {
 	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>\
 	<input required='true' type='hidden' id='lat' name='lat'>\
 	<input required='true' type='hidden' id='lng' name='lng'>\
@@ -123,6 +127,7 @@ function requestbucket() {
 	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'><option value='no'></option><br><br>\
 	<input type='submit' name='createfarmsubmit' value='Post Planting'>
 	</form>";
+	}
 }
 function requestprivateplanting() {
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
