@@ -153,6 +153,6 @@ function becomeambassador() {
 	<a href='#' onclick='closecreateobjectform'>CANCEL</a>";
 	
 }
-function closeobjectform() {
+function closecreateobjectform() {
 	document.getElementById('requestdiv').className = 'requestdiv requestdivhidden';
 }
