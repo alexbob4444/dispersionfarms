@@ -188,6 +188,7 @@ function syncrequest(type, id) {
 		{
 		if(SJAX.readyState == 4 && SJAX.status == 200) {
         		latlng = SJAX.responseText;
+        		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + latlng;
     		}
 		}
 		SJAX.send("postid="+id);
