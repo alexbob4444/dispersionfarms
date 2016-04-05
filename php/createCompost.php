@@ -24,7 +24,7 @@ else {
   mysql_select_db('dispersionfarms',$con);
   $sql = "INSERT INTO compost (owner,lat,lng,locationdescription,public) VALUES ('$usrn','$lat','$lng','$locdesc','$public')";
   mysql_query($sql,$con);
-  include('closeconnect.php')
+  include('closeconnect.php');
   header('Location: http://www.dispersionfarms.com/myaccount');
 }
 ?>
