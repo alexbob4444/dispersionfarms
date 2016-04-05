@@ -1,3 +1,4 @@
+
 function eventResize() {
     if (window.innerWidth<600) {//screen of mobile
       document.getElementById("headerlogoi").className = "headerlogom";
