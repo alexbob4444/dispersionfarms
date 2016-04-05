@@ -164,7 +164,7 @@ function loadpubliccompostmap() {
 		});
 		//markerc.setMap(mapc);
 		}
-		curnum=(curnum+1);
+		curnum=(curnum + 1);
 		syncrequest('c',curnum);
 	}
 }
@@ -258,7 +258,7 @@ function loadpublicfarmmap() {
 		});
 		//markerf.setMap(mapf);
 		}
-		curnum=(curnum+1);
+		curnum=(curnum + 1);
 		syncrequest('f',curnum);
 	}
 }
