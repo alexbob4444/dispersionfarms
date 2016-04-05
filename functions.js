@@ -145,7 +145,13 @@ function loadpubliccompostmap() {
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
-	var numbins = Number("<?php  include('connect.php'); mysql_select_db('dispersionfarms',$con); $sql = 'SELECT id FROM compost ORDER BY id DESC LIMIT 1'; $bin = mysql_result(mysql_query($sql,$con)); echo '$bin['id']; ?>");
+	var numbins = Number("<?php  \
+	include('connect.php'); \
+	mysql_select_db('dispersionfarms',$con); \
+	$sql = 'SELECT max(id) FROM compost';\
+	$bin = mysql_result(mysql_query($sql,$con)); \
+	echo '$bin['id']; \
+	?>");
 	document.getElementById('publicfarmdiv').innerHTML = numbins;
 	var currnum = 1;
 	var marker;
