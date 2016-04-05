@@ -142,22 +142,39 @@ function loadpubliccompostmap() {
 	document.getElementById('publiccompostdiv').style.height = 400;
 	var map = new google.maps.Map(document.getElementById('publiccompostdiv'), {zoom:13, center: new google.maps.LatLng(43.070000,-89.411000), mapTypeId: google.maps.MapTypeId.ROADMAP });
 	var numbins = "<?php  include('connect.php'); mysql_select_db('dispersionfarms',$con);\
-	$sql = "SELECT id,lat,lng FROM compost";\
-	echo '$bins = mysql_query($sql,$con)';\
+	$sql = "SELECT MAX(id) from compost";\
+	echo(mysql_result(mysql_query($sql,$con),0);\
 	?>";
 	var currnum = "1";
-	var lat = "";//first php val
-	var lng = "";//first php val
-	while (lat!=null) {
-		if ()
+	var latlng = syncidrequest('c',currnum)
+	var lat = latlng[0];//first php val
+	var lng = latlng[1];//first php val
+	while (currnum<=numbins) {//while curid < max id number
+		if (lat!=null && lat!=0)
 		var marker = new google.maps.Marker({
 			position:new google.maps.LatLng(lat, lng),
 			draggable:false
 		})
 		marker.setMap(map);
-		var lat = "";//next php val
-		var lng = "";//next php val
+		var latlng = syncidrequest('c',currnum)
+		var lat = latlng[0];//first php val
+		var lng = latlng[1];//first php val
+		currnum=currnum+1;
 	}
+}
+var latlng = function syncidrequest(type, id) {
+	if (window.XMLHttpRequest) {
+	SJAX=new XMLHttpRequest();
+	}else {
+	SJAX=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	if (SJAX) {
+		setCookie("cookieid",id);
+		SJAX.open("POST","/dispersionfarms/php/getUsername.php",false);
+		SJAX.send();
+		return [getCookie('lat'),getCookie('lng')];
+	}
+	return [0, 0];
 }
 function loadpublicfarmmap() {
 	
