@@ -141,7 +141,7 @@ function closecreateobjectform() {
 function loadpubliccompostmap() {
 	document.getElementById('publiccompostdiv').style.width = '90%';
 	document.getElementById('publiccompostdiv').style.height = 400;
-	var map = new google.maps.Map(document.getElementById('publiccompostdiv'), {
+	var mapc = new google.maps.Map(document.getElementById('publiccompostdiv'), {
 		zoom:13,
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -159,7 +159,7 @@ function loadpubliccompostmap() {
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
-		marker.setMap(map);
+		marker.setMap(mapc);
 		}
 		curnum=curnum+1;
 		syncrequest('c',curnum);
@@ -233,7 +233,7 @@ function syncrequest(type, id) {
 function loadpublicfarmmap() {
 	document.getElementById('publicfarmdiv').style.width = '90%';
 	document.getElementById('publicfarmdiv').style.height = 400;
-	var map = new google.maps.Map(document.getElementById('publicfarmdiv'), {
+	var mapf = new google.maps.Map(document.getElementById('publicfarmdiv'), {
 		zoom:13,
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -251,7 +251,7 @@ function loadpublicfarmmap() {
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
-		marker.setMap(map);
+		marker.setMap(mapf);
 		}
 		curnum=curnum+1;
 		syncrequest('f',curnum);
