@@ -192,7 +192,7 @@ function syncrequest(type, id) {
 	if (type=='f') {
 	
 	if (SJAX) {
-		SJAX.open("POST","/dispersionfarms/php/mapPublicFarm.php",false);
+		SJAX.open("POST","/dispersionfarms/php/mapPublicFarms.php",false);
 		SJAX.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		SJAX.onreadystatechange = function()
 		{
