@@ -6,4 +6,4 @@
 	echo($val = $bin[0]);
 	echo($val);
 	setcookie('numCompost',$val);
-	?>";
+?>
