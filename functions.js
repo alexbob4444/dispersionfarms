@@ -146,14 +146,12 @@ function loadpubliccompostmap() {
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
-	document.getElementById('publicfarmdiv').innerHTML = '999';
 	syncrequest('n',0);
-	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + numcompost;
-	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 899;
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 888;
 	var curnum = 1;
 	syncrequest('c',curnum);
-	
+	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML +" " + latlng;
+
 	while (curnum<=numcompost) {//while curid < max id number
 		var lat = latlng.substring(0,7);
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lat + " ";
@@ -192,7 +190,6 @@ function syncrequest(type, id) {
 		{
 		if(SJAX.readyState == 4 && SJAX.status == 200) {
         		latlng = SJAX.responseText;
-        		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + latlng;
     		}
 		}
 		SJAX.send("postid=" + id);
