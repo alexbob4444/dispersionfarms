@@ -102,12 +102,21 @@ function createInputMap() {
 function requestbucket() {
 	
 	createInputMap();
-	
+	document.getElementById('inputtitlediv').innerHTML = "Input The Information about Your Bucket Farm"
+	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
-	document.getElementById('requestdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>\
+	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>\
 	<input required='true' type='hidden' id='lat' name='lat'>\
 	<input required='true' type='hidden' id='lng' name='lng'>\
-	<input required='true' type='text' name='locationdescription' size='35'>\
+	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'>\
+	What Types of Plants are here: <select name='p1'>\
+	<option value="Peas">\
+	<option value="Carrots">\
+	<option value="Spinach">\
+	<option value="Watermellon">\
+	<option value="Honeydew">\
+	<option value="Strawberries">\
+	</select>\
 	</form>";
 }
 function requestprivateplanting() {
