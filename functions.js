@@ -247,7 +247,7 @@ function loadpublicfarmmap() {
 	var lat;
 	var lng;
 	var valid;
-	while (curnum<=5) {//while curid < max id number
+	while (curnum<=numcompost) {//while curid < max id number
 		lat = latlng.substring(0,7);
 		lng = latlng.substring(7,15);
 		valid = latlng.substring(15);
