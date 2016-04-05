@@ -13,8 +13,8 @@
 		$binquery = mysql_query($sql,$con);
 		$bin = mysql_fetch_array($binquery);
 		echo "made it to before echos";
-			echo("<script>var lat = $bin['lat']</script>");
-			echo("<script>var lng = $bin['lng']</script>");		
+			echo("<script>var lat =". json_encode($bin['lat']) . "; </script>");
+			echo("<script>var lng =". json_encode($bin['lng']) . ";</script>");		
 			echo(($bin['lat']));
 			echo(($bin['lng']));
 			setcookie('valid',(true));
