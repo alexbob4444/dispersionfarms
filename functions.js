@@ -176,10 +176,8 @@ function syncrequest(type, id) {
 	SJAX=new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	if (SJAX) {
-		document.cookie = "cookieid="+id+";";
-		SJAX.open("POST","/dispersionfarms/php/mapPublicCompost.php",false);
-		SJAX.send();
-		
+		SJAX.open("POST","/dispersionfarms/php/mapPublicCompost.php",true);
+		SJAX.send("postid="+id);
 	}
 	}
 	if (type=='n') {
