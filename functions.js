@@ -140,8 +140,8 @@ function closecreateobjectform() {
 function loadpubliccompostmap() {
 	document.getElementById('publiccompostdiv').style.width = '100%';
 	document.getElementById('publiccompostdiv').style.height = 400;
-	var map = new google.maps.Map(document.getElementById('publiccompostdiv'), {zoom:13, center: new google.maps.LatLng(43.070000,-89.411000), mapTypeId: google.maps.MapTypeId.ROADMAP });
-	var numbins = "<?php  include('connect.php'); mysql_select_db('dispersionfarms',$con); $sql = 'SELECT MAX(id) from compost'; echo(mysql_result(mysql_query($sql,$con),0); ?>";
+	var mapc = new google.maps.Map(document.getElementById('publiccompostdiv'), {zoom:13, center: new google.maps.LatLng(43.070000,-89.411000), mapTypeId: google.maps.MapTypeId.ROADMAP });
+	var numbins = "<?php  include('connect.php'); mysql_select_db('dispersionfarms',$con); $sql = 'SELECT max(id) FROM compost'; echo(mysql_result(mysql_query($sql,$con),0); ?>";
 	var currnum = "1";
 	var latlng = syncidrequest('c',currnum);
 	var lat = latlng[0];//first php val
