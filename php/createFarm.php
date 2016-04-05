@@ -1,7 +1,8 @@
 <?php
 session_start();
 $usrn = $_SESSION['currentuser'];
-
+$lat = $_POST['lat'];
+$lng = $_POST['lng'];
 $locdesc = $_POST['locationdescription'];
 $rainwater = $_POST['rain'];
 if ($rainwater=='yes') {
