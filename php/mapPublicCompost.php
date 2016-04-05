@@ -1,7 +1,7 @@
 <?php
 	echo "compiled...";
-	if (isset($_POST["cookieid"])) {
-	$cid = intval($_POST["cookieid"]);
+	if (isset($_POST["postid"])) {
+	$cid = intval($_POST["postid"]);
 	include('connect.php');
 	if (!$con) {//bad connection
 		die("Cannot connect to Database: ". mysql_error());
