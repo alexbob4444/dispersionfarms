@@ -12,9 +12,9 @@ if (!$con) {//bad connection
 else {//good connection
 echo mysql_select_db('dispersionfarms',$con);//select db
 $userExistsAlready = false;
-$sql = "SELECT * FROM users where AND username='$usrn'";
+$sql = "SELECT * FROM users where username='$usrn'";
 $userData = mysql_query($sql,$con);
-if(($rows==1)) {
+if(!($rows==1)) {
 $sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
 echo mysql_query($sql,$con);
 echo "Successful Creation";
