@@ -138,7 +138,7 @@ function closecreateobjectform() {
 	document.getElementById('requestdiv').className = 'requestdiv requestdivhidden';
 }
 function loadpubliccompostmap() {
-	<script type='text/javascript'>document.getElementById('publiccompostdiv').style.width = '100%';
+	document.getElementById('publiccompostdiv').style.width = '100%';
 	document.getElementById('publiccompostdiv').style.height = 400;
 	var map = new google.maps.Map(document.getElementById('publiccompostdiv'), {zoom:13, center: new google.maps.LatLng(43.070000,-89.411000), mapTypeId: google.maps.MapTypeId.ROADMAP });
 	var numbins = "<?php  include('connect.php'); mysql_select_db('dispersionfarms',$con);\
