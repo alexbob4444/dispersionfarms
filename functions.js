@@ -150,7 +150,7 @@ function loadpubliccompostmap() {
 	mysql_select_db('dispersionfarms',$con); \
 	$sql = 'SELECT max(id) FROM compost';\
 	$bin = mysql_result(mysql_query($sql,$con)); \
-	echo '$bin['id']; \
+	echo '$bin'; \
 	?>");
 	document.getElementById('publicfarmdiv').innerHTML = numbins;
 	var currnum = 1;
