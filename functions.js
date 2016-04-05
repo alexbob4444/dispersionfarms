@@ -123,7 +123,7 @@ function farmModForm(upc) {
 	<option value='Strawberries'>\
 	</datalist>\
 	When Were They Planted? <input type='date' name='date' id='datepicker'><br><br>\
-	Does This Site Recieve Rainwater? <select required='true' name='public'><option value='yes'><option value='no'></option><br><br>\
+	Does This Site Recieve Rainwater? <select required='true' name='public'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	<input type='submit' name='createfarmsubmit' value='Post Planting'>\
 	</form>";
