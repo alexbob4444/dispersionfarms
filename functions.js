@@ -110,12 +110,12 @@ function requestbucket() {
 	<input required='true' type='hidden' id='lng' name='lng'>\
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'>\
 	What Types of Plants are here: <select name='p1'>\
-	<option value="Peas">\
-	<option value="Carrots">\
-	<option value="Spinach">\
-	<option value="Watermellon">\
-	<option value="Honeydew">\
-	<option value="Strawberries">\
+	<option value='Peas'>\
+	<option value='Carrots'>\
+	<option value='Spinach'>\
+	<option value='Watermellon'>\
+	<option value='Honeydew'>\
+	<option value='Strawberries'>\
 	</select>\
 	</form>";
 }
