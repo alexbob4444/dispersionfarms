@@ -149,13 +149,13 @@ function loadpubliccompostmap() {
 	syncrequest('nc',0);
 	var curnum = 1;
 	syncrequest('c',curnum);
-
+	var markerc;
 	while (curnum<=numcompost) {//while curid < max id number
 		var lat = latlng.substring(0,7);
 		var lng = latlng.substring(7,15);
 		var valid = latlng.substring(15);
 		if (lat!=null && lat!=0 && valid==Number(1)) {
-		var markerc = new google.maps.Marker({
+		markerc = new google.maps.Marker({
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
@@ -241,13 +241,13 @@ function loadpublicfarmmap() {
 	syncrequest('nf',0);
 	var curnum = 1;
 	syncrequest('f',curnum);
-
+	var markerf;
 	while (curnum<=numcompost) {//while curid < max id number
 		var lat = latlng.substring(0,7);
 		var lng = latlng.substring(7,15);
 		var valid = latlng.substring(15);
 		if (lat!=null && lat!=0 && valid==Number(1)) {
-		var markerf = new google.maps.Marker({
+		markerf = new google.maps.Marker({
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
