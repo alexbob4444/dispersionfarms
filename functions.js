@@ -157,7 +157,7 @@ function loadpubliccompostmap() {
 		lat = latlng.substring(0,7);
 		lng = latlng.substring(7,15);
 		valid = latlng.substring(15);
-		if (lat!=null && lat!=0 && valid==Number(1)) {
+		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerc = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
 			map: mapc
@@ -251,7 +251,7 @@ function loadpublicfarmmap() {
 		lat = latlng.substring(0,7);
 		lng = latlng.substring(7,15);
 		valid = latlng.substring(15);
-		if (lat!=null && lat!=0 && valid==Number(1)) {
+		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerf = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
 			map: mapf
