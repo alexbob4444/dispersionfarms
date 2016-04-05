@@ -5,6 +5,6 @@
 	$bin = mysql_fetch_row(mysql_query($sql,$con));
 	$val = $bin[0];
 	echo($val);
-	setcookie("numCompost",$val);
+	echo("<script>var numcompost = $val;  </script>")
 	include('closeconnect.php');
 ?>
