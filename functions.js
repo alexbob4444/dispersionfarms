@@ -179,6 +179,8 @@ function syncidrequest(type, id) {
 		setCookie("cookieid",id);
 		SJAX.open("POST","/dispersionfarms/php/getUsername.php",false);
 		SJAX.send();
+		
+	document.getElementById('publicfarmdiv').innerHTML = "cpassed";
 	}
 	}
 	if (type=='n') {
@@ -190,6 +192,7 @@ function syncidrequest(type, id) {
 		if (SJAX) {
 			SJAX.open("POST","/dispersionfarms/php/numCompost.php",false);
 			SJAX.send();
+	document.getElementById('publicfarmdiv').innerHTML = "npassed";
 		}	
 	}
 }
