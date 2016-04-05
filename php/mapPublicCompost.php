@@ -11,7 +11,7 @@
 		$sql = "SELECT * FROM compost WHERE public='1' AND requestfulfilled='1' AND id='$cid'";
 		$binquery = mysql_query($sql,$con);
 		$bin = mysql_fetch_array($binquery);
-		echo "made it to before echos"
+		echo "made it to before echos";
 			echo(setcookie('lat', json_encode($bin['lat'])));
 			echo(setcookie('lng', json_encode($bin['lng'])));
 			echo(setcookie('valid',json_encode(true)));
