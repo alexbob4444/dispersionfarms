@@ -150,7 +150,7 @@ function loadpubliccompostmap() {
 	var lat = latlng[0];//first php val
 	var lng = latlng[1];//first php val
 	while (currnum<=numbins) {//while curid < max id number
-		if (lat!=null && lat!=0)
+		if (lat!=null && lat!=0) {
 		var marker = new google.maps.Marker({
 			position:new google.maps.LatLng(lat, lng),
 			draggable:false
@@ -159,6 +159,7 @@ function loadpubliccompostmap() {
 		var latlng = syncidrequest('c',currnum)
 		var lat = latlng[0];//first php val
 		var lng = latlng[1];//first php val
+		}
 		currnum=currnum+1;
 	}
 }
