@@ -179,9 +179,12 @@ function syncrequest(type, id) {
 	if (SJAX) {
 		SJAX.open("POST","/dispersionfarms/php/mapPublicCompost.php",true);
 		SJAX.send("postid="+id);
+		SJAX.onreadystatechange = function()
+		{
 		if(SJAX.readyState == 4 && SJAX.status == 200) {
         		var numcompost = SJAX.responseText;
     		}
+		}
 	}
 	}
 	if (type=='n') {
@@ -193,9 +196,12 @@ function syncrequest(type, id) {
 		if (SJAX) {
 			SJAX.open("POST","/dispersionfarms/php/numCompost.php",false);
 			SJAX.send();
+			SJAX.onreadystatechange = function()
+			{
 			if(SJAX.readyState == 4 && SJAX.status == 200) {
 				 var latlng=SJAX.responseText;
     			}
+			}
 		}	
 	}
 }
