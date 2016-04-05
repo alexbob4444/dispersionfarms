@@ -113,7 +113,6 @@ function loading() {
     <a class='menuh' href='index.html'><b>Home</b></a>
     <a class='menui' href='myaccount'>Make a Request</a>
     <a class='menui' href='search'>Locate a Site</a>
-    <a class='menui' href='myaccount'>Upload New Site Info</a>
     <a class='menui' target='_blank'href='http://instagram.com/dispersionfarms/'>Photos</a>
     <a class='menui' href='getinvolved'>Get Involved</a>
   </nav>
