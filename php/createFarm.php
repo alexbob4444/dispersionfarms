@@ -1,23 +1,23 @@
 <?php
 session_start();
 $usrn = $_SESSION['currentuser'];
-$lat = $_SESSION['lat'];
-$lng = $_SESSION['lng'];
-$locdesc = $_SESSION['locationdescriptiong'];
-$rainwater = $_SESSION['rain'];
+$lat = $_POST['lat'];
+$lng = $_POST['lng'];
+$locdesc = $_POST['locationdescriptiong'];
+$rainwater = $_POST['rain'];
 if ($rainwater=='yes') {
   $rainwater = true;
 }
 else {
   $rainwater =false;
 }
-$p1 = $_SESSION['p1'];
-$p2 = $_SESSION['p2'];
-$p3 = $_SESSION['p3'];
-$p4 = $_SESSION['p4'];
-$p5 = $_SESSION['p5'];
-$date = $_SESSION['date'];
-$public = $_SESSION['public'];
+$p1 = $_POST['p1'];
+$p2 = $_POST['p2'];
+$p3 = $_POST['p3'];
+$p4 = $_POST['p4'];
+$p5 = $_POST['p5'];
+$date = $_POST['date'];
+$public = $_POST['public'];
 if ($public=='yes') {
   $public = true;
 }
