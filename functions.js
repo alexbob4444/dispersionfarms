@@ -162,7 +162,7 @@ function loadpubliccompostmap() {
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
-		marker.setMap(mapc);
+		marker.setMap(map);
 		syncrequest('c',curnum);
 		}
 		curnum=curnum+1;
