@@ -145,21 +145,14 @@ function loadpubliccompostmap() {
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
-	var numbins = "<?php  \
-	include('connect.php'); \
-	mysql_select_db('dispersionfarms',$con); \
-	$sql = 'SELECT MAX(id) FROM compost';\
-	echo($bin = mysql_fetch_row(mysql_query($sql,$con))); \
-	echo($val = $bin[0]);\
-	echo($val); \
-	?>";
-	document.getElementById('publicfarmdiv').innerHTML = numbins;
+	var numcompost = getCookie('numCompost');
+	document.getElementById('publicfarmdiv').innerHTML = numcompost;
 	var currnum = 1;
 	var marker;
 	var latlng = syncidrequest('c',currnum);
 	var lat = latlng[0];//first php val
 	var lng = latlng[1];//first php val
-	while (currnum<=numbins) {//while curid < max id number
+	while (currnum<=numcompost) {//while curid < max id number
 		if (lat!=null && lat!=0 && getCookie('valid')==1) {
 		marker = new google.maps.Marker({
 			position:new google.maps.LatLng(lat, lng),
@@ -175,6 +168,7 @@ function loadpubliccompostmap() {
 	}
 }
 function syncidrequest(type, id) {
+	if (type=='c') {
 	if (window.XMLHttpRequest) {
 	SJAX=new XMLHttpRequest();
 	}else {
@@ -184,6 +178,18 @@ function syncidrequest(type, id) {
 		setCookie("cookieid",id);
 		SJAX.open("POST","/dispersionfarms/php/getUsername.php",false);
 		SJAX.send();
+	}
+	}
+	if (type=='n') {
+		if (window.XMLHttpRequest) {
+		SJAX=new XMLHttpRequest();
+		}else {
+		SJAX=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		if (SJAX) {
+			SJAX.open("POST","/dispersionfarms/php/numCompost.php",false);
+			SJAX.send();
+		}	
 	}
 }
 function loadpublicfarmmap() {
