@@ -145,12 +145,12 @@ function loadpubliccompostmap() {
 		center: new google.maps.LatLng(43.070000,-89.411000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
-	syncidrequest('n',0);
+	syncrequest('n',0);
 	var numcompost = getCookie('numCompost');
 	document.getElementById('publicfarmdiv').innerHTML = numcompost;
 	var currnum = 1;
 	var marker;
-	syncidrequest('c',currnum);
+	syncrequest('c',currnum);
 	var lat = latlng[0];//first php val
 	var lng = latlng[1];//first php val
 	while (currnum<=numcompost) {//while curid < max id number
@@ -160,7 +160,7 @@ function loadpubliccompostmap() {
 			draggable:false
 		})
 		marker.setMap(mapc);
-		var latlng = syncidrequest('c',currnum);
+		var latlng = syncrequest('c',currnum);
 		var lat = getCookie('lat');//first php val
 		var lng = getCookie('lng');//first php val
 		
@@ -168,7 +168,7 @@ function loadpubliccompostmap() {
 		currnum=currnum+1;
 	}
 }
-function syncidrequest(type, id) {
+function syncrequest(type, id) {
 	if (type=='c') {
 	if (window.XMLHttpRequest) {
 	SJAX=new XMLHttpRequest();
