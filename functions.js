@@ -155,11 +155,11 @@ function loadpubliccompostmap() {
 		var lng = latlng.substring(7,15);
 		var valid = latlng.substring(15);
 		if (lat!=null && lat!=0 && valid==Number(1)) {
-		var marker = new google.maps.Marker({
+		var markerc = new google.maps.Marker({
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
-		marker.setMap(mapc);
+		markerc.setMap(mapc);
 		}
 		curnum=curnum+1;
 		syncrequest('c',curnum);
@@ -247,11 +247,11 @@ function loadpublicfarmmap() {
 		var lng = latlng.substring(7,15);
 		var valid = latlng.substring(15);
 		if (lat!=null && lat!=0 && valid==Number(1)) {
-		var marker = new google.maps.Marker({
+		var markerf = new google.maps.Marker({
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
-		marker.setMap(mapf);
+		markerf.setMap(mapf);
 		}
 		curnum=curnum+1;
 		syncrequest('f',curnum);
