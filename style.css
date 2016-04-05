@@ -285,3 +285,8 @@ div.phpdrawing {
 form.form {
 	
 }
+div.requestdivhidden {
+	display:none;
+}
+div.requestdiv {
+}
