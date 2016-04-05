@@ -5,6 +5,5 @@
 	$bin = mysql_fetch_row(mysql_query($sql,$con));
 	$val = $bin[0];
 	echo($val);
-	echo("<script>var numcompost =". json_encode($val) . ";  </script>")
 	include('closeconnect.php');
 ?>
