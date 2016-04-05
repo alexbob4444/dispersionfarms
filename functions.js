@@ -152,8 +152,8 @@ function loadpubliccompostmap() {
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 899;
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 888;
 	var curnum = 1;
-	var marker;
 	syncrequest('c',curnum);
+	var marker;
 	var lat = latlng.substring(0,10);
 	var lng = latlng.substring(10,15);
 	var valid = latlng.substring(15);
