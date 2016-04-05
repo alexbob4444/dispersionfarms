@@ -71,8 +71,8 @@ function createInputMap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 	var marker = new google.maps.Marker({
-		position:new google.maps.LatLng(43.070000,-89.411000),
-		draggable:true
+		position: new google.maps.LatLng(43.070000,-89.411000),
+		draggable: true
 	});
 	google.maps.event.addListener(marker,'dragend',function (evt){
 		document.getElementById('lat').value = "" + evt.latLng.lat().toFixed(6);
@@ -156,13 +156,13 @@ function loadpubliccompostmap() {
 		var valid = latlng.substring(15);
 		if (lat!=null && lat!=0 && valid==Number(1)) {
 		markerc = new google.maps.Marker({
-			position:new google.maps.LatLng(Number(lat), Number(lng)),
-			draggable:false,
+			position: new google.maps.LatLng(Number(lat), Number(lng)),
+			draggable: false,
 			map: mapc
 		});
 		//markerc.setMap(mapc);
 		}
-		curnum=curnum+1;
+		curnum=(curnum+1);
 		syncrequest('c',curnum);
 	}
 }
@@ -183,8 +183,6 @@ function syncrequest(type, id) {
 		{
 		if(SJAX.readyState == 4 && SJAX.status == 200) {
         		latlng = SJAX.responseText;
-        		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML +" (" + latlng + ")";
-
     		}
 		}
 		SJAX.send("postid=" + id);
@@ -237,26 +235,26 @@ function loadpublicfarmmap() {
 	var mapf = new google.maps.Map(document.getElementById('publicfarmdiv'), {
 		zoom:13,
 		center: new google.maps.LatLng(43.070000,-89.411000),
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+		mapTypeId: google.maps.MapTypeId.TERRAIN
 	});
 	syncrequest('nf',0);
 	//document.getElementById('body').innerHTML = document.getElementById('body').innerHTML + numcompost;
 	var curnum = 1;
 	syncrequest('f',curnum);
 	var markerf;
-	while (curnum<=numcompost) {//while curid < max id number
+	while (curnum<=2) {//while curid < max id number
 		var lat = latlng.substring(0,7);
 		var lng = latlng.substring(7,15);
 		var valid = latlng.substring(15);
 		if (lat!=null && lat!=0 && valid==Number(1)) {
 		markerf = new google.maps.Marker({
-			position:new google.maps.LatLng(Number(lat), Number(lng)),
-			draggable:false,
+			position: new google.maps.LatLng(Number(lat), Number(lng)),
+			draggable: false,
 			map: mapf
 		});
 		//markerf.setMap(mapf);
 		}
-		curnum=curnum+1;
+		curnum=(curnum+1);
 		syncrequest('f',curnum);
 	}
 }
