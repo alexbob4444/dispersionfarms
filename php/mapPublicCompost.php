@@ -1,5 +1,7 @@
 <?php
+	echo "compiled.";
 	if (isset($_POST["postid"])) {
+	echo "posted."
 	$cid = ($_POST["postid"]);
 	include('connect.php');
 	if (!$con) {//bad connection
