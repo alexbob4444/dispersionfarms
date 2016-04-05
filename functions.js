@@ -176,11 +176,10 @@ function syncrequest(type, id) {
 	SJAX=new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	if (SJAX) {
-		setCookie("cookieid",id);
+		document.cookie = "cookieid="+id+";";
 		SJAX.open("POST","/dispersionfarms/php/getUsername.php",false);
 		SJAX.send();
 		
-	document.getElementById('publicfarmdiv').innerHTML = "cpassed";
 	}
 	}
 	if (type=='n') {
@@ -192,7 +191,6 @@ function syncrequest(type, id) {
 		if (SJAX) {
 			SJAX.open("POST","/dispersionfarms/php/numCompost.php",false);
 			SJAX.send();
-	document.getElementById('publicfarmdiv').innerHTML = "npassed";
 		}	
 	}
 }
