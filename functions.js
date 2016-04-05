@@ -119,8 +119,9 @@ function requestbucket() {
 	<option value='Strawberries'>\
 	</datalist>\
 	When Were They Planted? <input type='date' name='date'><br><br>\
-	Does This Site Recieve Rainwater? <select name='public'><option value='true'><option value='false'></option><br><br>\
-	Is This Farm Open To the Public? <select name='public'><option value='true'><option value='false'></option><br><br>\
+	Does This Site Recieve Rainwater? <select required='true' name='public'><option value='yes'><option value='no'></option><br><br>\
+	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'><option value='no'></option><br><br>\
+	<input type='submit' name='createfarmsubmit' value='Post Planting'>
 	</form>";
 }
 function requestprivateplanting() {
