@@ -153,10 +153,12 @@ function loadpubliccompostmap() {
 	var lat;
 	var lng;
 	var valid;
+	var tempindex;
 	while (curnum<=numcompost) {//while curid < max id number
-		lat = latlng.substring(0,7);
-		lng = latlng.substring(7,15);
-		valid = latlng.substring(15);
+		tempindex = latlng.indexOf('-');
+		lat = latlng.substring(0,tempindex);
+		lng = latlng.substring(tempindex,latlng.length);
+		valid = latlng.substring(latlng.length);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerc = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
@@ -248,10 +250,10 @@ function loadpublicfarmmap() {
 	var lng;
 	var valid;
 	while (curnum<=numcompost) {//while curid < max id number
-		lat = latlng.substring(0,7);
-		lng = latlng.substring(7,15);
-		valid = latlng.substring(15);
-		document.getElementById('pageheadtextb').innerHTML = document.getElementById('pageheadtextb').innerHTML + " " + lat +" " +  lng + valid;
+		tempindex = latlng.indexOf('-');
+		lat = latlng.substring(0,tempindex);
+		lng = latlng.substring(tempindex,latlng.length);
+		valid = latlng.substring(latlng.length);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerf = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
