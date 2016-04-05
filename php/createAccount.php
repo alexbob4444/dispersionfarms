@@ -12,15 +12,9 @@ if (!$con) {//bad connection
 else {//good connection
 echo mysql_select_db('dispersionfarms',$con);//select db
 $userExistsAlready = false;
-$sql = "SELECT * FROM users";
+$sql = "SELECT * FROM users where AND username='$usrn'";
 $userData = mysql_query($sql,$con);
-while(!$userExistsAlready && $record=mysql_fetch_array($userData)) {//loop through array of data
-if($record['username']==$usrn) {
-	$userExistsAlready =true;//stop loop and quit
-}
-}
-
-if (!$userExistsAlready) {
+if(($rows==1)) {
 $sql = "INSERT INTO users (username,password) VALUES ('$usrn','$pass1')";
 echo mysql_query($sql,$con);
 echo "Successful Creation";
