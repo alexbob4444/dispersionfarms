@@ -62,7 +62,7 @@ function sessionOpenCheck() {
 	}
 }
 function createInputMap() {
-	document.getElementById('map').style.width = 100%;
+	document.getElementById('map').style.width = '100%';
 	document.getElementById('map').style.height = 400;
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom:13,
@@ -138,7 +138,7 @@ function closecreateobjectform() {
 	document.getElementById('requestdiv').className = 'requestdiv requestdivhidden';
 }
 function loadpubliccompostmap() {
-	document.getElementById('publiccompostdiv').style.width = 100%;
+	document.getElementById('publiccompostdiv').style.width = '100%';
 	document.getElementById('publiccompostdiv').style.height = 400;
 	var map = new google.maps.Map(document.getElementById('publiccompostdiv'), {
 		zoom:13,
