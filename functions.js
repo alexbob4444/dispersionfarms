@@ -170,6 +170,7 @@ function loadpubliccompostmap() {
 		curnum=curnum+1;
 	}
 }
+var numcompost;
 var returnval = function syncrequest(type, id) {
 	if (type=='c') {
 	if (window.XMLHttpRequest) {
@@ -182,7 +183,7 @@ var returnval = function syncrequest(type, id) {
 		SJAX.onreadystatechange = function()
 		{
 		if(SJAX.readyState == 4 && SJAX.status == 200) {
-        		var numcompost = SJAX.responseText;
+        		latlng = SJAX.responseText;
     		}
 		}
 		SJAX.send("postid="+id);
@@ -200,7 +201,7 @@ var returnval = function syncrequest(type, id) {
 			SJAX.onreadystatechange = function()
 			{
 			if(SJAX.readyState == 4 && SJAX.status == 200) {
-				 var latlng=SJAX.responseText;
+				 numcompost=SJAX.responseText;
     			}
 			}
 			SJAX.send();
