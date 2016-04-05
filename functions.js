@@ -109,15 +109,15 @@ function requestbucket() {
 	<input required='true' type='hidden' id='lat' name='lat'>\
 	<input required='true' type='hidden' id='lng' name='lng'>\
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br>\
-	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> & <input list='plants' name='p3'> & <input list='plants' name='p4'> & <input list='plants' name='p5'>\
-	<select id='plants'>\
+	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> &<br><input list='plants' name='p3'> & <input list='plants' name='p4'> & <input list='plants' name='p5'>\
+	<datalist id='plants'>\
 	<option value='Peas'>\
 	<option value='Carrots'>\
 	<option value='Spinach'>\
 	<option value='Watermellon'>\
 	<option value='Honeydew'>\
 	<option value='Strawberries'>\
-	</select>\
+	</datalist>\
 	</form>";
 }
 function requestprivateplanting() {
