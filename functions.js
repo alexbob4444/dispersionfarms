@@ -153,20 +153,17 @@ function loadpubliccompostmap() {
 	while (curnum<=numcompost) {//while curid < max id number
 		var lat = latlng.substring(0,7);
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lat + " ";
-		var lng = latlng.substring(7,8);
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lng;
+		var lng = latlng.substring(7,15);
+		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lng + " ";
 		var valid = latlng.substring(15);
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + valid;
+		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + valid+ " ";
 		if (lat!=null && lat!=0 && valid==Number(1)) {
 		var marker = new google.maps.Marker({
 			position:new google.maps.LatLng(Number(lat), Number(lng)),
 			draggable:false
 		})
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 777;
 		marker.setMap(mapc);
 		syncrequest('c',curnum);
-		
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 666;
 		}
 		curnum=curnum+1;
 	}
