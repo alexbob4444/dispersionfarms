@@ -16,8 +16,8 @@
 		echo "made it to before echos";
 			setcookie('lat', json_encode($bin['lat']));
 			setcookie('lng', json_encode($bin['lng']));
-			echo($bin['lat']);
-			echo($bin['lng']);
+			echo(json_encode($bin['lat']));
+			echo(json_encode($bin['lng']));
 			setcookie('valid',json_encode(true));
 			echo "after echos";
 	}
