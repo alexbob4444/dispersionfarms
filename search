@@ -9,6 +9,8 @@
   function loading() {
   	eventResize();
   	autologin();
+  	loadpubliccompostmap();
+  	loadpublicfarmmap();
   }
   window.onresize = eventResize;
   window.onload = loading;
@@ -34,6 +36,10 @@
 
 <div class='bodyholder'>
   <div class='body' id='body'>
+  <h3>Compost Bins</h3>
+  <div id='publiccompostdiv'></div>
+  <h3>Public Farms</h3>
+  <div id='publicfarmdiv'></div>
   <!-- 
   Option: View Public Planting Map or Find a Public Composting Location or I Am Looking at a Site now. Tell me about it
   (Only Search Public Bins if not logged in. Add Your Own Private bins if Logged in.
