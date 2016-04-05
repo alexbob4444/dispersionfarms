@@ -83,7 +83,7 @@ function createInputMap() {
 function requestbucket() {
 	
 	createInputMap();
-	document.getElementById('inputtitlediv').innerHTML = "Input Your Bucket Farm"
+	document.getElementById('inputtitlediv').innerHTML = "Input Your Bucket Farm";
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	farmModForm('c');
@@ -114,14 +114,14 @@ function farmModForm(upc) {
 }
 function requestprivateplanting() {
 	createInputMap();
-	document.getElementById('inputtitlediv').innerHTML = "Input the Info For Your Desired Planting"
+	document.getElementById('inputtitlediv').innerHTML = "Input the Info For Your Desired Planting";
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	farmModForm('c');
 }
 function becomeambassador() {
 	createInputMap();
-	document.getElementById('inputtitlediv').innerHTML = "Input the Information About Your Desired Compost Bin"
+	document.getElementById('inputtitlediv').innerHTML = "Input the Information About Your Desired Compost Bin";
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createCompost.php' method='POST'>\
@@ -129,9 +129,9 @@ function becomeambassador() {
 	<input required='true' type='hidden' id='lng' name='lng'>\
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
 	Is This Bin Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
-	<input class='requestbutton' type='submit' name='createcompostubmit' value='Post Compost Bin'>\
+	<input type='submit' name='createcompostubmit' value='Post Compost Bin'>\
 	</form>\
-	<a href='#' onclick='closecreateobjectform()'>CANCEL</a>";
+	<a class='requestbutton' href='#' onclick='closecreateobjectform()'>CANCEL</a>";
 	
 }
 function closecreateobjectform() {
