@@ -11,6 +11,7 @@
 		$bin = mysql_fetch_array($binquery);
 			setcookie('lat', $bin['lat']);
 			setcookie('lng', $bin['lng']);
+			setcookie('valid',true);
 		}
 		echo "</script>";
 		include('closeconnect.php');
