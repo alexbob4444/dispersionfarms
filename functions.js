@@ -102,7 +102,7 @@ function createInputMap() {
 function requestbucket() {
 	
 	createInputMap();
-	document.getElementById('inputtitlediv').innerHTML = "Input The Information about Your Bucket Farm"
+	document.getElementById('inputtitlediv').innerHTML = "Input Your Bucket Farm"
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	farmModForm('c');
@@ -122,7 +122,7 @@ function farmModForm(upc) {
 	<option value='Honeydew'>\
 	<option value='Strawberries'>\
 	</datalist>\
-	When Were They Planted? <input type='date' name='date' id='datepicker'><br><br>\
+	When Were They Seeds Planted? <input type='date' name='date' id='datepicker'><br><br>\
 	Does This Site Recieve Rainwater? <select required='true' name='rain'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	<input type='submit' name='createfarmsubmit' value='Post Planting'>\
@@ -131,8 +131,23 @@ function farmModForm(upc) {
 	}
 }
 function requestprivateplanting() {
+	createInputMap();
+	document.getElementById('inputtitlediv').innerHTML = "Input the Info For Your Desired Planting"
+	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
+	farmModForm('c');
 }
 function becomeambassador() {
-	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createCompost.php
+	createInputMap();
+	document.getElementById('inputtitlediv').innerHTML = "Input the Information About Your Desired Compost Bin"
+	document.getElementById('requestdiv').className = "requestdiv";
+	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
+	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createCompost.php' method='POST'>\
+	<input required='true' type='hidden' id='lat' name='lat'>\
+	<input required='true' type='hidden' id='lng' name='lng'>\
+	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
+	Is This Bin Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
+	<input type='submit' name='createcompostubmit' value='Post Compost Bin'>\
+	</form>";
+	
 }
