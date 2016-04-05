@@ -138,13 +138,22 @@ function closecreateobjectform() {
 	document.getElementById('requestdiv').className = 'requestdiv requestdivhidden';
 }
 function loadpubliccompostmap() {
-	$.get('/dispersionfarms/php/mapPublicCompost.php');
-	//var marker1 = new google.maps.Marker({
-	//	position:new google.maps.LatLng(43.070000,-89.411000),
-	//	draggable:false
-	//});
-	//marker1.setMap(map);
-	
+	<script type='text/javascript'>document.getElementById('publiccompostdiv').style.width = '100%';
+	document.getElementById('publiccompostdiv').style.height = 400;
+	var map = new google.maps.Map(document.getElementById('publiccompostdiv'), {zoom:13, center: new google.maps.LatLng(43.070000,-89.411000), mapTypeId: google.maps.MapTypeId.ROADMAP });
+	var numbins = "";
+	var currnum = "";
+	var lat = "";//first php val
+	var lng = "";//first php val
+	while (lat!=null) {
+		var marker = new google.maps.Marker({
+			position:new google.maps.LatLng(lat, lng),
+			draggable:false
+		})
+		marker.setMap(map);
+		var lat = "";//next php val
+		var lng = "";//next php val
+	}
 }
 function loadpublicfarmmap() {
 	
