@@ -61,27 +61,8 @@ function sessionOpenCheck() {
 		document.getElementById("dispaccount").className = 'dispaccount';
 	}
 }
-function createMap() {
-	document.getElementById('map').style.width = 500;
-	document.getElementById('map').style.height = 400;
-	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom:13,
-		center: new google.maps.LatLng(43.070000,-89.411000),
-		mapTypeId: google.maps.MapTypeId.ROADMAP
-	});
-	var marker1 = new google.maps.Marker({
-		position:new google.maps.LatLng(43.070000,-89.411000),
-		draggable:false
-	});
-	google.maps.event.addListener(marker,'dragend',function (evt){
-		document.getElementById('lat').value = "" + evt.latLng.lat().toFixed(6);
-		document.getElementById('lng').value = "" + evt.latLng.lng().toFixed(6);
-	});
-	map.setCenter(marker1.position);
-	marker.setMap(map1);
-}
 function createInputMap() {
-	document.getElementById('map').style.width = 500;
+	document.getElementById('map').style.width = 100%;
 	document.getElementById('map').style.height = 400;
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom:13,
@@ -155,4 +136,36 @@ function becomeambassador() {
 }
 function closecreateobjectform() {
 	document.getElementById('requestdiv').className = 'requestdiv requestdivhidden';
+}
+function loadpubliccompostmap() {
+	document.getElementById('publiccompostdiv').style.width = 100%;
+	document.getElementById('publiccompostdiv').style.height = 400;
+	var map = new google.maps.Map(document.getElementById('publiccompostdiv'), {
+		zoom:13,
+		center: new google.maps.LatLng(43.070000,-89.411000),
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+	//var marker1 = new google.maps.Marker({
+	//	position:new google.maps.LatLng(43.070000,-89.411000),
+	//	draggable:false
+	//});
+	//marker1.setMap(map);
+	<?php
+		include('connect.php');
+		if (!$con) {//bad connection
+			die("Cannot connect to Database: ". mysql_error());
+		}else {
+			mysql_select_db('dispersionfarms',$con);
+			$sql = "SELECT * FROM compost where public='1' AND requestfulfilled='1'";
+			$bin = mysql_query($sql,$con);
+			while($bin = mysql_fetch_array($allbins)) {
+				echo "var marker = new google.maps.Marker({position:new google.maps.LatLng($bin['lat'],$bin['lng'),draggable:false});"
+				echo "marker.setMap(map);"
+			}
+			include('closeconnect.php');
+		}
+	?>
+}
+function loadpublicfarmmap() {
+	
 }
