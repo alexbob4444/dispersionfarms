@@ -1,6 +1,6 @@
 <?php
 	if (isset("cookieid")) {
-	$cid = cookies["cookieid"];
+	$cid = intval(cookies["cookieid"]);
 	include('connect.php');
 	if (!$con) {//bad connection
 		die("Cannot connect to Database: ". mysql_error());
@@ -13,7 +13,6 @@
 			setcookie('lng', $bin['lng']);
 			setcookie('valid',true);
 		}
-		echo "</script>";
 		include('closeconnect.php');
 	}
 	}
