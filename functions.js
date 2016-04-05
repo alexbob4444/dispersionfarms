@@ -153,9 +153,12 @@ function loadpubliccompostmap() {
 	document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 888;
 	var curnum = 1;
 	var marker;
+	var lat = latlng.substring(0,10);
+	var lng = latlng.substring(10,15);
+	var valid = latlng.substring(15);
 	syncrequest('c',curnum);
 	while (curnum<=numcompost) {//while curid < max id number
-		if (lat!=null && lat!=0 && getCookie('valid')==1) {
+		if (lat!=null && lat!=0 && valid==1) {
 		marker = new google.maps.Marker({
 			position:new google.maps.LatLng(lat, lng),
 			draggable:false
@@ -163,7 +166,7 @@ function loadpubliccompostmap() {
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 777;
 		marker.setMap(mapc);
 		syncrequest('c',curnum);
-		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lat;
+		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lat + " ";
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + lng;
 		document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + 666;
 		}
@@ -202,7 +205,6 @@ function syncrequest(type, id) {
 			{
 			if(SJAX.readyState == 4 && SJAX.status == 200) {
 				 numcompost=SJAX.responseText;
-				 document.getElementById('publicfarmdiv').innerHTML = document.getElementById('publicfarmdiv').innerHTML + SJAX.responseText;
     			}
 			}
 			SJAX.send();
