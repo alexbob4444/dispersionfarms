@@ -5,6 +5,12 @@ $lat = $_SESSION['currentuser'];
 $lng = $_SESSION['currentuser'];
 $locdesc = $_SESSION['currentuser'];
 $rainwater = $_SESSION['currentuser'];
+if ($rainwater=='yes') {
+  $rainwater = true;
+}
+else {
+  $rainwater =false;
+}
 $p1 = $_SESSION['currentuser'];
 $p2 = $_SESSION['currentuser'];
 $p3 = $_SESSION['currentuser'];
@@ -12,6 +18,12 @@ $p4 = $_SESSION['currentuser'];
 $p5 = $_SESSION['currentuser'];
 $date = $_SESSION['currentuser'];
 $public = $_SESSION['currentuser'];
+if ($public=='yes') {
+  $public = true;
+}
+else {
+  $public =false;
+}
 include('connect.php');
 if (!$con) {
   die("Cannot connect to Database: ". mysql_error());
