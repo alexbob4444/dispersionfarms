@@ -110,10 +110,10 @@ a.accountm:hover, a.accountm:active, a.accountd:hover, a.accountd:active {
 }
 
 div.headerm {
-	height:350px;
+	height:60%;
 }
 div.headerd {
-	height:550px;
+	height:70%;
 }
 img.headerlogom {
 	width:320px;
