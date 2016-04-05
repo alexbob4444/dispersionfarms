@@ -146,7 +146,7 @@ function loadpubliccompostmap() {
 	echo(mysql_result(mysql_query($sql,$con),0);\
 	?>";
 	var currnum = "1";
-	var latlng = syncidrequest('c',currnum)
+	var latlng = syncidrequest('c',currnum);
 	var lat = latlng[0];//first php val
 	var lng = latlng[1];//first php val
 	while (currnum<=numbins) {//while curid < max id number
@@ -156,7 +156,7 @@ function loadpubliccompostmap() {
 			draggable:false
 		})
 		marker.setMap(map);
-		var latlng = syncidrequest('c',currnum)
+		var latlng = syncidrequest('c',currnum);
 		var lat = latlng[0];//first php val
 		var lng = latlng[1];//first php val
 		}
