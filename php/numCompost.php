@@ -5,5 +5,5 @@
 	$bin = mysql_fetch_row(mysql_query($sql,$con));
 	$val = $bin[0];
 	echo($val);
-	setcookie('numCompost',$val);
+	setcookie('numCompost',json_encode($val));
 ?>
