@@ -1,8 +1,8 @@
 <?php
 session_start();
 $usrn = $_SESSION['currentuser'];
-$lat = substring($_POST['lat'],0,9);
-$lng = substring($_POST['lng'],0,9);
+$lat = substr($_POST['lat'],0,9);
+$lng = substr($_POST['lng'],0,9);
 
 $locdesc = $_POST['locationdescription'];
 $rainwater = $_POST['rain'];
