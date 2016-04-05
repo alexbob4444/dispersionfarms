@@ -24,6 +24,7 @@ if ($public=='yes') {
 else {
   $public =false;
 }
+echo $usrn.$lat.$lng.$locdesc.$rainwater.$p1.$p2.$p3.$p4.$p5.$date.$public;
 include('connect.php');
 if (!$con) {
   die("Cannot connect to Database: ". mysql_error());
