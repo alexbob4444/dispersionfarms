@@ -146,13 +146,10 @@ function loadpubliccompostmap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 	syncrequest('n',0);
-	var numcompost = getCookie('numCompost');
 	document.getElementById('publicfarmdiv').innerHTML = numcompost;
 	var curnum = 1;
 	var marker;
 	syncrequest('c',curnum);
-	var lat = getCookie('lat');//first php val
-	var lng = getCookie('lng');//first php val
 	while (curnum<=numcompost) {//while curid < max id number
 		if (lat!=null && lat!=0 && getCookie('valid')==1) {
 		marker = new google.maps.Marker({
@@ -160,9 +157,7 @@ function loadpubliccompostmap() {
 			draggable:false
 		})
 		marker.setMap(mapc);
-		var latlng = syncrequest('c',curnum);
-		var lat = getCookie('lat');//first php val
-		var lng = getCookie('lng');//first php val
+		syncrequest('c',curnum);
 		
 		}
 		curnum=curnum+1;
