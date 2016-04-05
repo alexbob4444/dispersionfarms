@@ -126,7 +126,8 @@ function farmModForm(upc) {
 	Does This Site Recieve Rainwater? <select required='true' name='rain'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	<input type='submit' name='createfarmsubmit' value='Post Planting'>\
-	</form>";
+	</form>\
+	<a href='#' onclick='closecreateobjectform'>CANCEL</a>";
 	document.getElementById('datepicker').valueAsDate = new Date();
 	}
 }
@@ -148,6 +149,10 @@ function becomeambassador() {
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
 	Is This Bin Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	<input type='submit' name='createcompostubmit' value='Post Compost Bin'>\
-	</form>";
+	</form>\
+	<a href='#' onclick='closecreateobjectform'>CANCEL</a>";
 	
+}
+function closeobjectform() {
+	document.getElementById('requestdiv').className = 'requestdiv requestdivhidden';
 }
