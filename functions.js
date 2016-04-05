@@ -127,7 +127,7 @@ function farmModForm(upc) {
 	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	<input type='submit' name='createfarmsubmit' value='Post Planting'>\
 	</form>\
-	<a href='#' onclick='closecreateobjectform'>CANCEL</a>";
+	<a href='#' onclick='closecreateobjectform()'>CANCEL</a>";
 	document.getElementById('datepicker').valueAsDate = new Date();
 	}
 }
@@ -150,7 +150,7 @@ function becomeambassador() {
 	Is This Bin Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	<input type='submit' name='createcompostubmit' value='Post Compost Bin'>\
 	</form>\
-	<a href='#' onclick='closecreateobjectform'>CANCEL</a>";
+	<a href='#' onclick='closecreateobjectform()'>CANCEL</a>";
 	
 }
 function closecreateobjectform() {
