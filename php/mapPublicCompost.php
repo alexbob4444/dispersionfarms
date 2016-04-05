@@ -9,9 +9,9 @@
 		$sql = "SELECT * FROM compost WHERE public='1' AND requestfulfilled='1' AND id='$cid'";
 		$binquery = mysql_query($sql,$con);
 		$bin = mysql_fetch_array($binquery);
-			setcookie('lat', $bin['lat']);
-			setcookie('lng', $bin['lng']);
-			setcookie('valid',true);
+			echo(setcookie('lat', $bin['lat']));
+			echo(setcookie('lng', $bin['lng']));
+			echo(setcookie('valid',true));
 		}
 		include('closeconnect.php');
 	}
