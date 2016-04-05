@@ -1,9 +1,10 @@
 <?php
 session_start();
 $usrn = $_SESSION['currentuser'];
-$lat = $_POST['lat'];
-$lng = $_POST['lng'];
-$locdesc = $_POST['locationdescriptiong'];
+$lat = substring($_POST['lat'],0,9);
+$lng = substring($_POST['lng'],0,9);
+
+$locdesc = $_POST['locationdescription'];
 $rainwater = $_POST['rain'];
 if ($rainwater=='yes') {
   $rainwater = true;
