@@ -1,11 +1,12 @@
 <?php
 	echo "compiled...";
-	if (isset(cookies["cookieid"])) {
-	$cid = intval(cookies["cookieid"]);
+	if (isset($_COOKIE["cookieid"])) {
+	$cid = intval($_COOKIE["cookieid"]);
 	include('connect.php');
 	if (!$con) {//bad connection
 		die("Cannot connect to Database: ". mysql_error());
-	}else {
+	}
+	else {
 		mysql_select_db('dispersionfarms',$con);
 		$sql = "SELECT * FROM compost WHERE public='1' AND requestfulfilled='1' AND id='$cid'";
 		$binquery = mysql_query($sql,$con);
