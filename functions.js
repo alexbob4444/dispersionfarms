@@ -108,8 +108,9 @@ function requestbucket() {
 	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>\
 	<input required='true' type='hidden' id='lat' name='lat'>\
 	<input required='true' type='hidden' id='lng' name='lng'>\
-	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'>\
-	What Types of Plants are here: <input list='p1' name='p1'> <datalist id='p1'>\
+	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br>\
+	What Types of Plants are here: <input required='true' list='plants' name='p1'> and <input list='plants' name='p2'> and <input list='plants' name='p3'> and <input list='plants' name='p4'> and <input list='plants' name='p5'>\
+	<datalist id='p1'>\
 	<option value='Peas'>\
 	<option value='Carrots'>\
 	<option value='Spinach'>\
