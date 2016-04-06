@@ -158,7 +158,7 @@ function loadpubliccompostmap() {
 	var comment;
 	while (curnum<=numcompost) {//while curid < max id number
 		tempindex1 = latlng.indexOf('-');
-		tempindex2 = latlng.indexOf("`*");
+		tempindex2 = latlng.indexOf("x7");
 		lat = latlng.substring(0,tempindex1);
 		lng = latlng.substring(tempindex1,tempindex2-1);
 		valid = latlng.substring(tempindex2-1,tempindex2);
@@ -255,9 +255,10 @@ function loadpublicfarmmap() {
 	var tempindex1;
 	var tempindex2;
 	var comment;
+	var infowindow = new google.maps.InfoWindow();
 	while (curnum<=numcompost) {//while curid < max id number
 		tempindex1 = latlng.indexOf('-');
-		tempindex2 = latlng.indexOf("`*");
+		tempindex2 = latlng.indexOf("x7");
 		lat = latlng.substring(0,tempindex1);
 		lng = latlng.substring(tempindex1,tempindex2-1);
 		valid = latlng.substring(tempindex2-1,tempindex2);
@@ -269,10 +270,10 @@ function loadpublicfarmmap() {
 		});
 		google.maps.event.addListener(marker, 'click', (function(marker, i) {
         	return function() {
-          		infowindow.setContent(locations[i][0]);
-          		infowindow.open(map, marker);
+          		infowindow.setContent(comment);
+          		infowindow.open(mapf, marker);
         	}
-      		})(marker, i));
+      		})(marker));
 		}
 		curnum=(curnum + 1);
 		syncrequest('f',curnum);
