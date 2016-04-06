@@ -160,7 +160,7 @@ function loadpubliccompostmap() {
 		tempindex1 = latlng.indexOf('-');
 		tempindex2 = latlng.indexOf("`*");
 		lat = latlng.substring(0,tempindex1);
-		lng = latlng.substring(tempinde1x,tempindex2-1);
+		lng = latlng.substring(tempindex1,tempindex2-1);
 		valid = latlng.substring(tempindex2-1,tempindex2);
 		comment = latlng.substring(tempindex2+2);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
@@ -259,7 +259,7 @@ function loadpublicfarmmap() {
 		tempindex1 = latlng.indexOf('-');
 		tempindex2 = latlng.indexOf("`*");
 		lat = latlng.substring(0,tempindex1);
-		lng = latlng.substring(tempinde1x,tempindex2-1);
+		lng = latlng.substring(tempindex1,tempindex2-1);
 		valid = latlng.substring(tempindex2-1,tempindex2);
 		comment = latlng.substring(tempindex2+2);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
