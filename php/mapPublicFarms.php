@@ -10,7 +10,7 @@
 		$sql = "SELECT * FROM farm WHERE public='1' AND requestfulfilled='1' AND id='$cid'";
 		$binquery = mysql_query($sql,$con);
 		$bin = mysql_fetch_array($binquery);	
-		$sql = "SELECT * FROM users WHERE username='$bin['owner']'"
+		$sql = "SELECT * FROM users WHERE username='$bin['owner']'";
 		$namequery = mysql_query($sql,$con);
 		$name = mysql_fetch_array($namequery);
 			echo(($bin['lat']));
