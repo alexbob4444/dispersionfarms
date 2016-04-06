@@ -20,7 +20,7 @@ function loading() {
 
 <div class='page'>
 
-<div id='header' class='header headerm' style='background-image:url(../dispersionfarms/images/IMG_2231.JPG);'>
+<div id='header' class='header headerm' style='background-image:url(../dispersionfarms/images/myaccount.JPG);'>
   <a href='myaccount' class='accountm' id='account'>SIGN IN</a>
   <a href='index.html' class='headerlogo'><img class='headerlogom' id='headerlogoi' src='/dispersionfarms/images/logo.png'></a>
   <a href='#' id='menuicona' onclick='loadMenu()' class='menuiconm'><img id='menuiconi' class='menuiconm' src='/dispersionfarms/images/menu.png'></a>
