@@ -168,6 +168,12 @@ function loadpubliccompostmap() {
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
 			map: mapc
 		});
+		google.maps.event.addListener(markerc, 'click', (function(markerc,comment) {
+        	return function() {
+          		infowindow.setContent(comment);
+          		infowindow.open(mapc, markerc);
+        	}
+      		})(markerc,comment));
 		}
 		curnum=(curnum + 1);
 		syncrequest('c',curnum);
