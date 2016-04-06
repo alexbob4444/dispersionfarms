@@ -158,22 +158,11 @@ function loadpubliccompostmap() {
 	var comment;
 	while (curnum<=numcompost) {//while curid < max id number
 		tempindex1 = latlng.indexOf('-');
-		document.getElementById('pageheadtexts').innerHTML = document.getElementById('pageheadtexts').innerHTML + tempindex1;
 		tempindex2 = latlng.indexOf("x7");
-		document.getElementById('pageheadtexts').innerHTML = document.getElementById('pageheadtexts').innerHTML + tempindex2;
-
 		lat = latlng.substring(0,tempindex1);
-		document.getElementById('pageheadtexts').innerHTML = document.getElementById('pageheadtexts').innerHTML + lat;
-
 		lng = latlng.substring(tempindex1,tempindex2-1);
-		document.getElementById('pageheadtexts').innerHTML = document.getElementById('pageheadtexts').innerHTML + lng;
-
 		valid = latlng.substring(tempindex2-1,tempindex2);
-		document.getElementById('pageheadtexts').innerHTML = document.getElementById('pageheadtexts').innerHTML + valid;
-
 		comment = latlng.substring(tempindex2+2);
-		document.getElementById('pageheadtexts').innerHTML = document.getElementById('pageheadtexts').innerHTML + comment;
-
 		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerc = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
@@ -279,12 +268,12 @@ function loadpublicfarmmap() {
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
 			map: mapf
 		});
-		google.maps.event.addListener(marker, 'click', (function(marker, i) {
+		google.maps.event.addListener(markerf, 'click', (function(markerf,comment) {
         	return function() {
           		infowindow.setContent(comment);
-          		infowindow.open(mapf, marker);
+          		infowindow.open(mapf, markerf);
         	}
-      		})(marker));
+      		})(markerf,comment));
 		}
 		curnum=(curnum + 1);
 		syncrequest('f',curnum);
