@@ -153,18 +153,21 @@ function loadpubliccompostmap() {
 	var lat;
 	var lng;
 	var valid;
-	var tempindex;
+	var tempindex1;
+	var tempindex2;
+	var comment;
 	while (curnum<=numcompost) {//while curid < max id number
-		tempindex = latlng.indexOf('-');
-		lat = latlng.substring(0,tempindex);
-		lng = latlng.substring(tempindex,latlng.length-1);
-		valid = latlng.substring(latlng.length-1);
+		tempindex1 = latlng.indexOf('-');
+		tempindex2 = latlng.indexOf("`*");
+		lat = latlng.substring(0,tempindex1);
+		lng = latlng.substring(tempinde1x,tempindex2-1);
+		valid = latlng.substring(tempindex2-1,tempindex2);
+		comment = latlng.substring(tempindex2+2);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerc = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
 			map: mapc
 		});
-		//markerc.setMap(mapc);
 		}
 		curnum=(curnum + 1);
 		syncrequest('c',curnum);
@@ -239,7 +242,7 @@ function loadpublicfarmmap() {
 	var mapf = new google.maps.Map(document.getElementById('publicfarmdiv'), {
 		zoom:13,
 		center: new google.maps.LatLng(43.070000,-89.411000),
-		mapTypeId: google.maps.MapTypeId.TERRAIN
+		mapTypeId: google.maps.MapTypeId.HYBRID
 	});
 	syncrequest('nf',0);
 	//document.getElementById('body').innerHTML = document.getElementById('body').innerHTML + numcompost;
@@ -249,17 +252,27 @@ function loadpublicfarmmap() {
 	var lat;
 	var lng;
 	var valid;
+	var tempindex1;
+	var tempindex2;
+	var comment;
 	while (curnum<=numcompost) {//while curid < max id number
-		tempindex = latlng.indexOf('-');
-		lat = latlng.substring(0,tempindex);
-		lng = latlng.substring(tempindex,latlng.length-1);
-		valid = latlng.substring(latlng.length-1);
+		tempindex1 = latlng.indexOf('-');
+		tempindex2 = latlng.indexOf("`*");
+		lat = latlng.substring(0,tempindex1);
+		lng = latlng.substring(tempinde1x,tempindex2-1);
+		valid = latlng.substring(tempindex2-1,tempindex2);
+		comment = latlng.substring(tempindex2+2);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerf = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
 			map: mapf
 		});
-		//markerf.setMap(mapf);
+		google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        	return function() {
+          		infowindow.setContent(locations[i][0]);
+          		infowindow.open(map, marker);
+        	}
+      		})(marker, i));
 		}
 		curnum=(curnum + 1);
 		syncrequest('f',curnum);
