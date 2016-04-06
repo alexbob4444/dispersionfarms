@@ -156,6 +156,7 @@ function loadpubliccompostmap() {
 	var tempindex1;
 	var tempindex2;
 	var comment;
+	var infowindow = new google.maps.InfoWindow();
 	while (curnum<=numcompost) {//while curid < max id number
 		tempindex1 = latlng.indexOf('-');
 		tempindex2 = latlng.indexOf("x7");
