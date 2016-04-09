@@ -30,7 +30,7 @@
 			  	echo(" & " . $bin[$string]);
 			  }
 			}
-			echo("<b>Notes:</b> " . $bin['locationdescription']); 
+			echo("<br><b>Notes:</b> " . $bin['locationdescription']); 
 		}
 	}
 	include('closeconnect.php');
