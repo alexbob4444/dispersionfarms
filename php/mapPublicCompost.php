@@ -22,6 +22,7 @@
 			}else {
 				echo "0";
 			}
+			echo($bin['largedropoff']);
 			echo("x7" . "<b>Owner:</b> " . $name['name'] . "<br>" . "<b>Notes:</b> " . $bin['locationdescription']); 
 	}
 	}
