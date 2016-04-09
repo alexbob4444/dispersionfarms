@@ -97,20 +97,20 @@ function farmModForm(upc) {
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
 	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> &<input list='plants' name='p3'> &<br> <input list='plants' name='p4'> & <input list='plants' name='p5'> & <input list='plants' name='p6'> & <input list='plants' name='p7'><br><br>\
 	<select id='plants'>\
-	<option value='Peas'>\
-	<option value='Carrots'>\
-	<option value='Spinach'>\
-	<option value='Watermellon'>\
-	<option value='Honeydew'>\
-	<option value='Strawberries'>\
-	<option value='Borrage'>\
-	<option value='Corn'>\
-	<option value='Squash'>\
-	<option value='Green Beans'>\
-	<option value='Tomatoe'>\
-	<option value='Basil'>\
-	<option value='Kale'>\
-	<option value='Chard'>\
+	<option value='Peas'>Peas</option>\
+	<option value='Carrots'>Carrots</option>\
+	<option value='Spinach'>Spinach</option>\
+	<option value='Watermellon'>Watermellon</option>\
+	<option value='Honeydew'>Honeydew</option>\
+	<option value='Strawberries'>Strawberries</option>\
+	<option value='Borrage'>Borrage</option>\
+	<option value='Corn'>Corn</option>\
+	<option value='Squash'>Squash</option>\
+	<option value='Green Beans'>Green Beans</option>\
+	<option value='Tomatoes'>Tomatoes</option>\
+	<option value='Basil'>Basil</option>\
+	<option value='Kale'>Kale</option>\
+	<option value='Chard'>Chard</option>\
 	</select>\
 	When Were They Seeds Planted? <input type='date' name='date' id='datepicker'><br><br>\
 	Does This Site Recieve Rainwater? <select required='true' name='rain'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
