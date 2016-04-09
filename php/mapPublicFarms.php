@@ -8,7 +8,7 @@
 		mysql_select_db('dispersionfarms',$con);
 		$sql = "SELECT * FROM farm WHERE public='1' AND requestfulfilled='1' AND id='$cid'";
 		$binquery = mysql_query($sql,$con);
-		if (mysql_num_rows($query)>=1) {
+		if (mysql_num_rows($query)==1) {
 		$bin = mysql_fetch_array($binquery);	
 		$owner =$bin['owner'];
 		$sql = "SELECT * FROM users WHERE username='$owner'";
