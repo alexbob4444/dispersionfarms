@@ -277,6 +277,8 @@ function loadpublicfarmmap() {
 	var comment;
 	var infowindow = new google.maps.InfoWindow();
 	while (curnum<=numcompost) {//while curid < max id number
+	if (latlng == null || latlng=="") {
+	}else {
 		tempindex1 = latlng.indexOf('-');
 		tempindex2 = latlng.indexOf("x7");
 		lat = latlng.substring(0,tempindex1);
@@ -295,6 +297,7 @@ function loadpublicfarmmap() {
         	}
       		})(markerf,comment));
 		}
+	}
 		curnum=(curnum + 1);
 		syncrequest('f',curnum);
 	}
