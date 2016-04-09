@@ -171,6 +171,8 @@ function loadpubliccompostmap() {
 	var comment;
 	var infowindow = new google.maps.InfoWindow();
 	while (curnum<=numcompost) {//while curid < max id number
+	if (latlng == null || latlng=="") {
+	}else {
 		tempindex1 = latlng.indexOf('-');
 		tempindex2 = latlng.indexOf("x7");
 		lat = latlng.substring(0,tempindex1);
@@ -189,6 +191,7 @@ function loadpubliccompostmap() {
         	}
       		})(markerc,comment));
 		}
+	}
 		curnum=(curnum + 1);
 		syncrequest('c',curnum);
 	}
