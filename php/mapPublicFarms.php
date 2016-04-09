@@ -21,7 +21,13 @@
 			}else {
 				echo "0";
 			}
-			echo("x7" . "Owner: " . $name['name'] . "<br>" . "Plants: " . $bin['plant1'] . $bin['plant2'] . $bin['plant3'] . $bin['plant4'] . $bin['plant5']. "<br>" ." Notes: " . $bin['locationdescription']); 
+			echo("x7" . "<b>Owner:</b> " . $name['name'] . "<br>";
+			echo("<b>Plants:</b> " . $bin['plant1'])
+			for ($i=2; $i<8;$i++) {
+			  if ($bin["plant" . $i] != " ") 
+			  	echo(" & " . $bin['plant' . $i]);
+			}
+			echo(" Notes: " . $bin['locationdescription']); 
 	}
 	include('closeconnect.php');
 	}
