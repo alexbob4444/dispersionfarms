@@ -22,12 +22,12 @@
 				echo "0";
 			}
 			
-			echo("x7" . "<b>Owner:</b> " . $name['name'] . "<br>");
+			echo("x7<b>Owner:</b> " . $name['name'] . "<br>");
 			echo("<b>Plants:</b> " . $bin['plant1']);
 			for ($i=2; $i<8;$i++) {
-				
-			  if ($bin['plant' . $i] != " ") 
+			  if ($bin['plant' . $i] != " ") {
 			  	echo(" & " . $bin['plant' . $i]);
+			  }
 			}
 			echo("<b>Notes:</b> " . $bin['locationdescription']); 
 		}
