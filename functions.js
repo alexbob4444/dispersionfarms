@@ -104,7 +104,7 @@ function farmModForm(upc) {
 	<option value='Basil'>Basil</option>\
 	<option value='Kale'>Kale</option>\
 	<option value='Chard'>Chard</option>\
-	</select>\";
+	</select>";
 	if (upc=='c') {
 	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>\
 	<input required='true' type='hidden' id='lat' name='lat'>\
