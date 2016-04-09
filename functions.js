@@ -90,7 +90,8 @@ function requestbucket() {
 	farmModForm('c');
 }
 function farmModForm(upc) {
-	var selectos = "<option value='Peas'>Peas</option>\
+	var selectos = "<option value=' '></option>\
+	<option value='Peas'>Peas</option>\
 	<option value='Carrots'>Carrots</option>\
 	<option value='Spinach'>Spinach</option>\
 	<option value='Watermellon'>Watermellon</option>\
