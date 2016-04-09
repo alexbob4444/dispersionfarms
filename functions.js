@@ -112,9 +112,8 @@ function farmModForm(upc) {
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
 	What Types of Plants are here: <select required='true' name='p1'> "+ selectos + " & <select name='p2'>" + selectos + " & <select \
 	name='p3'>" + selectos + " & <br><select name='p4'>" + selectos + " & <select name='p5'>" + selectos + " & <select name='p6'>" + selectos + " & <select \
-	name='p7'><br><br>";
-	
-	When Were They Seeds Planted? <input type='date' name='date' id='datepicker'><br><br>\
+	name='p7'><br><br>\
+	When Were the Seeds Planted? <input type='date' name='date' id='datepicker'><br><br>\
 	Does This Site Recieve Rainwater? <select required='true' name='rain'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	<input type='submit' name='createfarmsubmit' value='Post Planting'>\
