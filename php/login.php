@@ -18,8 +18,8 @@ if(!($rows==1)) {
 }
 else {
 	//valid info was entered so login using session of $usrn
-	$rows=mysql_fetch_array($rows);
-	if (crypt($pass, $rows['password']) == $rows['password']) {
+	$row=mysql_fetch_array($query);
+	if (crypt($pass, $row['password']) == $row['password']) {
 		session_start();
 		$_SESSION['currentuser']=$usrn;
 		header('Location: http://www.dispersionfarms.com/myaccount');
