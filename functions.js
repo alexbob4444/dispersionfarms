@@ -192,7 +192,7 @@ function loadpubliccompostmap() {
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
 			map: mapc,
 			icon: {
-        			path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+        			path: google.maps.SymbolPath.CIRCLE,
         			strokeColor: strokecolor,
         			scale: 3
     			}
