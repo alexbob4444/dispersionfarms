@@ -5,7 +5,7 @@ $pass1 = $_POST['inputpassword'];
 $pass2 = $_POST['retypepassword'];
 $name = $_POST['inputname'];
 $email = $_POST['inputemail'];
-$phone = $_POST['inputphone'];
+$phone = ($_POST['tel1'] . "-" . $_POST['tel2'] . "-" . $_POST['tel3']);
 if($pass1==$pass2) {
 include('connect.php');//connect to db
 if (!$con) {//bad connection
