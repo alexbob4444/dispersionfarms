@@ -95,7 +95,7 @@ function farmModForm(upc) {
 	<input required='true' type='hidden' id='lat' name='lat'>\
 	<input required='true' type='hidden' id='lng' name='lng'>\
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
-	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> &<br><input list='plants' name='p3'> & <input list='plants' name='p4'> & <input list='plants' name='p5'><br><br>\
+	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> &<input list='plants' name='p3'> &<br> <input list='plants' name='p4'> & <input list='plants' name='p5'> & <input list='plants' name='p6'> & <input list='plants' name='p7'><br><br>\
 	<select id='plants'>\
 	<option value='Peas'>\
 	<option value='Carrots'>\
@@ -103,6 +103,14 @@ function farmModForm(upc) {
 	<option value='Watermellon'>\
 	<option value='Honeydew'>\
 	<option value='Strawberries'>\
+	<option value='Borrage'>\
+	<option value='Corn'>\
+	<option value='Squash'>\
+	<option value='Green Beans'>\
+	<option value='Tomatoe'>\
+	<option value='Basil'>\
+	<option value='Kale'>\
+	<option value='Chard'>\
 	</select>\
 	When Were They Seeds Planted? <input type='date' name='date' id='datepicker'><br><br>\
 	Does This Site Recieve Rainwater? <select required='true' name='rain'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
