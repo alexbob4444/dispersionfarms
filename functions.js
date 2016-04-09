@@ -166,6 +166,7 @@ function loadpubliccompostmap() {
 	var lat;
 	var lng;
 	var valid;
+	var mass;
 	var tempindex1;
 	var tempindex2;
 	var comment;
@@ -177,12 +178,23 @@ function loadpubliccompostmap() {
 		tempindex2 = latlng.indexOf("x7");
 		lat = latlng.substring(0,tempindex1);
 		lng = latlng.substring(tempindex1,tempindex2-1);
-		valid = latlng.substring(tempindex2-1,tempindex2);
+		valid = latlng.substring(tempindex2-2,tempindex2-1);
+		mass = latlng.substring(tempindex2-1,tempindex2);
 		comment = latlng.substring(tempindex2+2);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerc = new google.maps.Marker({
 			position: new google.maps.LatLng(Number(lat), Number(lng)),
-			map: mapc
+			map: mapc,
+			icon: {
+        			path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+        			if (mass=='1') {
+        				strokeColor: "green",
+
+        			}else {
+        				strokeColor: "red",
+        			}
+        			scale: 3
+    			}
 		});
 		google.maps.event.addListener(markerc, 'click', (function(markerc,comment) {
         	return function() {
