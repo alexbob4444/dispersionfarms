@@ -10,7 +10,7 @@ else {//good connection
 mysql_select_db('dispersionfarms',$con);//select the correct database
 $sql = "SELECT * FROM users where username='$usrn'";
 $query = (mysql_query($sql,$con));
-$rows = mysql_num_rows($query);
+$rows = mysql_fetch_array(mysql_num_rows($query));
 if(!($rows==1)) {
 	echo "username does not exist";
 	echo "usrn=";
