@@ -21,7 +21,7 @@
 			}else {
 				echo "0";
 			}
-			echo("x7" . "Owner: " . $name['name'] . "<br>" . "Notes: " . $bin['locationdescription']); 
+			echo("x7" . "<b>Owner:</b> " . $name['name'] . "<br>" . "<b>Notes:</b> " . $bin['locationdescription']); 
 	}
 	include('closeconnect.php');
 	}
