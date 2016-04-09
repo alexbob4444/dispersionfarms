@@ -18,6 +18,7 @@ $userExistsAlready = false;
 $sql = "SELECT * FROM users where username='$usrn'";
 $userData = mysql_query($sql,$con);
 if(!($rows==1)) {
+$pass1=crypt($pass1);
 $sql = "INSERT INTO users (username,password,name,email,phone) VALUES ('$usrn','$pass1','$name','$email','$phone')";
 echo mysql_query($sql,$con);
 echo "Successful Creation";
