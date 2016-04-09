@@ -56,7 +56,7 @@ function loading() {
       Email (<i>coordinating purposes</i>): <br>
       <input required='true' type='email' name='inputemail'><br>
       Phone (<i>coordinating purposes</i>): <br>
-      <input required='true' type='text' size='3'> <input required='true'  type='text' size='3'> <input required='true'  type='text' size='4'><br>
+      <input required='true' type='text' size='3' maxlength='3'> <input required='true'  type='text' size='3' maxlength='3'> <input required='true'  type='text' size='4' maxlength='4'><br>
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
       Password: <br>
