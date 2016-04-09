@@ -167,6 +167,7 @@ function loadpubliccompostmap() {
 	var lng;
 	var valid;
 	var mass;
+	var strokecolor;
 	var tempindex1;
 	var tempindex2;
 	var comment;
@@ -180,6 +181,11 @@ function loadpubliccompostmap() {
 		lng = latlng.substring(tempindex1,tempindex2-1);
 		valid = latlng.substring(tempindex2-2,tempindex2-1);
 		mass = latlng.substring(tempindex2-1,tempindex2);
+		if (mass=='1') {
+        		strokecolor = "green";
+		}else {
+        		strokecolor = "red";
+        	}
 		comment = latlng.substring(tempindex2+2);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
 		markerc = new google.maps.Marker({
@@ -187,12 +193,7 @@ function loadpubliccompostmap() {
 			map: mapc,
 			icon: {
         			path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
-        			if (mass=='1') {
-        				strokeColor: "green",
-
-        			}else {
-        				strokeColor: "red",
-        			}
+        			strokeColor: strokecolor,
         			scale: 3
     			}
 		});
