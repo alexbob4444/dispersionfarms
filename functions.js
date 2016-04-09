@@ -90,14 +90,7 @@ function requestbucket() {
 	farmModForm('c');
 }
 function farmModForm(upc) {
-	if (upc=='c') {
-	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>\
-	<input required='true' type='hidden' id='lat' name='lat'>\
-	<input required='true' type='hidden' id='lng' name='lng'>\
-	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
-	What Types of Plants are here: <input required='true' list='plants' name='p1'> & <input list='plants' name='p2'> &<input list='plants' name='p3'> &<br> <input list='plants' name='p4'> & <input list='plants' name='p5'> & <input list='plants' name='p6'> & <input list='plants' name='p7'><br><br>\
-	<select id='plants'>\
-	<option value='Peas'>Peas</option>\
+	var selectos = "<option value='Peas'>Peas</option>\
 	<option value='Carrots'>Carrots</option>\
 	<option value='Spinach'>Spinach</option>\
 	<option value='Watermellon'>Watermellon</option>\
@@ -111,7 +104,16 @@ function farmModForm(upc) {
 	<option value='Basil'>Basil</option>\
 	<option value='Kale'>Kale</option>\
 	<option value='Chard'>Chard</option>\
-	</select>\
+	</select>\";
+	if (upc=='c') {
+	document.getElementById('inputdiv').innerHTML=  "<form class='form' action='/dispersionfarms/php/createFarm.php' method='POST'>\
+	<input required='true' type='hidden' id='lat' name='lat'>\
+	<input required='true' type='hidden' id='lng' name='lng'>\
+	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
+	What Types of Plants are here: <select required='true' name='p1'> "+ selectos + " & <select name='p2'>" + selectos + " & <select \
+	name='p3'>" + selectos + " & <br><select name='p4'>" + selectos + " & <select name='p5'>" + selectos + " & <select name='p6'>" + selectos + " & <select \
+	name='p7'><br><br>";
+	
 	When Were They Seeds Planted? <input type='date' name='date' id='datepicker'><br><br>\
 	Does This Site Recieve Rainwater? <select required='true' name='rain'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
