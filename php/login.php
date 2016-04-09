@@ -1,5 +1,4 @@
 <?php
-echo "compiled";
 if(isset($_POST['login'])) {
 $usrn = $_POST['inputusername'];
 $pass = $_POST['inputpassword'];
