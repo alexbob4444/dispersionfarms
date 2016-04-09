@@ -11,11 +11,6 @@ if ($public=='yes') {
 else {
   $public =false;
 }
-echo $usrn;
-echo $lat;
-echo $lng;
-echo $locdesc;
-echo $public;
 include('connect.php');
 if (!$con) {
   die("Cannot connect to Database: ". mysql_error());
