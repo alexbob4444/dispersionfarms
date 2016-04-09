@@ -12,7 +12,7 @@ $sql = "SELECT * FROM users where username='$usrn'";
 $query = (mysql_query($sql,$con));
 $rows = mysql_num_rows($query);
 if(!($rows==1)) {
-	echo "password does not match username";
+	echo "username does not exist";
 	echo "usrn=";
 	echo $usrn;
 }
