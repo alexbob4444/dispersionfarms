@@ -8,9 +8,9 @@ if (!$con) {//bad connection
 }
 else {//good connection
 mysql_select_db('dispersionfarms',$con);//select the correct database
-$pass=crypt($pass);
-$sql = "SELECT * FROM users where password='$pass' AND username='$usrn'";
-$rows = mysql_num_rows(mysql_query($sql,$con));
+$sql = "SELECT * FROM users where username='$usrn'";
+$query = (mysql_query($sql,$con));
+$rows = mysql_num_rows($query);
 if(!($rows==1)) {
 	echo "password does not match username";
 	echo "usrn=";
@@ -18,9 +18,15 @@ if(!($rows==1)) {
 }
 else {
 	//valid info was entered so login using session of $usrn
-	session_start();
-	$_SESSION['currentuser']=$usrn;
-	header('Location: http://www.dispersionfarms.com/myaccount');
+	
+	if (crypt($pass, $rows['password']) == $rows['password']) {
+		session_start();
+		$_SESSION['currentuser']=$usrn;
+		header('Location: http://www.dispersionfarms.com/myaccount');
+	}
+	else {
+		echo "passwords do not match";
+	}
 }
 
 include('closeconnect.php');
