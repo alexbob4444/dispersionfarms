@@ -1,4 +1,5 @@
 <?php
+	echo ("compiled");
 	if (isset($_POST['postid'])) {
 	$cid = ($_POST['postid']);
 	include('connect.php');
