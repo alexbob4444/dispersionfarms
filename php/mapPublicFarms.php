@@ -3,7 +3,6 @@
 	$cid = ($_POST['postid']);
 	include('connect.php');
 	if (!$con) {//bad connection
-		die("Cannot connect to Database: ". mysql_error());
 	}
 	else {
 		mysql_select_db('dispersionfarms',$con);
