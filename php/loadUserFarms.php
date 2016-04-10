@@ -11,7 +11,7 @@ else {
   $query = mysql_query($sql,$con);
   if (mysql_num_rows($query) >=1) {
   echo "<h2>Your Farms</h2>";
-  echo "<table style='width:100%;opacity:0.75;'>";
+  echo "<table style='width:100%;opacity:0.75; border:1px solid black;'>";
   $rownum = 1;
   echo "<tr style='height:30px;'><td><b>Description</b></td><td><b>Plant1</b></td><td><b>Plant2</b></td><td><b>Plant3</b></td><td><b>Plant4</b></td><td><b>Plant5</b></td><td><b>Plant6</b></td><td><b>Plant7</b></td><td><b>Public</b></td><td>DELETE</td></tr>";
   while ($row = mysql_fetch_assoc($query)) {
