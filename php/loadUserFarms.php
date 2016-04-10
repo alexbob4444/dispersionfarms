@@ -9,6 +9,8 @@ else {
   mysql_select_db('dispersionfarms',$con);
   $sql = "SELECT * FROM farm WHERE owner='$usrn'";
   $query = mysql_query($sql,$con);
+  if (mysql_num_rows($query) >=1) {
+  echo "<h2>Your Farms</h2>";
   echo "<table style='width:100%'>";
   $rownum = 1;
   echo "<tr style='height:30px;'><td>Description</td><td>Plant1</td><td>Plant2</td><td>Plant3</td><td>Plant4</td><td>Plant5</td><td>Plant6</td><td>Plant7</td><td>Public</td><td>DELETE</td></tr>";
@@ -27,5 +29,9 @@ else {
     $rownum++;
   }
   echo "</table><br>";
+  }
+  else {
+    echo "You have no farms to display";
+  }
 }
 ?>
