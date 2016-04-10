@@ -12,7 +12,7 @@ else {
   echo "<table style='width:100%'>";
   $rownum = 1;
   echo "<tr style='height:30px;'><td>Description</td><td>Plant1</td><td>Plant2</td><td>Plant3</td><td>Plant4</td><td>Plant5</td><td>Plant6</td><td>Plant7</td><td>Public</td><td>DELETE</td></tr>";
-  while ($row = mysql_fetch_assoc($result)) {
+  while ($row = mysql_fetch_assoc($query)) {
     $id=$row['id'];
     $ldesc=$row['locationdescription'];
     $p1=$row['plant1'];
