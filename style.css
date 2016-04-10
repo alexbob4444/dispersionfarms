@@ -272,6 +272,7 @@ a.requestbutton {
 	padding:2px;
 	text-decoration:none;
 	background-color:#FFFFFF;
+	font-size:12px;
 }
 a.requestbutton:link, a.requestbutton:visited {
 	color:#777777;
