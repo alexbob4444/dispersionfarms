@@ -36,14 +36,17 @@
 <div class='bodyholder'>
   <div class='body' id='body'>
     <p class="mainp">
+    <br>
       <h2 class="sectionh">What We Do</h2>
       We are run by a small group of students working to provide accessible fresh free public food and composting
       to students on the UW Madison Campus.<br>
-      We grow seedlings, teach others about agriculture, and install edible landscaping on public and private land.<br>
+      We grow seedlings, teach others about agriculture, and install edible landscaping on public and private land.<br><br>
+      <hr>
+      <br>
       <h2 class="sectionh">Want to Contribute?</h2>
       If you would like to help out with crop-starting, education efforts, composting, or funding, email me at my contact information below.<br>
       If you simply would like to be a compost bin ambassabor in your house or appartment or get a free bucket farm, Log In at
-      <a class='textlink' href='myaccount'>dispersionfarms.com/request</a> and make a request using the links on the page.<br>
+      <a class='textlink' href='myaccount'>dispersionfarms.com/request</a> and make a request using the links on the page.<br><br>
     </p>
   </div>
 </div>
