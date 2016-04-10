@@ -4,6 +4,7 @@ html {
 }
 div.header .bg {
 	opacity:0.1;
+	z-index:-1;
 }
 html.menuopen {
 	overflow:hidden;
