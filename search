@@ -40,9 +40,8 @@
   <br>
   <h3>Compost Bins</h3>
   <div id='publiccompostdiv'></div><br><br>
-  <hr>
   <h3>Public Farms</h3>
-  <div id='publicfarmdiv'></div>
+  <div id='publicfarmdiv'></div><br><br>
   </div>
 </div>
 
