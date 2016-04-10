@@ -42,7 +42,7 @@ function autologin() {
 		SJAX.send();
 		document.getElementById('account').innerHTML = SJAX.responseText;
 	} else {
-	document.getElementById('account').innerHTML = "My Code Doesn't Work";
+	document.getElementById('account').innerHTML = "SJAX ERROR";
 	}
 }
 function openLogin() {
@@ -55,7 +55,7 @@ function openCreateAccount() {
 	document.getElementById("createaccountform").className = 'createaccountform';
 }
 function sessionOpenCheck() {
-	if ( -1 == ((document.getElementById("account").innerHTML).search("SIGN IN"))) {
+	if ( -1 == (document.getElementById("account").innerHTML).search("SIGN IN") && -1 == (document.getElementById("account").innerHTML).search("SJAX ERROR")) {
 		$("#phpuserfarms").load("/dispersionfarms/php/loadUserFarms.php");
 		$("#phpusercompost").load("/dispersionfarms/php/loadUserCompost.php");
 		document.getElementById("loginform").className = 'loginform loginformhidden';
