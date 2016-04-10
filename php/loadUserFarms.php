@@ -28,7 +28,7 @@ else {
     echo "<tr style='height:30px;border-spacing:5px;border:2px solid grey;'><td>$ldesc</td><td>$p1</td><td>$p2</td><td>$p3</td><td>$p4</td><td>$p5</td><td>$p6</td><td>$p7</td><td>$pub</td><td><a href='#' onClick='deleteo('f',$id;'>DELETE</a></td></tr>";
     $rownum++;
   }
-  echo "</table><br>";
+  echo "</table>";
   }
   else {
     echo "You have no farms to display";
