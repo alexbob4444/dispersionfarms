@@ -84,7 +84,7 @@ function loading() {
       <div id='map'></div><br><br>
       <div class="phpdrawing" id='inputdiv'></div><br>
       </div>
-      <div style="position:absolute; right:0;top:15px;"><a class='requestbutton' href='/dispersionfarms/php/logout.php'>Log Out</a></div>
+      <div style="position:absolute; right:3px;top:20px;"><a class='requestbutton' href='/dispersionfarms/php/logout.php'>Log Out</a></div>
     </div>
   </div>
 </div>
