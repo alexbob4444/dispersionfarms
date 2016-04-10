@@ -65,25 +65,27 @@ div.pageheadtextbd {
 	position:relative;
 	font-size:45px;
 	text-transform:uppercase;
-	color:#DDDDDD;
+	color:#F0F0F0;
 }
 div.pageheadtextsd {
 	position:relative;
 	top:170px; left:0px;
 	width:100%;
 	font-size:25px;
-	color:#CCCCCC;
+	color:#E0E0E0;
 }
 div.pageheadtextbm {
 	position:relative;
 	font-size:40px;
 	text-transform:uppercase;
+	color:#F0F0F0;
 }
 div.pageheadtextsm {
 	position:relative;
 	top:100px; left:0px;
 	width:100%;
 	font-size:20px;
+	color:#E0E0E0;
 }
 
 
