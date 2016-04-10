@@ -168,6 +168,7 @@ function loadpubliccompostmap() {
 	var valid;
 	var mass;
 	var strokecolor;
+	var circlesize;
 	var tempindex1;
 	var tempindex2;
 	var comment;
@@ -183,8 +184,10 @@ function loadpubliccompostmap() {
 		mass = latlng.substring(tempindex2-1,tempindex2);
 		if (mass=='1') {
         		strokecolor = "green";
+        		circlesize = 6;
 		}else {
         		strokecolor = "red";
+        		circlesize =3;
         	}
 		comment = latlng.substring(tempindex2+2);
 		if (lat!=null && lat!=0 && Number(valid)==1) {
@@ -194,7 +197,7 @@ function loadpubliccompostmap() {
 			icon: {
         			path: google.maps.SymbolPath.CIRCLE,
         			strokeColor: strokecolor,
-        			scale: 3
+        			scale: circlesize
     			}
 		});
 		google.maps.event.addListener(markerc, 'click', (function(markerc,comment) {
