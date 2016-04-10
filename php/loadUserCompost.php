@@ -7,7 +7,7 @@ if (!$con) {
 }
 else {
   mysql_select_db('dispersionfarms',$con);
-  $sql = "";
-  mysql_query($sql,$con);
+  //$sql = "";
+  //mysql_query($sql,$con);
 }
 ?>
