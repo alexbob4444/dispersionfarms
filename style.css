@@ -91,19 +91,19 @@ div.pageheadtextsm {
 
 
 a.accountd {
-	font-size:18px;
+	font-size:20px;
 	position:absolute;
 	right:70px;
-	top:28px;
+	top:26px;
 	text-decoration:none;
 	text-transform:uppercase;
 }
 
 a.accountm {
-	font-size:14px;
+	font-size:16px;
 	position:absolute;
 	right:57px;
-	top:18px;
+	top:16px;
 	text-decoration:none;
 	text-transform:uppercase;
 }
