@@ -38,10 +38,10 @@
 <div class='bodyholder'>
   <div class='body' id='body'>
   <br>
+  <h3>Public Farms</h3> <i>Click on the Map Marker to Learn about the Site. Click plant names to learn how to harvest.</i>
+  <div id='publicfarmdiv'></div><br><br>
   <h3>Compost Bins</h3>
   <div id='publiccompostdiv'></div><br><br>
-  <h3>Public Farms</h3>
-  <div id='publicfarmdiv'></div><br><br>
   </div>
 </div>
 
