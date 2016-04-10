@@ -170,7 +170,7 @@ img.menuicond {
 div.bodyholder {
 	position:static;
 	margin:0px;
-	width:95%;
+	width:100%;
 	background-color:#FFFFFF;
 }
 div.body {
@@ -180,7 +180,7 @@ div.body {
 	margin-right:auto;
 	padding:10px;
 	text-align:left;
-	width:100%;
+	width:95%;
 	max-width:900px;
 	display:block;
 	min-height:50px;
