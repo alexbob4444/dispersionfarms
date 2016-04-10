@@ -319,3 +319,6 @@ function loadpublicfarmmap() {
 		syncrequest('f',curnum);
 	}
 }
+function deleteo(foc,id) {
+	
+}
