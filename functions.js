@@ -120,9 +120,8 @@ function farmModForm(upc) {
 	When Were the Seeds Planted? <input type='date' name='date' id='datepicker'><br><br>\
 	Does This Site Recieve Rainwater? <select required='true' name='rain'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
 	Is This Farm Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
-	<input type='submit' name='createfarmsubmit' value='Post Planting'>\
-	</form>\
-	<a href='#' class='requestbutton' onclick='closecreateobjectform()'>CANCEL</a>";
+	<input type='submit' name='createfarmsubmit' value='Post Planting'>&nbsp&nbsp<a class='requestbutton' href='#' onclick='closecreateobjectform()'>CANCEL</a>\
+	</form>";
 	document.getElementById('datepicker').valueAsDate = new Date();
 	}
 }
@@ -143,9 +142,8 @@ function becomeambassador() {
 	<input required='true' type='hidden' id='lng' name='lng'>\
 	Location Specifics: <input required='true' type='text' name='locationdescription' size='35'> <i>Exp: Address</i><br><br>\
 	Is This Bin Open To the Public? <select required='true' name='public' value='yes'><option value='yes'>yes</option><option value='no'>no</option></select><br><br>\
-	<input type='submit' name='createcompostubmit' value='Post Compost Bin'>\
-	</form>\
-	<a class='requestbutton' href='#' onclick='closecreateobjectform()'>CANCEL</a>";
+	<input type='submit' name='createcompostubmit' value='Post Compost Bin'>&nbsp&nbsp<a class='requestbutton' href='#' onclick='closecreateobjectform()'>CANCEL</a>\
+	</form>";
 	
 }
 function closecreateobjectform() {
