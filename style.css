@@ -2,10 +2,6 @@ html {
 	background-color:#313131;
 	overflow-x:hidden;
 }
-div.header {
-	opacity:0.1;
-	z-index:-1;
-}
 html.menuopen {
 	overflow:hidden;
 }
