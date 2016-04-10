@@ -28,7 +28,7 @@ div.page {
 	line-height:1.6em;
 	font-style:normal;
 	letter-spacing:1px;
-	color: rgba(26,26,26,.7);
+	color: rgba(20,20,20,.7);
 }
 div.page.menuopen {
 	top:0px; left:-250px; right:250px;
