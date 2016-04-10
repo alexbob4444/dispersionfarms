@@ -15,6 +15,6 @@ else {
     echo "<tr style='height:30px;'><td id='fid'>$row['id']</td><td>$row['locationdescription']</td><td>$row['plant1']</td><td>$row['plant2']</td><td>$row['plant3']</td><td>$row['plant4']</td><td>$row['plant5']</td><td>$row['plant6']</td><td>$row['plant7']</td><td>$row['public']</td><td><a href='#' onClick='delete('f',$rownum)'>DELETE</a></td></tr>";
     $rownum++;
   }
-  echo "</table>"
+  echo "</table>";
 }
 ?>
