@@ -69,14 +69,16 @@ function loading() {
     </form>
     </div>
     <div class='dispaccount dispaccounthidden' id='dispaccount'>
-    <div class="phpdrawing" id='phpuserfarms'></div><br>
+    <br>
+    <div class="phpdrawing" id='phpuserfarms'></div>
       <a class='requestbutton' href='#' onclick='requestbucket()'>Request Bucket Farm</a> - 
       <a class='requestbutton' href='#' onclick='requestprivateplanting()'>Suggest Planting Location</a><br><br>
-      
+      <hr><br><br>
       <div class="phpdrawing" id='phpusercompost'></div><br>
-      <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a><br>
+      <a class='requestbutton' href='#' onclick='becomeambassador()'>Become a Compost Ambassador</a><br><br>
       
       <div class="requestdiv requestdivhidden" id='requestdiv'>
+      <hr><br><br>
       <h3><div id="inputtitlediv"></div></h3>
       Where should it be? (Drag the Marker)
       <div id='map'></div><br><br>
