@@ -302,6 +302,7 @@ tr {
 	height:40px;
 }
 td {
+	border-collapse: collapse;
 	padding:3px; 
 	border-bottom:1px solid grey;
 }
