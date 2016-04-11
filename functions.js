@@ -348,10 +348,10 @@ function loadPlant(plantname) {
 		url: "/dispersionfarms/php/plantReady.php",
 		success: function (data) {
 			if (data == 1) {
-				document.getElementById('plantinfodiv').innerHTML="This Plant IS READY for harvest!<br>"+document.getElementById('plantinfodiv').innerHTML;
+				document.getElementById('plantinfodiv').innerHTML="<h2>This Plant IS READY for harvest!<h2><br>"+document.getElementById('plantinfodiv').innerHTML;
 			}
 			else {
-				document.getElementById('plantinfodiv').innerHTML="THIS PLANT IS NOT READY FOR HARVEST<br>"+document.getElementById('plantinfodiv').innerHTML;
+				document.getElementById('plantinfodiv').innerHTML="<h2>THIS PLANT IS NOT READY FOR HARVEST<h2><br>"+document.getElementById('plantinfodiv').innerHTML;
 			}
 		}
 	});
