@@ -325,7 +325,7 @@ function deleteo(foc,id) {
 		url: '/dispersionfarms/php/deletefc.php',
 		method: 'POST',
 		success: function(json) {
-			location.reload(true)
+			location.reload(true);
 		}
 	});
 }
