@@ -10,4 +10,5 @@ else {
   //$sql = "";
   //mysql_query($sql,$con);
 }
+include('closeconnect.php');
 ?>
