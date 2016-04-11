@@ -17,6 +17,7 @@ if (!$con) {
 }
 else {
   mysql_select_db('dispersionfarms',$con);
+  mysql_query("DELETE * FROM compost WHERE lat='0'");
   $sql = "INSERT INTO compost (owner,lat,lng,locationdescription,public) VALUES ('$usrn','$lat','$lng','$locdesc','$public')";
   mysql_query($sql,$con);
   include('closeconnect.php');
