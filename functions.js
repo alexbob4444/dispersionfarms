@@ -323,6 +323,9 @@ function deleteo(foc,id) {
 	$.ajax({
 		data: 'type='+foc +'&id='+id,
 		url: '/dispersionfarms/php/deletefc.php',
-		method: 'POST'
+		method: 'POST',
+		success: function(json) {
+			location.reload(true)
+		}
 	});
 }
