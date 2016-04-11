@@ -29,7 +29,7 @@ else {
   echo "</table>";
   }
   else {
-    echo "You have no Compost Bins to display<br>";
+    echo "You have no Compost Bins to display<br><br>";
   }
 }
 include('closeconnect.php');
