@@ -13,7 +13,7 @@ else {
   echo "<h2>Your Compost Bins</h2>";
   echo "<table style='width:100%;opacity:0.75; border:1px solid grey;'>";
   $rownum = 1;
-  echo "<tr><td><b>Description</b></td><td><b>LargeDropOff</b></td><td><b>MonthOpen</b></td><td><b>MonthClose</b></td><td><b>Public</b></td>c</b></td><td><b>Full</b></td><td><b>Recieved</b></td><td><b>DELETE</b></td></tr>";
+  echo "<tr><td><b>Description</b></td><td><b>LargeDropOff</b></td><td><b>MonthOpen</b></td><td><b>MonthClose</b></td><td><b>Public</b></td></b></td><td><b>Full</b></td><td><b>Recieved</b></td><td><b>DELETE</b></td></tr>";
   while ($row = mysql_fetch_assoc($query)) {
     $id=$row['id'];
     $ldesc=$row['locationdescription'];
@@ -29,7 +29,7 @@ else {
   echo "</table>";
   }
   else {
-    echo "You have no farms to display";
+    echo "You have no Compost Bins to display<br>";
   }
 }
 include('closeconnect.php');
