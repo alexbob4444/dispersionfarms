@@ -300,8 +300,8 @@ table {
 }
 tr {
 	height:40px;
-	border-bottom:1px solid grey;
 }
 td {
-	padding:7px; 
+	padding:3px; 
+	border-bottom:1px solid grey;
 }
