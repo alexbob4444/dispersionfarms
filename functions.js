@@ -333,11 +333,12 @@ function loadPlant(plantname) {
 	//plantinfodiv
 	//publicfarmdiv
 	var stringloc = "/dispersionfarms/textinfo/" + plantname + ".html";
+	document.getElementById('#plantinfodiv').innerHTML=" ";
 	$.ajax({
 		url: stringloc,
 		dataType:"html",
 		success: function (data) {
-			$('#plantinfodiv').html(data);	
+			document.getElementById('#plantinfodiv').innerHTML=document.getElementById('#plantinfodiv').innerHTML+data;	
 		}
 	});
 	var datastr='planttype='+plantname;
@@ -345,11 +346,9 @@ function loadPlant(plantname) {
 		data: datastr,
 		method: "POST",
 		url: "/dispersionfarms/php/plantReady.php",
-		dataType:"html",
 		success: function (data) {
 			if (data == 1) {
 				document.getElementById('#plantinfodiv').innerHTML="This Plant IS READY for harvest!<br>"+document.getElementById('#plantinfodiv').innerHTML;
-
 			}
 			else {
 				document.getElementById('#plantinfodiv').innerHTML="THIS PLANT IS NOT READY FOR HARVEST<br>"+document.getElementById('#plantinfodiv').innerHTML;
