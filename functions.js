@@ -340,7 +340,10 @@ function loadPlant(plantname) {
 			$('#plantinfodiv').html(data);	
 		}
 	});
+	var datastr='planttype='+plantname;
 	$.ajax({
+		data: datastr,
+		method: "POST",
 		url: "/dispersionfarms/php/plantReady.php",
 		dataType:"html",
 		success: function (data) {
