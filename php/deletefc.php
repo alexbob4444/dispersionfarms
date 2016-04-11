@@ -7,7 +7,7 @@ if (!$con) {
 }
 else {
   mysql_select_db('dispersionfarms',$con);
-  mysql_query(DELETE FROM $type WHERE id='$id');
+  mysql_query("DELETE FROM $type WHERE id='$id'");
   include('closeconnect.php');
 }
 ?>
