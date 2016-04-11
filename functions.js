@@ -332,7 +332,7 @@ function deleteo(foc,id) {
 function loadPlant(plantname) {
 	//plantinfodiv
 	//publicfarmdiv
-	document.getElementById('publicfarmdiv').style.width="60%;";
+	document.getElementById('publicfarmdiv').style.width="60%";
 	document.getElementById('plantinfodiv').style.width="35%";
 	var stringloc = "/dispersionfarms/textinfo/" + plantname + ".html";
 	document.getElementById('plantinfodiv').innerHTML=" ";
