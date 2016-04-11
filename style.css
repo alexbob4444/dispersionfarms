@@ -297,12 +297,12 @@ div.requestdiv {
 table {
 	opacity:0.7;
 	border:0px;
+	border-collapse: collapse;
 }
 tr {
 	height:40px;
 }
 td {
-	border-collapse: collapse;
 	padding:3px; 
 	border-bottom:1px solid grey;
 }
