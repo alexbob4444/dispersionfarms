@@ -320,5 +320,9 @@ function loadpublicfarmmap() {
 	}
 }
 function deleteo(foc,id) {
-	
+	$.ajax({
+		data: 'type='+foc +'&id='+id,
+		url: '/dispersionfarms/php/deletefc.php',
+		method: 'POST'
+	});
 }
