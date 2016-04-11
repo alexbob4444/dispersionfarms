@@ -299,8 +299,8 @@ table {
 }
 tr {
 	height:40px;
-	border:1px solid grey;
 }
 td {
 	padding:7px; 
+	border-bottom:1px solid grey;
 }
