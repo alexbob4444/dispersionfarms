@@ -332,7 +332,7 @@ function deleteo(foc,id) {
 function loadPlant(plantname) {
 	//plantinfodiv
 	//publicfarmdiv
-	var stringloc = "/dispersionfarms/textinfo/" + plantname + ".txt";
+	var stringloc = "/dispersionfarms/textinfo/" + plantname + ".html";
 	$.ajax({
 		url: stringloc,
 		dataType:"html",
