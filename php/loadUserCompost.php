@@ -11,7 +11,7 @@ else {
   $query = mysql_query($sql,$con);
   if (mysql_num_rows($query) >=1) {
   echo "<h2>Your Compost Bins</h2>";
-  echo "<table style='width:100%;opacity:0.75; border:1px solid grey;'>";
+  echo "<table style='width:100%;opacity:0.85; border:1px solid grey;'>";
   $rownum = 1;
   echo "<tr><td><b>Description</b></td><td><b>LargeDropOff</b></td><td><b>MonthOpen</b></td><td><b>MonthClose</b></td><td><b>Public</b></td></b></td><td><b>Full</b></td><td><b>Recieved</b></td><td><b>DELETE</b></td></tr>";
   while ($row = mysql_fetch_assoc($query)) {
