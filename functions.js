@@ -44,6 +44,11 @@ function autologin() {
 	} else {
 	document.getElementById('account').innerHTML = "SJAX ERROR";
 	}
+	//check if mobile
+	//set width to 600px if mobile
+	if((/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
+		document.getElementById('wholepage').width="600px";
+	}
 }
 function openLogin() {
 	document.getElementById("createaccountform").className = 'createaccountform createaccountformhidden';
