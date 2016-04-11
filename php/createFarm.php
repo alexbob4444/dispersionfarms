@@ -32,7 +32,7 @@ if (!$con) {
 }
 else {
   mysql_select_db('dispersionfarms',$con);
-  mysql_query("DELETE * FROM compost WHERE lat='0'",$con);
+  mysql_query("DELETE * FROM farm WHERE lat='0'",$con);
   $sql = "INSERT INTO farm (owner,lat,lng,locationdescription,rainwater,plant1,plant2,plant3,plant4,plant5,plant6,plant7,dateplanted,public) VALUES ('$usrn','$lat','$lng','$locdesc','$rainwater','$p1','$p2','$p3','$p4','$p5','$p6','$p7','$date','$public')";
   echo mysql_query($sql,$con);
   include('closeconnect.php');
