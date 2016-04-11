@@ -335,9 +335,9 @@ function loadPlant(plantname) {
 	var stringloc = "/dispersionfarms/textinfo/" + plantname + ".txt";
 	$.ajax({
 		url: stringloc,
-		dataType:"text",
+		dataType:"html",
 		success: function (data) {
-			$('#plantinfodiv').html(stringloc);	
+			$('#plantinfodiv').html(data);	
 		}
 	});
 }
