@@ -333,7 +333,7 @@ function loadPlant(plantname) {
 	//plantinfodiv
 	//publicfarmdiv
 	var stringloc = "/dispersionfarms/textinfo/" + plantname + ".html";
-	document.getElementById('#plantinfodiv').innerHTML=" ";
+	document.getElementById('plantinfodiv').innerHTML=" ";
 	$.ajax({
 		url: stringloc,
 		dataType:"html",
