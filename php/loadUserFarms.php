@@ -35,4 +35,5 @@ else {
     echo "You have no farms to display";
   }
 }
+include('closeconnect.php');
 ?>
