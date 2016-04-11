@@ -21,13 +21,14 @@
 			}else {
 				echo "0";
 			}
-			
+			$plantname = $bin['plant1'];
 			echo("x7<b>Owner:</b> " . $name['name'] . "<br>");
-			echo("<b>Plants:</b> " . $bin['plant1']);
+			echo("<b>Plants:</b> <a href='#' class='textlink' onclick='loadPlant($plantname)'>$plantname</a>");
 			for ($i=2; $i<8;$i++) {
 				$string = "plant" . $i;
 			  if ($bin[$string] != " ") {
-			  	echo(" & " . $bin[$string]);
+			  	$plantname=$bin[$string];
+			  	echo(" & <a href='#' class='textlink' onclick='loadPlant($plantname)'>$plantname</a>");
 			  }
 			}
 			echo("<br><b>Notes:</b> " . $bin['locationdescription']); 
