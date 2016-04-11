@@ -294,3 +294,11 @@ div.requestdivhidden {
 }
 div.requestdiv {
 }
+table {
+	opacity:0.7;
+}
+td {
+	height:40p; 
+	padding:7px; 
+	border:1px solid grey;'
+}
