@@ -329,3 +329,9 @@ function deleteo(foc,id) {
 		}
 	});
 }
+function loadPlant(plantname) {
+	//plantinfodiv
+	//publicfarmdiv
+	var stringloc = "/dispersionfarms/textinfo/" + plantname + ".txt";
+	$('#plantinfodiv').load(stringloc);
+}
