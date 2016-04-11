@@ -39,7 +39,7 @@
   <div class='body' id='body'>
   <br>
   <h3>Public Farms</h3> <i>Click on the Map Marker to Learn about that Farm. Click plant names to learn how to harvest.</i>
-  <div id='publicfarmdiv'></div><br><div id='plantinfodiv'></div><br><br>
+  <div id='publicfarmdiv'></div><br><div id='plantinfodiv'>Hey?</div><br><br>
   <h3>Compost Bins</h3>
   <i>Click on the Map Marker to Learn about the Composting Location.</i>
   <div id='publiccompostdiv'></div><br><br>
