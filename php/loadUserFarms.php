@@ -13,7 +13,7 @@ else {
   echo "<h2>Your Farms</h2>";
   echo "<table style='width:100%;opacity:0.75; border:1px solid grey;'>";
   $rownum = 1;
-  echo "<tr style='height:30px; padding:7px; border:1px solid grey;'><td><b>Description</b></td><td><b>Plant1</b></td><td><b>Plant2</b></td><td><b>Plant3</b></td><td><b>Plant4</b></td><td><b>Plant5</b></td><td><b>Plant6</b></td><td><b>Plant7</b></td><td><b>Public</b></td><td>Available</td><td>DELETE</td></tr>";
+  echo "<tr style='height:30px; padding:7px; border:1px solid grey;'><td><b>Description</b></td><td><b>Plant1</b></td><td><b>Plant2</b></td><td><b>Plant3</b></td><td><b>Plant4</b></td><td><b>Plant5</b></td><td><b>Plant6</b></td><td><b>Plant7</b></td><td><b>Public</b></td><td><b>Available</b></td><td>DELETE</td></tr>";
   while ($row = mysql_fetch_assoc($query)) {
     $id=$row['id'];
     $ldesc=$row['locationdescription'];
