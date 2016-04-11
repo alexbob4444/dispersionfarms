@@ -340,4 +340,18 @@ function loadPlant(plantname) {
 			$('#plantinfodiv').html(data);	
 		}
 	});
+	$.ajax({
+		url: "/dispersionfarms/php/plantReady.php",
+		dataType:"html",
+		success: function (data) {
+			if (data == 1) {
+				document.getElementById('#plantinfodiv').innerHTML="This Plant IS READY for harvest!<br>"+document.getElementById('#plantinfodiv').innerHTML;
+
+			}
+			else {
+				document.getElementById('#plantinfodiv').innerHTML="THIS PLANT IS NOT READY FOR HARVEST<br>"+document.getElementById('#plantinfodiv').innerHTML;
+			}
+		}
+	});
+	
 }
