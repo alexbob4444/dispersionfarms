@@ -32,7 +32,7 @@ else {
   echo "</table>";
   }
   else {
-    echo "You have no farms to display";
+    echo "You have no farms to display<br>";
   }
 }
 include('closeconnect.php');
