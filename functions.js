@@ -9,6 +9,7 @@ function eventResize() {
       document.getElementById("pageheadtextb").className = "pageheadtextbm";
       document.getElementById("pageheadtexts").className = "pageheadtextsm";
       document.getElementById("arrowdown").className = "arrowdownm";
+      document.getElementById("headerlogoi").style.display = "none";
     }
     else {//screen of desktop
       document.getElementById("headerlogoi").className = "headerlogod";
@@ -46,9 +47,6 @@ function autologin() {
 	}
 	//check if mobile
 	//set width to 600px if mobile
-	if(screen.width<=600) {
-		document.getElementById('view').setAttribute('content','width=600');
-	}
 }
 function openLogin() {
 	document.getElementById("createaccountform").className = 'createaccountform createaccountformhidden';
