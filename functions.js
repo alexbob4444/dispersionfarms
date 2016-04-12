@@ -279,7 +279,7 @@ function syncrequest(type, id) {
 	}
 }
 function loadpublicfarmmap() {
-	document.getElementById('publicfarmdiv').style.width = '90%';
+	document.getElementById('publicfarmdiv').style.width = '100%';
 	document.getElementById('publicfarmdiv').style.height = 400;
 	var mapf = new google.maps.Map(document.getElementById('publicfarmdiv'), {
 		zoom:13,
@@ -355,11 +355,11 @@ function loadPlant(plantname) {
 		success: function (data) {
 			if (data == 1) {
 				document.getElementById('plantinfodiv').innerHTML="<h3>This Plant IS READY for harvest!</h3>\
-				<a style='float:right; margin-right:90px;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
+				<a style='float:right; margin-right:10%;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
 			}
 			else {
 				document.getElementById('plantinfodiv').innerHTML="<h3>This Plant IS NOT ready for harvest!</h3>\
-				<a style='float:right; margin-right:90px;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
+				<a style='float:right; margin-right:10%;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
 			}
 		}
 	});
