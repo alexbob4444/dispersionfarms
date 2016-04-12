@@ -9,7 +9,9 @@ function eventResize() {
       document.getElementById("pageheadtextb").className = "pageheadtextbm";
       document.getElementById("pageheadtexts").className = "pageheadtextsm";
       document.getElementById("arrowdown").className = "arrowdownm";
-      document.getElementById("headerlogoi").style.display = "none";
+      if (window.innerWidth<400) {
+      	document.getElementById("headerlogoi").style.display = "none";
+      }
     }
     else {//screen of desktop
       document.getElementById("headerlogoi").className = "headerlogod";
