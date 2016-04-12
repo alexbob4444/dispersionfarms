@@ -70,7 +70,7 @@ function sessionOpenCheck() {
 }
 function createInputMap() {
 	document.getElementById('map').style.width = '100%';
-	document.getElementById('map').style.height = 400;
+	document.getElementById('map').style.height = '400px';
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom:13,
 		center: new google.maps.LatLng(43.070000,-89.411000),
@@ -156,6 +156,7 @@ function becomeambassador() {
 }
 function closecreateobjectform() {
 	document.getElementById('requestdiv').className = 'requestdiv requestdivhidden';
+	window.scrollBy(0, 350);
 }
 function loadpubliccompostmap() {
 	document.getElementById('publiccompostdiv').style.width = '100%';
@@ -348,7 +349,7 @@ function loadPlant(plantname) {
 		dataType:"html",
 		success: function (data) {
 			document.getElementById('plantinfodiv').innerHTML=document.getElementById('plantinfodiv').innerHTML+data;
-			window.scrollBy(0, 500);
+			window.scrollBy(0, 450);
 		}
 	});
 	var datastr='planttype='+plantname;
@@ -360,12 +361,12 @@ function loadPlant(plantname) {
 			if (data == 1) {
 				document.getElementById('plantinfodiv').innerHTML="<h3>This Plant IS READY for harvest!</h3>\
 				<a style='float:right;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
-				window.scrollBy(0, 500);
+				window.scrollBy(0, 450);
 			}
 			else {
 				document.getElementById('plantinfodiv').innerHTML="<h3>This Plant IS NOT ready for harvest!</h3>\
 				<a style='float:right;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
-				window.scrollBy(0, 500);
+				window.scrollBy(0, 450);
 			}
 		}
 	});
