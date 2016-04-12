@@ -46,8 +46,8 @@ function autologin() {
 	}
 	//check if mobile
 	//set width to 600px if mobile
-	if((/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
-		document.getElementById('wholepage').width="400px";
+	if(screen.width<=400) {
+		document.getElementById('view').setAttribute('content','width=400');
 	}
 }
 function openLogin() {
