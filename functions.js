@@ -94,6 +94,7 @@ function requestbucket() {
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	farmModForm('c');
+	window.scrollBy(0, 600);
 }
 function farmModForm(upc) {
 	var selectos = "<option value=' '></option>\
@@ -137,6 +138,7 @@ function requestprivateplanting() {
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	farmModForm('c');
+	window.scrollBy(0, 600);
 }
 function becomeambassador() {
 	createInputMap();
@@ -345,7 +347,8 @@ function loadPlant(plantname) {
 		url: stringloc,
 		dataType:"html",
 		success: function (data) {
-			document.getElementById('plantinfodiv').innerHTML=document.getElementById('plantinfodiv').innerHTML+data;	
+			document.getElementById('plantinfodiv').innerHTML=document.getElementById('plantinfodiv').innerHTML+data;
+			window.scrollBy(0, 400);
 		}
 	});
 	var datastr='planttype='+plantname;
@@ -357,10 +360,12 @@ function loadPlant(plantname) {
 			if (data == 1) {
 				document.getElementById('plantinfodiv').innerHTML="<h3>This Plant IS READY for harvest!</h3>\
 				<a style='float:right;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
+				window.scrollBy(0, 400);
 			}
 			else {
 				document.getElementById('plantinfodiv').innerHTML="<h3>This Plant IS NOT ready for harvest!</h3>\
 				<a style='float:right;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
+				window.scrollBy(0, 400);
 			}
 		}
 	});
