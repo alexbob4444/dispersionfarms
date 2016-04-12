@@ -354,8 +354,7 @@ function loadPlant(plantname) {
 		url: "/dispersionfarms/php/plantReady.php",
 		success: function (data) {
 			if (data == 1) {
-				document.getElementById('plantinfodiv').innerHTML="<div>\
-				<h3>This Plant IS READY for harvest!</h3></div>\
+				document.getElementById('plantinfodiv').innerHTML="<h3>This Plant IS READY for harvest!</h3>\
 				<a href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
 			}
 			else {
