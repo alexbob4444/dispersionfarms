@@ -46,8 +46,8 @@ function autologin() {
 	}
 	//check if mobile
 	//set width to 600px if mobile
-	if(screen.width<=400) {
-		document.getElementById('view').setAttribute('content','width=400');
+	if(screen.width<=600) {
+		document.getElementById('view').setAttribute('content','width=600');
 	}
 }
 function openLogin() {
