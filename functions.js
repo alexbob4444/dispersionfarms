@@ -22,6 +22,7 @@ function eventResize() {
       document.getElementById("pageheadtextb").className = "pageheadtextbd";
       document.getElementById("pageheadtexts").className = "pageheadtextsd";
       document.getElementById("arrowdown").className = "arrowdownd";
+      document.getElementById("headerlogoi").style.display = "block";
     }
 }
 function loadMenu() {
