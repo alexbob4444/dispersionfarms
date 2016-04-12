@@ -69,7 +69,7 @@ function sessionOpenCheck() {
 	}
 }
 function createInputMap() {
-	document.getElementById('map').style.width = '90%';
+	document.getElementById('map').style.width = '100%';
 	document.getElementById('map').style.height = 400;
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom:13,
@@ -94,7 +94,7 @@ function requestbucket() {
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	farmModForm('c');
-	window.scrollBy(0, 600);
+	window.scrollBy(0, 700);
 }
 function farmModForm(upc) {
 	var selectos = "<option value=' '></option>\
@@ -138,7 +138,7 @@ function requestprivateplanting() {
 	document.getElementById('requestdiv').className = "requestdiv";
 	//fill request request div with form to create bucketfarm and runs /dispersionfarms/php/createFarm.php
 	farmModForm('c');
-	window.scrollBy(0, 600);
+	window.scrollBy(0, 700);
 }
 function becomeambassador() {
 	createInputMap();
