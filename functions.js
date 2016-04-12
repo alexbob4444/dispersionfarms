@@ -156,7 +156,7 @@ function closecreateobjectform() {
 	document.getElementById('requestdiv').className = 'requestdiv requestdivhidden';
 }
 function loadpubliccompostmap() {
-	document.getElementById('publiccompostdiv').style.width = '90%';
+	document.getElementById('publiccompostdiv').style.width = '100%';
 	document.getElementById('publiccompostdiv').style.height = 400;
 	var mapc = new google.maps.Map(document.getElementById('publiccompostdiv'), {
 		zoom:13,
