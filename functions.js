@@ -356,7 +356,7 @@ function loadPlant(plantname) {
 			if (data == 1) {
 				document.getElementById('plantinfodiv').innerHTML="<div>\
 				<h3>This Plant IS READY for harvest!</h3></div>\
-				<a style='position:relative;float:right;margin-right:90px;margin-top:0px;margin-left:auto;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
+				<a style='float:right;margin-right:90px;margin-top:0px;margin-left:auto;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>"+document.getElementById('plantinfodiv').innerHTML;
 			}
 			else {
 				document.getElementById('plantinfodiv').innerHTML="<h3>THIS PLANT IS NOT READY FOR HARVEST</h3><br>"+document.getElementById('plantinfodiv').innerHTML;
