@@ -1,5 +1,5 @@
 <html id='completehtml'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, min-width:400px, initial-scale=1.0">
 <head>
 <title>Dispersion Farms</title>
 <link rel="shortcut icon" href="icon.ico">
