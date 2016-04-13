@@ -7,7 +7,9 @@ div.headercover {
 	width:100%;
 	height:100%;
 }
-h3.sectionh
+h2.sectionh {
+	text-transform:uppercase;
+}
 html.menuopen {
 	overflow:hidden;
 }
