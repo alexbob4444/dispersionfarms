@@ -408,5 +408,6 @@ function searchpublicfarms() {
         	}
       		})(markerf,comment));
 		}
+		infowindow.open(mapf, markerf);
 	}
 }
