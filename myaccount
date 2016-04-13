@@ -22,6 +22,7 @@ function loading() {
 <div class='page'>
 
 <div id='header' class='header headerm' style='background-image:url(../dispersionfarms/images/myaccount.JPG);'>
+  <div style='width:100%;height:100%;background-color:rgba(0,0,0,0.15);'>
   <a href='myaccount' class='accountm' id='account'>SIGN IN</a>
   <a href='index.html' class='headerlogo'><img class='headerlogom' id='headerlogoi' src='/dispersionfarms/images/logo.png'></a>
   <a href='#' id='menuicona' onclick='loadMenu()' class='menuiconm'><img id='menuiconi' class='menuiconm' src='/dispersionfarms/images/menu.png'></a>
@@ -34,6 +35,7 @@ function loading() {
     <br>
   </div>
   <div class='arrowdown'><img id='arrowdown' class='arrowdownm' src='/dispersionfarms/images/arrowdown.png'/></div>
+  </div>
 </div>
 
 <div class='bodyholder'>
