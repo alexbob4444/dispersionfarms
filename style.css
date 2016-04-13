@@ -2,6 +2,9 @@ html {
 	background-color:#313131;
 	overflow-x:hidden;
 }
+div.headercover {
+	background-color:rgba(0,0,0,.1);
+}
 h3.sectionh
 html.menuopen {
 	overflow:hidden;
