@@ -187,7 +187,7 @@ div.body {
 	margin-left:auto;
 	margin-right:auto;
 	padding:10px;
-	text-align:left;
+	text-align:left top;
 	width:90%;
 	max-width:900px;
 	display:block;
