@@ -282,6 +282,7 @@ function syncrequest(type, id) {
 		}	
 	}
 }
+var mapf;
 function loadpublicfarmmap() {
 	document.getElementById('publicfarmdiv').style.width = '100%';
 	document.getElementById('publicfarmdiv').style.height = 400;
@@ -373,5 +374,39 @@ function loadPlant(plantname) {
 	
 }
 function searchpublicfarms() {
-	
+	syncrequest('f',document.getElementById('farmidinput').value);
+	var mapf = new google.maps.Map(document.getElementById('publicfarmdiv'), {
+		zoom:13,
+		center: new google.maps.LatLng(43.070000,-89.411000),
+		mapTypeId: google.maps.MapTypeId.HYBRID
+	});
+	var markerf;
+	var lat;
+	var lng;
+	var valid;
+	var tempindex1;
+	var tempindex2;
+	var comment;
+	var infowindow = new google.maps.InfoWindow();
+	if (latlng == null || latlng=="") {
+	}else {
+		tempindex1 = latlng.indexOf('-');
+		tempindex2 = latlng.indexOf("x7");
+		lat = latlng.substring(0,tempindex1);
+		lng = latlng.substring(tempindex1,tempindex2-1);
+		valid = latlng.substring(tempindex2-1,tempindex2);
+		comment = latlng.substring(tempindex2+2);
+		if (lat!=null && lat!=0 && Number(valid)==1) {
+		markerf = new google.maps.Marker({
+			position: new google.maps.LatLng(Number(lat), Number(lng)),
+			map: mapf
+		});
+		google.maps.event.addListener(markerf, 'click', (function(markerf,comment) {
+        	return function() {
+          		infowindow.setContent(comment);
+          		infowindow.open(mapf, markerf);
+        	}
+      		})(markerf,comment));
+		}
+	}
 }
