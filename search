@@ -42,6 +42,9 @@
 <div class='bodyholder'>
   <div class='body' id='body'>
   <br>
+  Farm Number:<br>
+  <input type="number" id='farmidinput' min="1" max="999"> <input type="button" onclick="searchpublicfarms" value="Search">
+  <br>
   <h3>Public Farms</h3> <i>Click on the Map Marker to Learn about that Farm. Click plant names to learn how to harvest.</i>
   <div style='display:block;' id='publicfarmdiv'></div>
   <div style='display:block; width:95%;' id='plantinfodiv'></div><br><br>
