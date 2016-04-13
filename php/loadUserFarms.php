@@ -13,7 +13,7 @@ else {
   echo "<h2>Your Farms</h2>";
   echo "<table style='width:100%;opacity:0.85; border:1px solid grey;'>";
   $rownum = 1;
-  echo "<tr><td><b>Description</b></td><td><b>P1</b></td><td><b>P2</b></td><td><b>P3</b></td><td><b>P4</b></td><td><b>P5</b></td><td><b>P6</b></td><td><b>P7</b></td><td><b>Public</b></td><td><b>Open</b></td><td><b>DELETE</b></td></tr>";
+  echo "<tr><td>#<b></td></td><td><b>Description</b></td><td><b>P1</b></td><td><b>P2</b></td><td><b>P3</b></td><td><b>P4</b></td><td><b>P5</b></td><td><b>P6</b></td><td><b>P7</b></td><td><b>Public</b></td><td><b>Open</b></td><td><b>DELETE</b></td></tr>";
   while ($row = mysql_fetch_assoc($query)) {
     $id=$row['id'];
     $ldesc=$row['locationdescription'];
@@ -26,7 +26,7 @@ else {
     $p7=$row['plant7'];
     $pub=$row['public'];
     $rf=$row['requestfulfilled'];
-    echo "<tr><td>$ldesc</td><td>$p1</td><td>$p2</td><td>$p3</td><td>$p4</td><td>$p5</td><td>$p6</td><td>$p7</td><td>$pub</td><td>$rf</td><td><a href='#' onclick=\"deleteo('farm',$id)\">DELETE</a></td></tr>";
+    echo "<tr><td>$id</td><td>$ldesc</td><td>$p1</td><td>$p2</td><td>$p3</td><td>$p4</td><td>$p5</td><td>$p6</td><td>$p7</td><td>$pub</td><td>$rf</td><td><a href='#' onclick=\"deleteo('farm',$id)\">DELETE</a></td></tr>";
     $rownum++;
   }
   echo "</table>";
