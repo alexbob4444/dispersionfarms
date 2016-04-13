@@ -359,13 +359,13 @@ function loadPlant(plantname) {
 		url: "/dispersionfarms/php/plantReady.php",
 		success: function (data) {
 			if (data == 1) {
-				document.getElementById('plantinfodiv').innerHTML="<a style='float:right top;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>\
-				<h3>This Plant IS READY for harvest!</h3>"+document.getElementById('plantinfodiv').innerHTML;
+				document.getElementById('plantinfodiv').innerHTML="<a style='float:right; top:-10px;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>\
+				<h3 style='top:15px;'>This Plant IS READY for harvest!</h3>"+document.getElementById('plantinfodiv').innerHTML;
 				window.scrollBy(0, 450);
 			}
 			else {
-				document.getElementById('plantinfodiv').innerHTML="<a style='float:right top;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>\
-				<h3>This Plant IS NOT ready for harvest!</h3>"+document.getElementById('plantinfodiv').innerHTML;
+				document.getElementById('plantinfodiv').innerHTML="<a style='float:right ;' href='#' onclick=\"javascript:document.getElementById('plantinfodiv').style.display='none';\" class='textlink'>CLOSE</a>\
+				<h3 style='top:15px;'>This Plant IS NOT ready for harvest!</h3>"+document.getElementById('plantinfodiv').innerHTML;
 				window.scrollBy(0, 450);
 			}
 		}
