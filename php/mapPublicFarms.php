@@ -22,7 +22,7 @@
 				echo "0";
 			}
 			$plantname = $bin['plant1'];
-			echo("x7<b>Owner:</b> " . $name['name'] . "     <b>Id:</b> $cid<br>");
+			echo("x7<b>Owner:</b> " . $name['name'] . "<br>");
 			echo("<b>Plants:</b> <a href='#' class='textlink' onclick=\"loadPlant('$plantname')\">$plantname</a>");
 			for ($i=2; $i<8;$i++) {
 				$string = "plant" . $i;
