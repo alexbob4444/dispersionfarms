@@ -123,10 +123,10 @@ a.accountm:hover, a.accountm:active, a.accountd:hover, a.accountd:active {
 }
 
 div.headerm {
-	height:350px;
+	min-height:350px;
 }
 div.headerd {
-	height:500px;
+	min-height:500px;
 }
 img.headerlogom {
 	/*width:320px;*/
