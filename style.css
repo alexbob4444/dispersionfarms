@@ -77,7 +77,8 @@ div.pageheadtextbd {
 }
 div.pageheadtextsd {
 	position:relative;
-	display:block;
+	display:table-cell;
+	vertical-align:middle;
 	height:70%;
 	padding-top:70px;
 	width:100%;
