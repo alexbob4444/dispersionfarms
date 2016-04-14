@@ -76,9 +76,9 @@ div.pageheadtextbd {
 	color:#FFFFFF;
 }
 div.pageheadtextsd {
-	position:relative;
+	position:absolute;
 	/*left:0px; bottom:0px; top:170px;*/
-	margin-top:50px;
+	padding-top:50px;
 	vertical-align:middle;
 	width:100%;
 	font-size:25px;
