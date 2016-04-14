@@ -144,6 +144,8 @@ img.headerlogod {
 }
 a.headerlogo {
 	position:absolute;
+	left:0px;
+	top:0px;
 }
 a.menuiconm {
 	float:right;
