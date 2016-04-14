@@ -14,6 +14,11 @@
   	autologin();
   	loadpubliccompostmap();
   	loadpublicfarmmap();
+  	document.getElementById('farmidinput').onkeypress=function(e){
+      if(e.keyCode==13){
+        searchpublicfarms();
+      }
+    }
   }
   window.onresize = eventResize;
   window.onload = loading;
