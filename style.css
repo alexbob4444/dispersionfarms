@@ -14,7 +14,7 @@ div.headercover {
 h2.sectionh {
 	text-transform:uppercase;
 	font-size:30px;
-	font-family:clarkssummit;
+	font-family:'clarkssummit';
 }
 html.menuopen {
 	overflow:hidden;
@@ -244,6 +244,7 @@ div.menu {
 	width:250px;
 	right:-250px;
 	height:100%;
+	font-family:'clarkssummit';
 }
 div.menu.menuopen {
 	right:0px;
