@@ -2,6 +2,10 @@ html {
 	background-color:#313131;
 	overflow-x:hidden;
 }
+@font-face {
+font-family: clarkssummit;
+src: url("clarkssummit.otf") format("opentype");
+}
 div.headercover {
 	background-color:rgba(0,0,0,.1);
 	width:100%;
@@ -9,6 +13,7 @@ div.headercover {
 }
 h2.sectionh {
 	text-transform:uppercase;
+	font-family:clarkssummit;
 }
 html.menuopen {
 	overflow:hidden;
@@ -76,6 +81,7 @@ div.pageheadtextbd {
 	color:#FFFFFF;
 }
 div.pageheadtextsd {
+	font-family:'clarkssummit';
 	position:relative;
 	display:block;
 	width:100%;
@@ -89,6 +95,7 @@ div.pageheadtextbm {
 	color:#FFFFFF;
 }
 div.pageheadtextsm {
+	font-family:'clarkssummit';
 	position:relative;
 	width:100%;
 	font-size:20px;
@@ -217,7 +224,7 @@ div.footer {
 	margin:0px;
 	background-color:#313131;
 	color:#E6E6E6;
-	font:"proxima-nova";
+	font-family:'clarkssummit';
 	font-size:20px;
 	text-transform:uppercase;
 	letter-spacing:2px;
