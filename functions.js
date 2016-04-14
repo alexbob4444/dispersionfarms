@@ -1,6 +1,6 @@
 
 function eventResize() {
-	document.getElementById('header').height = window.innerHeight*0.7;
+	document.getElementById('header').style.height = window.innerHeight*0.8;
     if (window.innerWidth<600) {//screen of mobile
       document.getElementById("headerlogoi").className = "headerlogom";
       document.getElementById("menuiconi").className = 'menuiconm';
