@@ -40,6 +40,7 @@ function loading() {
 
 <div class='bodyholder'>
   <div class='body' id='body'>
+  <br>
   <div class='loginform' id='loginform'>
     <form class="form" action='/dispersionfarms/php/login.php' method='POST'>
       <h2 class='sectionh'>Log In</h2>
@@ -89,6 +90,7 @@ function loading() {
       </div>
       <div style="position:absolute; right:10px;top:40px;"><a class='requestbutton' href='/dispersionfarms/php/logout.php'>Log Out</a></div>
     </div>
+    </br>
   </div>
 </div>
 
