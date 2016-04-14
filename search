@@ -14,7 +14,7 @@
   	autologin();
   	loadpubliccompostmap();
   	loadpublicfarmmap();
-  	document.getElementById('farmidinput').onkeypress=function(e){
+  	document.getElementById('farmidinput').keypress=function(e){
       if(e.keyCode==13){
         searchpublicfarms();
       }
