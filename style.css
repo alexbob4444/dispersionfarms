@@ -133,15 +133,17 @@ img.headerlogom {
 	content:url("/dispersionfarms/images/minilogo.png");
 	height:70px;
 	display:block;
+	left:10px;
+	top:5px;
 }
 img.headerlogod {
 	width:450px;
 	display:block;
+	left:0px;
+	top:2px;
 }
 a.headerlogo {
 	position:absolute;
-	left:10px;
-	top:5px;
 }
 a.menuiconm {
 	float:right;
