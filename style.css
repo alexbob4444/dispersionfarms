@@ -78,8 +78,7 @@ div.pageheadtextbd {
 div.pageheadtextsd {
 	position:relative;
 	display:block;
-	top:0px;
-	bottom:0px;
+	height:70%;
 	/*left:0px; bottom:0px; top:170px;*/
 	padding-top:70px;
 	vertical-align:middle;
