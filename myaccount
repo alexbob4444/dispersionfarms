@@ -42,7 +42,7 @@ function loading() {
   <div class='body' id='body'>
   <div class='loginform' id='loginform'>
     <form class="form" action='/dispersionfarms/php/login.php' method='POST'>
-      <h3>Log In</h3>
+      <h2 class='sectionh'>Log In</h2>
       Username: <br>
       <input required='true' type='text' name='inputusername'><br>
       Password: <br>
