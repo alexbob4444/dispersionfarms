@@ -1,7 +1,7 @@
 
 function eventResize() {
 	document.getElementById('header').style.height = window.innerHeight*0.8;
-	document.getElementById('pageheadtexts').style.top= (window.innerHeight*0.8-70)/2-document.getElementById('pageheadtexts').style.height;
+	document.getElementById('pageheadtexts').style.top= 70+(window.innerHeight*0.8-70)/2-document.getElementById('pageheadtexts').style.height;
     if (window.innerWidth<600) {//screen of mobile
       document.getElementById("headerlogoi").className = "headerlogom";
       document.getElementById("menuiconi").className = 'menuiconm';
