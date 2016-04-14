@@ -9,9 +9,6 @@ function eventResize() {
       document.getElementById("pageheadtextb").className = "pageheadtextbm";
       document.getElementById("pageheadtexts").className = "pageheadtextsm";
       document.getElementById("arrowdown").className = "arrowdownm";
-      if (window.innerWidth<400) {
-      	document.getElementById("headerlogoi").style.display = "none";
-      }
     }
     else {//screen of desktop
       document.getElementById("headerlogoi").className = "headerlogod";
@@ -22,7 +19,6 @@ function eventResize() {
       document.getElementById("pageheadtextb").className = "pageheadtextbd";
       document.getElementById("pageheadtexts").className = "pageheadtextsd";
       document.getElementById("arrowdown").className = "arrowdownd";
-      document.getElementById("headerlogoi").style.display = "block";
     }
 }
 function loadMenu() {
