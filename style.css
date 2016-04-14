@@ -79,6 +79,7 @@ div.pageheadtextsd {
 	position:relative;
 	display:table-cell;
 	vertical-align:middle;
+	margin:auto;
 	height:70%;
 	padding-top:70px;
 	width:100%;
