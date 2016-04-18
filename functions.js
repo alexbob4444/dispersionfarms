@@ -1,6 +1,7 @@
 
 function eventResize() {
 	document.getElementById('header').style.height = window.innerHeight*0.8;
+	document.getElementById('header').sytle.maxheight = window.innerWidth*1.5;
 	document.getElementById('pageheadtexts').style.top= (window.innerHeight*0.8-130-document.getElementById('pageheadtexts').style.height)/2;
     if (window.innerWidth<600) {//screen of mobile
       document.getElementById("headerlogoi").className = "headerlogom";
