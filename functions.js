@@ -2,7 +2,7 @@
 function eventResize() {
 	document.getElementById('header').style.height = window.innerHeight*0.8;
 	document.getElementById('header').style.maxHeight = window.innerWidth*1.5;
-	var height =document.getElementById('header').height;
+	var height =parseint(document.getElementById('header').style.height);
 	document.getElementById('pageheadtexts').style.top= (height-130-document.getElementById('pageheadtexts').style.height)/2;
     if (window.innerWidth<600) {//screen of mobile
       document.getElementById("headerlogoi").className = "headerlogom";
