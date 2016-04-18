@@ -3,7 +3,11 @@ function eventResize() {
 	document.getElementById('header').style.height = window.innerHeight*0.8;
 	document.getElementById('header').style.maxHeight = window.innerWidth*1.5;
 	var headerheight = parseInt(document.getElementById('header').style.height,10);
-	document.getElementById('pageheadtexts').style.top= (headerheight-140)/2 + "px";
+	var maxheaderheight = parseInt(document.getElementById('header').style.maxHeight,10);
+	if (maxheaderheight<headerheight) {
+		headerheight=maxheaderheight;
+	}
+	document.getElementById('pageheadtexts').style.top= (headerheight-150)/2;
     if (window.innerWidth<600) {//screen of mobile
       document.getElementById("headerlogoi").className = "headerlogom";
       document.getElementById("menuiconi").className = 'menuiconm';
